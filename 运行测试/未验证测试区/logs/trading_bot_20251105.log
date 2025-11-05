@@ -1,0 +1,20 @@
+2025-11-05 00:35:49,418 - TradingBot - INFO - 交易所 binance 初始化成功
+2025-11-05 00:35:49,418 - TradingBot - WARNING - 没有可用的AI信号提供者
+2025-11-05 00:35:49,418 - TradingBot - INFO - 模拟模式：跳过交易所连接测试
+2025-11-05 00:35:49,418 - TradingBot - INFO - 所有组件初始化成功
+2025-11-05 00:35:49,418 - TradingBot - INFO - 交易机器人初始化完成
+2025-11-05 00:35:49,421 - TradingBot - INFO - 交易执行器已启动
+2025-11-05 00:35:49,421 - TradingBot - ERROR - 设置定时任务失败: 'Config' object has no attribute 'analysis_interval'
+2025-11-05 00:35:49,421 - TradingBot - INFO - 交易机器人已启动
+2025-11-05 00:36:16,160 - TradingBot - INFO - 交易执行器已停止
+2025-11-05 00:36:16,161 - TradingBot - INFO - 交易机器人已停止
+2025-11-05 05:02:13,983 - TradingBot - INFO - 交易所 binance 初始化成功
+2025-11-05 05:02:13,983 - TradingBot - WARNING - 没有可用的AI信号提供者
+2025-11-05 05:02:13,983 - TradingBot - INFO - 模拟模式：跳过交易所连接测试
+2025-11-05 05:02:13,983 - TradingBot - INFO - 所有组件初始化成功
+2025-11-05 05:02:13,983 - TradingBot - INFO - 交易机器人初始化完成
+2025-11-05 05:02:13,986 - TradingBot - INFO - 交易执行器已启动
+2025-11-05 05:02:13,986 - TradingBot - ERROR - 设置定时任务失败: 'Config' object has no attribute 'analysis_interval'
+2025-11-05 05:02:13,986 - TradingBot - INFO - 交易机器人已启动
+2025-11-05 05:02:25,570 - TradingBot - INFO - 交易执行器已停止
+2025-11-05 05:02:25,571 - TradingBot - INFO - 交易机器人已停止

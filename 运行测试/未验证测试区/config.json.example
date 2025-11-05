@@ -1,0 +1,68 @@
+{
+  "exchange": {
+    "name": "binance",
+    "sandbox": true,
+    "api_key": "",
+    "secret": "",
+    "timeout": 30000,
+    "retries": 3,
+    "rate_limit": 10
+  },
+  "trading": {
+    "symbol": "PAXG/USDT",
+    "base_currency": "USDT",
+    "quote_currency": "PAXG",
+    "max_risk_per_trade": 0.02,
+    "max_daily_risk": 0.05,
+    "max_open_positions": 3,
+    "min_signal_confidence": 0.6,
+    "min_signal_interval": 300,
+    "max_loss_percentage": 0.05
+  },
+  "analysis": {
+    "timeframes": ["15m", "1h", "4h", "1d"],
+    "analysis_interval": 60,
+    "risk_check_interval": 5,
+    "report_interval": 24
+  },
+  "ai": {
+    "providers": ["deepseek", "openai"],
+    "primary_provider": "deepseek",
+    "consensus_threshold": 0.6,
+    "deepseek": {
+      "api_key": "",
+      "model": "deepseek-chat",
+      "base_url": "https://api.deepseek.com/v1"
+    },
+    "openai": {
+      "api_key": "",
+      "model": "gpt-4",
+      "base_url": "https://api.openai.com/v1"
+    }
+  },
+  "smc": {
+    "bos_choch_sensitivity": 0.7,
+    "order_block_min_strength": 0.6,
+    "fvg_min_strength": 0.5,
+    "mtf_weight": {
+      "15m": 0.1,
+      "1h": 0.3,
+      "4h": 0.3,
+      "1d": 0.3
+    }
+  },
+  "risk": {
+    "atr_multiplier": 2.0,
+    "trailing_stop_activation": 1.5,
+    "trailing_stop_distance": 0.5,
+    "position_sizing_method": "risk_based",
+    "max_leverage": 1.0,
+    "risk_free_rate": 0.02
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "logs/trading_bot.log",
+    "max_size": 10485760,
+    "backup_count": 5
+  }
+}

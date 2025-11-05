@@ -1,0 +1,13 @@
+2025-11-04 15:19:31,402 - Main - ERROR - 运行失败: 'Config' object has no attribute 'max_workers'
+2025-11-04 15:19:59,135 - Main - ERROR - 运行失败: 'Config' object has no attribute 'exchange_name'
+2025-11-04 15:20:35,328 - Main - ERROR - 运行失败: 'Config' object has no attribute 'max_daily_risk'
+2025-11-04 15:20:43,361 - Main - ERROR - 运行失败: 'Config' object has no attribute 'max_open_positions'
+2025-11-04 15:20:51,846 - Main - ERROR - 运行失败: 'Config' object has no attribute 'risk_reward_ratio'
+2025-11-04 15:21:28,956 - Main - ERROR - 运行失败: 'Config' object has no attribute 'stop_loss_atr_multiplier'
+2025-11-04 15:21:37,294 - Main - ERROR - 运行失败: 'Config' object has no attribute 'take_profit_atr_multiplier'
+2025-11-04 15:21:44,260 - Main - ERROR - 运行失败: 'Config' object has no attribute 'trailing_stop_activation_atr'
+2025-11-04 15:21:50,901 - Main - ERROR - 运行失败: 'ExchangeManager' object has no attribute 'connect'
+2025-11-04 15:22:14,745 - Main - ERROR - 运行失败: 无法连接到交易所
+2025-11-04 15:22:34,770 - Main - ERROR - 运行失败: 无法连接到交易所
+2025-11-04 15:22:41,967 - Main - INFO - 启动交易机器人
+2025-11-04 21:11:43,147 - Main - INFO - 接收到停止信号

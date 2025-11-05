@@ -1,0 +1,42 @@
+2025-11-04 15:19:31,401 - TradingBot - ERROR - 组件初始化失败: 'Config' object has no attribute 'max_workers'
+2025-11-04 15:19:59,134 - TradingBot - ERROR - 交易所初始化失败: 'Config' object has no attribute 'exchange_name'
+2025-11-04 15:19:59,135 - TradingBot - ERROR - 组件初始化失败: 'Config' object has no attribute 'exchange_name'
+2025-11-04 15:20:35,328 - TradingBot - INFO - 交易所 binance 初始化成功
+2025-11-04 15:20:35,328 - TradingBot - WARNING - 没有可用的AI信号提供者
+2025-11-04 15:20:35,328 - TradingBot - ERROR - 组件初始化失败: 'Config' object has no attribute 'max_daily_risk'
+2025-11-04 15:20:43,361 - TradingBot - INFO - 交易所 binance 初始化成功
+2025-11-04 15:20:43,361 - TradingBot - WARNING - 没有可用的AI信号提供者
+2025-11-04 15:20:43,361 - TradingBot - ERROR - 组件初始化失败: 'Config' object has no attribute 'max_open_positions'
+2025-11-04 15:20:51,846 - TradingBot - INFO - 交易所 binance 初始化成功
+2025-11-04 15:20:51,846 - TradingBot - WARNING - 没有可用的AI信号提供者
+2025-11-04 15:20:51,846 - TradingBot - ERROR - 组件初始化失败: 'Config' object has no attribute 'risk_reward_ratio'
+2025-11-04 15:21:28,956 - TradingBot - INFO - 交易所 binance 初始化成功
+2025-11-04 15:21:28,956 - TradingBot - WARNING - 没有可用的AI信号提供者
+2025-11-04 15:21:28,956 - TradingBot - ERROR - 组件初始化失败: 'Config' object has no attribute 'stop_loss_atr_multiplier'
+2025-11-04 15:21:37,294 - TradingBot - INFO - 交易所 binance 初始化成功
+2025-11-04 15:21:37,294 - TradingBot - WARNING - 没有可用的AI信号提供者
+2025-11-04 15:21:37,294 - TradingBot - ERROR - 组件初始化失败: 'Config' object has no attribute 'take_profit_atr_multiplier'
+2025-11-04 15:21:44,260 - TradingBot - INFO - 交易所 binance 初始化成功
+2025-11-04 15:21:44,260 - TradingBot - WARNING - 没有可用的AI信号提供者
+2025-11-04 15:21:44,260 - TradingBot - ERROR - 组件初始化失败: 'Config' object has no attribute 'trailing_stop_activation_atr'
+2025-11-04 15:21:50,900 - TradingBot - INFO - 交易所 binance 初始化成功
+2025-11-04 15:21:50,901 - TradingBot - WARNING - 没有可用的AI信号提供者
+2025-11-04 15:21:50,901 - TradingBot - ERROR - 组件初始化失败: 'ExchangeManager' object has no attribute 'connect'
+2025-11-04 15:22:04,716 - TradingBot - INFO - 交易所 binance 初始化成功
+2025-11-04 15:22:04,717 - TradingBot - WARNING - 没有可用的AI信号提供者
+2025-11-04 15:22:14,744 - TradingBot - ERROR - 交易所连接测试失败: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-04 15:22:14,745 - TradingBot - ERROR - 组件初始化失败: 无法连接到交易所
+2025-11-04 15:22:24,764 - TradingBot - INFO - 交易所 binance 初始化成功
+2025-11-04 15:22:24,764 - TradingBot - WARNING - 没有可用的AI信号提供者
+2025-11-04 15:22:34,769 - TradingBot - ERROR - 交易所连接测试失败: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-04 15:22:34,770 - TradingBot - ERROR - 组件初始化失败: 无法连接到交易所
+2025-11-04 15:22:41,967 - TradingBot - INFO - 交易所 binance 初始化成功
+2025-11-04 15:22:41,967 - TradingBot - WARNING - 没有可用的AI信号提供者
+2025-11-04 15:22:41,967 - TradingBot - INFO - 模拟模式：跳过交易所连接测试
+2025-11-04 15:22:41,967 - TradingBot - INFO - 所有组件初始化成功
+2025-11-04 15:22:41,967 - TradingBot - INFO - 交易机器人初始化完成
+2025-11-04 15:22:41,972 - TradingBot - INFO - 交易执行器已启动
+2025-11-04 15:22:41,972 - TradingBot - ERROR - 设置定时任务失败: 'Config' object has no attribute 'analysis_interval'
+2025-11-04 15:22:41,972 - TradingBot - INFO - 交易机器人已启动
+2025-11-04 21:11:43,174 - TradingBot - INFO - 交易执行器已停止
+2025-11-04 21:11:43,174 - TradingBot - INFO - 交易机器人已停止

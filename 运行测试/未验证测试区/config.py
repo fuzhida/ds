@@ -223,6 +223,15 @@ class Config:
                 self.analysis_interval = analysis.get("analysis_interval", self.analysis_interval)
                 self.risk_check_interval = analysis.get("risk_check_interval", self.risk_check_interval)
                 self.report_interval = analysis.get("report_interval", self.report_interval)
+                # 价格监控与调度循环检查间隔
+                try:
+                    _pmi = analysis.get("price_monitor_interval")
+                    if _pmi is None:
+                        _pmi = trade.get("price_monitor_interval")
+                    if isinstance(_pmi, (int, float)):
+                        self.price_monitor_interval = int(_pmi)
+                except Exception:
+                    pass
                 # 交易所名称
                 if exchange.get("name"):
                     self.exchange_name = exchange.get("name")

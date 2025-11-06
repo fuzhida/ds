@@ -91,6 +91,7 @@ class Config:
     heartbeat_interval: int = 60
     heartbeat_file: str = "heartbeat.log"
     cache_ttl: int = 300  # 5分钟
+    price_monitor_interval: int = 60  # 价格监控与调度循环检查间隔(秒)，适配3m主时间框架
     
     # 日志配置
     log_level: str = "INFO"

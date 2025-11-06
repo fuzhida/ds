@@ -188,3 +188,23 @@
 2025-11-07 04:18:02,174 - TradingBot - INFO - 交易机器人已启动
 2025-11-07 04:18:02,376 - TradingBot - INFO - 交易执行器已停止
 2025-11-07 04:18:02,376 - TradingBot - INFO - 交易机器人已停止
+2025-11-07 04:23:01,116 - TradingBot - INFO - 交易所 binance 初始化成功
+2025-11-07 04:23:01,116 - TradingBot - WARNING - 没有可用的AI信号提供者
+2025-11-07 04:23:01,116 - TradingBot - INFO - 模拟模式：跳过交易所连接测试
+2025-11-07 04:23:01,116 - TradingBot - INFO - 所有组件初始化成功
+2025-11-07 04:23:01,116 - TradingBot - INFO - 交易机器人初始化完成
+2025-11-07 04:23:01,116 - TradingBot - INFO - 交易执行器已启动
+2025-11-07 04:23:01,117 - TradingBot - INFO - 定时任务已设置
+2025-11-07 04:23:01,117 - TradingBot - INFO - 交易机器人已启动
+2025-11-07 04:23:01,322 - TradingBot - INFO - 交易执行器已停止
+2025-11-07 04:23:01,323 - TradingBot - INFO - 交易机器人已停止
+2025-11-07 04:27:32,230 - TradingBot - INFO - 交易所 binance 初始化成功
+2025-11-07 04:27:32,408 - TradingBot - INFO - DeepSeek AI信号提供者初始化成功
+2025-11-07 04:27:32,408 - TradingBot - INFO - 模拟模式：跳过交易所连接测试
+2025-11-07 04:27:32,408 - TradingBot - INFO - 所有组件初始化成功
+2025-11-07 04:27:32,409 - TradingBot - INFO - 交易机器人初始化完成
+2025-11-07 04:27:32,409 - TradingBot - INFO - 交易执行器已启动
+2025-11-07 04:27:32,410 - TradingBot - INFO - 定时任务已设置
+2025-11-07 04:27:32,410 - TradingBot - INFO - 交易机器人已启动
+2025-11-07 04:27:32,613 - TradingBot - INFO - 交易执行器已停止
+2025-11-07 04:27:32,613 - TradingBot - INFO - 交易机器人已停止

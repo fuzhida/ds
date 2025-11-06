@@ -319,7 +319,8 @@ class TradingBot:
                     schedule.run_pending()
                     
                     # 等待下一次检查
-                    self.stop_event.wait(1)
+                    wait_sec = getattr(self.config, "price_monitor_interval", 1) or 1
+                    self.stop_event.wait(max(1, int(wait_sec)))
                 
                 except Exception as e:
                     self.logger.error(f"监控循环异常: {e}")

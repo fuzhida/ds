@@ -10,7 +10,7 @@ from datetime import datetime
 from trading_bot import TradingBot
 
 
-def setup_logging(log_level="INFO"):
+def setup_logging(log_level="INFO", symbol: str = None):
     """设置日志"""
     # 创建日志目录
     log_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "logs")
@@ -26,8 +26,12 @@ def setup_logging(log_level="INFO"):
     # 清除现有处理器
     logger.handlers.clear()
     
-    # 文件处理器
-    log_file = os.path.join(log_dir, f"main_{datetime.now().strftime('%Y%m%d')}.log")
+    # 文件处理器：若提供符号，则按符号命名
+    if symbol and isinstance(symbol, str):
+        sanitized = symbol.replace('/', '').replace(':', '').replace('-', '').lower()
+        log_file = os.path.join(log_dir, f"{sanitized}_main.log")
+    else:
+        log_file = os.path.join(log_dir, f"main_{datetime.now().strftime('%Y%m%d')}.log")
     file_handler = logging.FileHandler(log_file)
     file_handler.setLevel(logging.INFO)
     file_handler.setFormatter(logging.Formatter(log_format))
@@ -56,12 +60,11 @@ def main():
     
     args = parser.parse_args()
     
-    # 设置日志
-    logger = setup_logging(args.log_level)
-    
+    # 创建交易机器人实例
     try:
-        # 创建交易机器人实例
         bot = TradingBot(args.config)
+        # 交易机器人创建后，使用其符号设置主日志
+        logger = setup_logging(args.log_level, symbol=getattr(bot.config, 'symbol', None))
         
         # 根据模式执行不同操作
         if args.mode == "run":

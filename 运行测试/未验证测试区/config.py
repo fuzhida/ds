@@ -98,6 +98,8 @@ class Config:
     contextual_log_file: str = "logs/contextual_rejects.jsonl"
     max_log_size: int = 10 * 1024 * 1024  # 10MB
     backup_count: int = 5
+    # 信号持久化（按交易品种自动命名）
+    signals_file: str = "logs/signals_history.jsonl"
     
     # 回测配置
     backtest_file: Optional[str] = None
@@ -175,7 +177,21 @@ class Config:
                 self.symbol = trade.get("symbol", self.symbol) or self.symbol
                 self.max_risk_per_trade = trade.get("max_risk_per_trade", self.max_risk_per_trade)
                 self.max_daily_risk = trade.get("max_daily_risk", self.max_daily_risk)
-                self.max_open_positions = trade.get("max_open_positions", self.max_open_positions)
+                # 兼容别名：max_open_positions / max_positions
+                _mo = trade.get("max_open_positions")
+                _mp = trade.get("max_positions")
+                if _mo is not None:
+                    try:
+                        self.max_open_positions = int(_mo)
+                        self.max_positions = int(_mo)
+                    except Exception:
+                        pass
+                elif _mp is not None:
+                    try:
+                        self.max_open_positions = int(_mp)
+                        self.max_positions = int(_mp)
+                    except Exception:
+                        pass
                 self.min_signal_confidence = trade.get("min_signal_confidence", self.min_signal_confidence)
                 self.min_signal_interval = trade.get("min_signal_interval", self.min_signal_interval)
                 # 执行相关的默认参数（可从配置文件覆盖）
@@ -184,6 +200,21 @@ class Config:
                 self.default_stop_loss_pct = trade.get("default_stop_loss_pct", self.default_stop_loss_pct)
                 self.default_take_profit_pcts = trade.get("default_take_profit_pcts", self.default_take_profit_pcts)
                 self.spread_tolerance = trade.get("spread_tolerance", self.spread_tolerance)
+                # 兼容别名：risk_reward_ratio / rr_ratio
+                _rr = trade.get("risk_reward_ratio")
+                _rr2 = trade.get("rr_ratio")
+                if isinstance(_rr, (int, float)):
+                    try:
+                        self.risk_reward_ratio = float(_rr)
+                        self.rr_ratio = float(_rr)
+                    except Exception:
+                        pass
+                elif isinstance(_rr2, (int, float)):
+                    try:
+                        self.risk_reward_ratio = float(_rr2)
+                        self.rr_ratio = float(_rr2)
+                    except Exception:
+                        pass
                 # 分析与调度参数
                 tf = analysis.get("timeframes")
                 if tf:
@@ -210,6 +241,13 @@ class Config:
                 # 日志相关配置
                 logging_cfg = cfg.get("logging", {})
                 self.contextual_log_file = logging_cfg.get("contextual_log_file", self.contextual_log_file)
+                # log_file 与 signals_file 支持从配置文件加载
+                _lf = logging_cfg.get("log_file")
+                if _lf:
+                    self.log_file = _lf
+                _sf = logging_cfg.get("signals_file")
+                if _sf:
+                    self.signals_file = _sf
         except Exception:
             # 保持静默以兼容无配置文件场景
             pass
@@ -249,8 +287,69 @@ class Config:
         if os.getenv("OPENAI_API_KEY"):
             self.openai_api_key = os.getenv("OPENAI_API_KEY")
 
+        # 日志/信号文件环境覆盖
+        if os.getenv("LOG_FILE"):
+            self.log_file = os.getenv("LOG_FILE")
+        if os.getenv("SIGNALS_FILE"):
+            self.signals_file = os.getenv("SIGNALS_FILE")
         if os.getenv("CONTEXTUAL_LOG_FILE"):
             self.contextual_log_file = os.getenv("CONTEXTUAL_LOG_FILE")
+        # 自动化：默认上下文日志文件按符号命名（未显式指定时）
+        try:
+            path = getattr(self, "contextual_log_file", None)
+            # 当使用默认占位名或为空时，改为按符号自动命名
+            if (not path or not str(path).strip() or str(path).endswith("contextual_rejects.jsonl")) and isinstance(self.symbol, str) and self.symbol:
+                base_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "logs")
+                os.makedirs(base_dir, exist_ok=True)
+                sanitized = self.symbol.replace("/", "").replace(":", "").replace("-", "")
+                self.contextual_log_file = os.path.join(base_dir, f"contextual_{sanitized}.jsonl")
+        except Exception:
+            # 保持静默，避免影响后续校验
+            pass
+        # 自动化：log_file 与 signals_file 按符号命名（未显式指定或为占位名时）
+        try:
+            base_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "logs")
+            os.makedirs(base_dir, exist_ok=True)
+            sanitized = self.symbol.replace("/", "").replace(":", "").replace("-", "") if isinstance(self.symbol, str) else ""
+            # log_file：默认占位或空 -> <symbol>_trading_bot.log
+            lf = getattr(self, "log_file", None)
+            if (not lf or not str(lf).strip() or str(lf).endswith("paxg_trading.log")) and sanitized:
+                self.log_file = os.path.join(base_dir, f"{sanitized.lower()}_trading_bot.log")
+            # signals_file：默认占位或空 -> signals_<symbol>.jsonl
+            sf = getattr(self, "signals_file", None)
+            if (not sf or not str(sf).strip() or str(sf).endswith("signals_history.jsonl")) and sanitized:
+                self.signals_file = os.path.join(base_dir, f"signals_{sanitized.lower()}.jsonl")
+        except Exception:
+            pass
+        # 别名环境覆盖（风险回报与最大持仓）
+        if os.getenv("RISK_REWARD_RATIO"):
+            try:
+                v = float(os.getenv("RISK_REWARD_RATIO"))
+                self.risk_reward_ratio = v
+                self.rr_ratio = v
+            except Exception:
+                pass
+        if os.getenv("RR_RATIO"):
+            try:
+                v = float(os.getenv("RR_RATIO"))
+                self.risk_reward_ratio = v
+                self.rr_ratio = v
+            except Exception:
+                pass
+        if os.getenv("MAX_OPEN_POSITIONS"):
+            try:
+                v = int(os.getenv("MAX_OPEN_POSITIONS"))
+                self.max_open_positions = v
+                self.max_positions = v
+            except Exception:
+                pass
+        if os.getenv("MAX_POSITIONS"):
+            try:
+                v = int(os.getenv("MAX_POSITIONS"))
+                self.max_open_positions = v
+                self.max_positions = v
+            except Exception:
+                pass
         # 别名环境覆盖
         if os.getenv("MAX_SLIPPAGE_PCT_ENTRY"):
             try:
@@ -284,6 +383,8 @@ class Config:
             raise ValueError("Max drawdown must be between 0 and 1")
         
         if self.rr_ratio <= 0:
+            raise ValueError("Risk-reward ratio must be greater than 0")
+        if self.risk_reward_ratio <= 0:
             raise ValueError("Risk-reward ratio must be greater than 0")
         
         if self.atr_multiplier <= 0:
@@ -347,6 +448,10 @@ class Config:
             raise ValueError("spread_threshold must be non-negative")
         if not isinstance(self.contextual_log_file, str) or not self.contextual_log_file.strip():
             raise ValueError("Contextual log file must be a non-empty string")
+        if not isinstance(self.log_file, str) or not self.log_file.strip():
+            raise ValueError("Log file must be a non-empty string")
+        if not isinstance(self.signals_file, str) or not self.signals_file.strip():
+            raise ValueError("Signals file must be a non-empty string")
 
         # 执行相关默认参数校验
         if self.default_position_size <= 0:

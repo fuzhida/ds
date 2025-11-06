@@ -190,9 +190,9 @@ class Config:
     order_timeout: int = 10
     heartbeat_interval: int = 60
     price_monitor_interval: int = 60  # 1分钟监控间隔，更及时捕捉价格变动（适应3m主时间框架）
-    signals_file: str = 'paxg_signal_history.json'  # PAXG专用信号历史文件
+    signals_file: str = ''  # 由 __post_init__ 按符号自动命名
     heartbeat_file: str = 'heartbeat.log'
-    log_file: str = 'paxg_trading_bot.log'  # PAXG专用日志文件
+    log_file: str = ''  # 由 __post_init__ 按符号自动命名
     max_log_size: int = 10 * 1024 * 1024
     log_backup_count: int = 5
     deepseek_timeout: int = 30
@@ -261,7 +261,7 @@ class Config:
     enable_duplicate_filtering: bool = True  # Enable duplicate entry prevention
     duplicate_signal_ttl: int = 180  # Duplicate signal TTL in seconds (3 minutes)
     enable_contextual_logging: bool = True  # Enable contextual rejection logging
-    contextual_log_file: str = 'paxg_contextual_rejections.json'  # PAXG专用上下文日志文件  # File for contextual rejection logs
+    contextual_log_file: str = ''  # 由 __post_init__ 按符号自动命名
 
     # NEW: Hybrid SMC strategy parameters
     hybrid_smc_min_confidence: float = 0.6  # 混合SMC最小置信度阈值
@@ -322,6 +322,23 @@ class Config:
                 'BTC/USDC:USDC': 10,  # BTC比特币交易对10倍杠杆
                 # Add more as needed
             }
+        # 基于符号自动命名日志与信号文件（避免跨品种污染）
+        try:
+            base_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "logs")
+            os.makedirs(base_dir, exist_ok=True)
+            sym = str(getattr(self, "symbol", "") or "")
+            sanitized = sym.replace("/", "").replace(":", "").replace("-", "").lower()
+            # signals_file：默认或PAXG命名 -> <symbol>_signal_history.json
+            if not isinstance(self.signals_file, str) or not self.signals_file.strip() or "paxg_signal_history" in self.signals_file:
+                self.signals_file = os.path.join(base_dir, f"{sanitized or 'default'}_signal_history.json")
+            # log_file：默认或通用命名 -> <symbol>_trading_bot.log
+            if not isinstance(self.log_file, str) or not self.log_file.strip() or self.log_file in ("paxg_trading_bot.log", "trading_bot.log"):
+                self.log_file = os.path.join(base_dir, f"{sanitized or 'default'}_trading_bot.log")
+            # contextual_log_file：默认或PAXG命名 -> contextual_<symbol>.jsonl
+            if not isinstance(self.contextual_log_file, str) or not self.contextual_log_file.strip() or "paxg_contextual_rejections" in self.contextual_log_file:
+                self.contextual_log_file = os.path.join(base_dir, f"contextual_{sanitized or 'default'}.jsonl")
+        except Exception:
+            pass
         if self.level_weights is None:
             self.level_weights = {
                 # Daily levels (highest)

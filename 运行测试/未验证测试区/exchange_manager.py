@@ -77,7 +77,9 @@ class ExchangeManager:
     def test_connection(self) -> bool:
         """测试交易所连接：在模拟模式下跳过网络请求，否则加载交易对信息以验证连接"""
         # 在模拟模式，不进行网络访问，直接认为连接成功
-        if getattr(self.config, 'simulation_mode', False):
+        # 仅当 simulation_mode 显式为 True 才视为模拟模式，避免 Mock 对象被当作真值
+        sim_mode = getattr(self.config, 'simulation_mode', False)
+        if sim_mode is True:
             self.logger.info("模拟模式：跳过交易所连接测试")
             return True
         try:

@@ -128,6 +128,9 @@ class Config:
     order_retry_delay: float = 1.0  # 订单重试延迟(秒)
     slippage_tolerance: float = 0.001  # 滑点容忍度
     spread_tolerance: float = 0.001  # 点差容忍度（买卖价差占中间价比例）
+    # 别名配置（与建议保持一致）：如提供则优先使用
+    max_slippage_pct_entry: Optional[float] = None  # 入场滑点容忍度别名
+    spread_threshold: Optional[float] = None        # 点差容忍度别名
 
     # 执行相关的默认参数（供 TradingExecutor 使用）
     default_position_size: float = 0.01  # 默认仓位大小（单位数量）
@@ -248,6 +251,17 @@ class Config:
 
         if os.getenv("CONTEXTUAL_LOG_FILE"):
             self.contextual_log_file = os.getenv("CONTEXTUAL_LOG_FILE")
+        # 别名环境覆盖
+        if os.getenv("MAX_SLIPPAGE_PCT_ENTRY"):
+            try:
+                self.max_slippage_pct_entry = float(os.getenv("MAX_SLIPPAGE_PCT_ENTRY"))
+            except Exception:
+                pass
+        if os.getenv("SPREAD_THRESHOLD"):
+            try:
+                self.spread_threshold = float(os.getenv("SPREAD_THRESHOLD"))
+            except Exception:
+                pass
         
         # 验证配置参数
         self._validate_config()
@@ -327,6 +341,10 @@ class Config:
             raise ValueError("Slippage tolerance must be non-negative")
         if self.spread_tolerance < 0:
             raise ValueError("Spread tolerance must be non-negative")
+        if self.max_slippage_pct_entry is not None and self.max_slippage_pct_entry < 0:
+            raise ValueError("max_slippage_pct_entry must be non-negative")
+        if self.spread_threshold is not None and self.spread_threshold < 0:
+            raise ValueError("spread_threshold must be non-negative")
         if not isinstance(self.contextual_log_file, str) or not self.contextual_log_file.strip():
             raise ValueError("Contextual log file must be a non-empty string")
 

@@ -4903,3 +4903,9 @@
 2025-11-07 00:58:31 [Thread-2  ] monitor      - INFO     - 💓 Heartbeat: 00:58:31 | Position=No position | Balance=1001.97 USDC | Signals=0 | Price=$100654.50
 2025-11-07 00:58:53 [Thread-1  ] api          - INFO     - ✅ 获取实时市场价格: $100726.50
 2025-11-07 00:58:53 [Thread-1  ] monitor      - DEBUG    - ✅ 价格监控获取真实价格: $100726.50
+2025-11-07 00:59:31 [Thread-2  ] monitor      - INFO     - 💓 Heartbeat: 00:59:31 | Position=No position | Balance=1001.97 USDC | Signals=0 | Price=$100654.50
+2025-11-07 00:59:56 [Thread-1  ] api          - INFO     - ✅ 获取实时市场价格: $100780.50
+2025-11-07 00:59:56 [Thread-1  ] monitor      - DEBUG    - ✅ 价格监控获取真实价格: $100780.50
+2025-11-07 01:00:31 [Thread-2  ] monitor      - INFO     - 💓 Heartbeat: 01:00:31 | Position=No position | Balance=1001.97 USDC | Signals=0 | Price=$100654.50
+2025-11-07 01:00:59 [Thread-1  ] api          - INFO     - ✅ 获取实时市场价格: $100938.50
+2025-11-07 01:00:59 [Thread-1  ] monitor      - DEBUG    - ✅ 价格监控获取真实价格: $100938.50

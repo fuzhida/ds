@@ -49,7 +49,11 @@ class OrderManager:
         self.order_timeout = _to_int(getattr(config, 'order_timeout', 30), 30)  # 订单超时时间(秒)
         self.max_retries = _to_int(getattr(config, 'max_order_retries', getattr(config, 'max_retries', 3)), 3)  # 最大重试次数
         self.retry_delay = _to_int(getattr(config, 'order_retry_delay', getattr(config, 'retry_delay', 1)), 1)  # 重试延迟(秒)
-        self.slippage_tolerance = _to_float(getattr(config, 'slippage_tolerance', 0.01), 0.01)  # 滑点容忍度
+        # 滑点容忍度（支持别名 max_slippage_pct_entry）
+        raw_slip = getattr(config, 'max_slippage_pct_entry', None)
+        if raw_slip is None:
+            raw_slip = getattr(config, 'slippage_tolerance', 0.01)
+        self.slippage_tolerance = _to_float(raw_slip, 0.01)
     
     def create_order(self, *args, **kwargs) -> Dict[str, Any]:
         """创建订单"""
@@ -797,9 +801,12 @@ class TradingExecutor:
                         best_ask = float(asks[0][0])
                         mid = (best_bid + best_ask) / 2.0 if (best_bid and best_ask) else current_price
                         spread_ratio = (best_ask - best_bid) / mid if mid > 0 else 0.0
-                        if spread_ratio > getattr(self.config, 'spread_tolerance', 0.001):
+                        tol = getattr(self.config, 'spread_threshold', None)
+                        if tol is None:
+                            tol = getattr(self.config, 'spread_tolerance', 0.001)
+                        if spread_ratio > tol:
                             self.logger.warning(
-                                f"点差过大: {spread_ratio:.2%} > {getattr(self.config, 'spread_tolerance', 0.001):.2%}，拒绝执行"
+                                f"点差过大: {spread_ratio:.2%} > {tol:.2%}，拒绝执行"
                             )
                             # 记录门禁事件
                             try:
@@ -815,7 +822,7 @@ class TradingExecutor:
                                             "best_ask": best_ask,
                                             "mid": mid,
                                             "spread_ratio": spread_ratio,
-                                            "tolerance": getattr(self.config, 'spread_tolerance', None),
+                                            "tolerance": tol,
                                             "signal_type": signal.get("signal", "HOLD")
                                         }
                                     }

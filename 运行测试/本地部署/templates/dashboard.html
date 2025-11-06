@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMC交易系统仪表盘</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .container {
+            max-width: 1400px;
+            padding: 0 2rem;
+        }
+        .tab-content {
+            padding-top: 2rem;
+        }
+        .row {
+            margin-bottom: 2rem;
+        }
+        .col-md-6, .col-md-3, .col-12, .col-4, .col-3 {
+            margin-bottom: 1.5rem;
+        }
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            font-size: 18px;
+            color: #2c3e50;
+        }
+        .dashboard-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 0;
+            margin-bottom: 3rem;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        .dashboard-header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        .dashboard-header p {
+            font-size: 1.4rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        .metric-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+        .metric-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+        }
+        .metric-label {
+            font-size: 1.2rem;
+            color: #6c757d;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+        .metric-value {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        .direction-bullish {
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 1.2rem; /* 增加方向指示字体大小 */
+        }
+        .direction-bearish {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 1.2rem; /* 增加方向指示字体大小 */
+        }
+        .tab-content {
+            background: white;
+            border-radius: 20px; /* 增加圆角 */
+            padding: 2.5rem; /* 增加内边距 */
+            margin-top: 1rem;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* 增加阴影 */
+        }
+        .nav-tabs {
+            border-bottom: 3px solid #e9ecef; /* 增加下边框 */
+            margin-bottom: 0;
+        }
+        .nav-tabs .nav-link {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #6c757d;
+            border: none;
+            border-bottom: 3px solid transparent;
+            padding: 1rem 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .nav-tabs .nav-link.active {
+            color: #667eea;
+            background-color: transparent;
+            border-bottom: 3px solid #667eea;
+            font-weight: 700;
+        }
+        .nav-tabs .nav-link:hover {
+            color: #667eea;
+            border-bottom: 3px solid rgba(102, 126, 234, 0.5);
+        }
+        .nav-tabs .nav-link.active:hover {
+            border-bottom: 3px solid #5a6fd8;
+        }
+        .refresh-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 30px; /* 增加圆角 */
+            padding: 0.8rem 2rem; /* 增加内边距 */
+            font-size: 1.1rem; /* 增加字体大小 */
+            font-weight: 600;
+            transition: all 0.3s ease; /* 添加过渡效果 */
+            box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3); /* 添加阴影 */
+        }
+        .refresh-btn:hover {
+            background: #5a6fd8;
+            transform: translateY(-2px); /* 悬停时上移 */
+            box-shadow: 0 6px 12px rgba(102, 126, 234, 0.4); /* 悬停时增加阴影 */
+        }
+        h4 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e9ecef;
+        }
+        h5 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #495057;
+            margin-bottom: 1.2rem;
+        }
+        .table {
+            font-size: 1.1rem;
+        }
+        .table th {
+            font-weight: 700;
+            color: #2c3e50;
+            background-color: #f8f9fa;
+            border-top: none;
+            padding: 1rem;
+        }
+        .table td {
+            padding: 0.8rem 1rem;
+            vertical-align: middle;
+        }
+        .alert {
+            font-size: 1.2rem;
+            padding: 1.2rem 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="dashboard-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h1><i class="fas fa-chart-line"></i> SMC交易系统仪表盘</h1>
+                    <p class="mb-0">实时监控交易关键指标和信号</p>
+                </div>
+                <div class="col-auto">
+                    <button class="refresh-btn" onclick="location.reload()">
+                        <i class="fas fa-sync-alt"></i> 刷新数据
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- 性能指标卡片 -->
+        <div class="row">
+            <div class="col-md-3">
+                <div class="metric-card">
+                    <div class="metric-label">总交易次数</div>
+                    <div class="metric-value">{{ performance_metrics.total_trades }}</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="metric-card">
+                    <div class="metric-label">胜率</div>
+                    <div class="metric-value">{{ "%.1f"|format(performance_metrics.win_rate) }}%</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="metric-card">
+                    <div class="metric-label">总盈利</div>
+                    <div class="metric-value">${{ "%.2f"|format(performance_metrics.total_profit) }}</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="metric-card">
+                    <div class="metric-label">单笔平均盈利</div>
+                    <div class="metric-value">${{ "%.2f"|format(performance_metrics.avg_profit_per_trade) }}</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 标签页导航 -->
+        <ul class="nav nav-tabs" id="dashboardTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="realtime-tab" data-bs-toggle="tab" data-bs-target="#realtime" type="button" role="tab">
+                    <i class="fas fa-chart-line"></i> 实时监控
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ai-interaction-tab" data-bs-toggle="tab" data-bs-target="#ai-interaction" type="button" role="tab">
+                    <i class="fas fa-robot"></i> AI交互数据
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="performance-tab" data-bs-toggle="tab" data-bs-target="#performance" type="button" role="tab">
+                    <i class="fas fa-chart-bar"></i> 性能分析
+                </button>
+            </li>
+        </ul>
+
+        <!-- 标签页内容 -->
+        <div class="tab-content" id="dashboardTabsContent">
+            <!-- 实时监控标签页 -->
+            <div class="tab-pane fade show active" id="realtime" role="tabpanel">
+                {% if symbol_data %}
+                <div class="row">
+                    <!-- 基本信息 -->
+                    <div class="col-md-6">
+                        <h4><i class="fas fa-info-circle"></i> 基本信息</h4>
+                        <div class="metric-card">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="metric-label">品种</div>
+                                    <div class="metric-value">{{ symbol_data.symbol }}</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="metric-label">当前价格</div>
+                                    <div class="metric-value">${{ "%.2f"|format(symbol_data.raw_data.price_info.current) }}</div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="metric-label">决策</div>
+                                    <div class="metric-value">{{ symbol_data.analysis_result.decision }}</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="metric-label">置信度</div>
+                                    <div class="metric-value">{{ "%.1f"|format(symbol_data.analysis_result.confidence * 100) }}%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 方向分析 -->
+                    <div class="col-md-6">
+                        <h4><i class="fas fa-compass"></i> 方向分析</h4>
+                        {% if symbol_data.analysis_result.direction_analysis %}
+                        {% set dir_analysis = symbol_data.analysis_result.direction_analysis %}
+                        <div class="metric-card">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="metric-label">4小时方向</div>
+                                    <div class="metric-value {{ 'direction-bullish' if dir_analysis['4h_direction'] == 'BULLISH' else 'direction-bearish' }}">
+                                        {{ dir_analysis['4h_direction'] }}
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="metric-label">1小时方向</div>
+                                    <div class="metric-value {{ 'direction-bullish' if dir_analysis['1h_direction'] == 'BULLISH' else 'direction-bearish' }}">
+                                        {{ dir_analysis['1h_direction'] }}
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="metric-label">当前方向</div>
+                                    <div class="metric-value {{ 'direction-bullish' if dir_analysis.current_direction == 'BULLISH' else 'direction-bearish' }}">
+                                        {{ dir_analysis.current_direction }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12">
+                                    <div class="metric-label">方向一致性</div>
+                                    <div class="metric-value {{ 'direction-bullish' if dir_analysis.directions_consistent else 'direction-bearish' }}">
+                                        {{ '✅ 一致' if dir_analysis.directions_consistent else '❌ 不一致' }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <!-- 技术指标 -->
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <h4><i class="fas fa-chart-area"></i> 订单块分析</h4>
+                        {% set ob_data = symbol_data.smc_patterns.order_blocks if symbol_data.smc_patterns and symbol_data.smc_patterns.order_blocks else {'recent_ob_count': 0, 'bullish_ob': {'support': 0, 'resistance': 0}} %}
+                        <div class="metric-card">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="metric-label">OB数量</div>
+                                    <div class="metric-value">{{ ob_data.recent_ob_count }}</div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="metric-label">看涨支撑</div>
+                                    <div class="metric-value">${{ "%.2f"|format(ob_data.bullish_ob.support) }}</div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="metric-label">看涨阻力</div>
+                                    <div class="metric-value">${{ "%.2f"|format(ob_data.bullish_ob.resistance) }}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h4><i class="fas fa-exchange-alt"></i> FVG分析</h4>
+                        {% set fvg_data = symbol_data.smc_patterns.fair_value_gaps if symbol_data.smc_patterns and symbol_data.smc_patterns.fair_value_gaps else {'recent_fvg_count': 0, 'bullish_fvg': {'gap_top': 0, 'gap_bottom': 0}} %}
+                        <div class="metric-card">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="metric-label">FVG数量</div>
+                                    <div class="metric-value">{{ fvg_data.recent_fvg_count }}</div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="metric-label">看涨FVG顶部</div>
+                                    <div class="metric-value">${{ "%.2f"|format(fvg_data.bullish_fvg.gap_top) }}</div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="metric-label">看涨FVG底部</div>
+                                    <div class="metric-value">${{ "%.2f"|format(fvg_data.bullish_fvg.gap_bottom) }}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% else %}
+                <div class="alert alert-warning">
+                    <i class="fas fa-exclamation-triangle"></i> 未找到分析数据
+                </div>
+                {% endif %}
+            </div>
+
+            <!-- AI交互数据标签页 -->
+            <div class="tab-pane fade" id="ai-interaction" role="tabpanel">
+                <h4><i class="fas fa-robot"></i> AI交互数据监控</h4>
+                
+                <!-- 当前AI分析结果 -->
+                {% if ai_interaction_data.current_ai_analysis %}
+                <div class="row">
+                    <div class="col-12">
+                        <h5><i class="fas fa-chart-line"></i> 当前AI分析结果</h5>
+                        <div class="metric-card">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="metric-label">交易风格</div>
+                                    <div class="metric-value">{{ ai_interaction_data.current_ai_analysis.trading_style }}</div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="metric-label">风险偏好</div>
+                                    <div class="metric-value">{{ ai_interaction_data.current_ai_analysis.risk_preference }}</div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="metric-label">当前价格</div>
+                                    <div class="metric-value">${{ "%.2f"|format(ai_interaction_data.current_ai_analysis.raw_data_summary.price) }}</div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="metric-label">24小时变化</div>
+                                    <div class="metric-value">{{ "%.1f"|format(ai_interaction_data.current_ai_analysis.raw_data_summary['24h_change'] * 100) }}%</div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12">
+                                    <div class="metric-label">AI分析摘要</div>
+                                    <div style="max-height: 250px; overflow-y: auto; background: #f8f9fa; padding: 1.2rem; border-radius: 8px; font-size: 1.1rem; line-height: 1.6; border: 1px solid #e9ecef;">
+                                        {{ ai_interaction_data.current_ai_analysis.ai_analysis[:800] }}{% if ai_interaction_data.current_ai_analysis.ai_analysis|length > 800 %}...{% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% else %}
+                <div class="alert alert-info">
+                    <i class="fas fa-info-circle"></i> 暂无当前AI分析结果
+                </div>
+                {% endif %}
+
+                <!-- AI交互历史 -->
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <h5><i class="fas fa-history"></i> AI交互历史记录</h5>
+                        {% if ai_interaction_data.ai_interaction_history %}
+                        <div class="metric-card">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>时间</th>
+                                            <th>文件</th>
+                                            <th>品种</th>
+                                            <th>交易风格</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for interaction in ai_interaction_data.ai_interaction_history[:10] %}
+                                        <tr>
+                                            <td>{{ interaction.timestamp|int|timestamp_to_datetime|datetimeformat('%Y-%m-%d %H:%M') }}</td>
+                                            <td><small>{{ interaction.file }}</small></td>
+                                            <td>{{ interaction.symbols|join(', ') }}</td>
+                                            <td>{{ interaction.trading_style }}</td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        {% else %}
+                        <div class="alert alert-info">
+                            <i class="fas fa-info-circle"></i> 暂无AI交互历史记录
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <!-- 提交给AI的数据 -->
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <h5><i class="fas fa-upload"></i> 提交给AI的数据</h5>
+                        {% if ai_interaction_data.submitted_data %}
+                        <div class="metric-card">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>品种</th>
+                                            <th>价格</th>
+                                            <th>时间</th>
+                                            <th>来源文件</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for data in ai_interaction_data.submitted_data[:10] %}
+                                        <tr>
+                                            <td>{{ data.symbol }}</td>
+                                            <td>${{ "%.2f"|format(data.price) }}</td>
+                                            <td>{{ data.timestamp|int|timestamp_to_datetime|datetimeformat('%Y-%m-%d %H:%M') }}</td>
+                                            <td><small>{{ data.file }}</small></td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        {% else %}
+                        <div class="alert alert-info">
+                            <i class="fas fa-info-circle"></i> 暂无提交给AI的数据记录
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+
+            <!-- 性能分析标签页 -->
+            <div class="tab-pane fade" id="performance" role="tabpanel">
+                <h4><i class="fas fa-history"></i> 最近交易记录</h4>
+                {% if history_data %}
+                <div class="row">
+                    {% for trade in history_data[-5:] %}
+                    <div class="col-md-6">
+                        <div class="metric-card">
+                            <div class="metric-label">{{ trade.symbol }} - {{ trade.timestamp }}</div>
+                            <div class="metric-value">{{ trade.signal_details.side }} - ${{ "%.2f"|format(trade.signal_details.entry_price) }}</div>
+                            <div class="mt-2">
+                                <small class="text-muted">
+                                    止损: ${{ "%.2f"|format(trade.signal_details.stop_loss) }} | 
+                                    止盈: ${{ "%.2f"|format(trade.signal_details.take_profit) }}
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <div class="alert alert-info">
+                    <i class="fas fa-info-circle"></i> 暂无交易记录
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // 自动刷新数据（每30秒）
+        setInterval(function() {
+            fetch('/api/data')
+                .then(response => response.json())
+                .then(data => {
+                    console.log('数据已刷新:', data.timestamp);
+                    // 更新关键指标
+                    updateMetrics(data);
+                })
+                .catch(error => console.error('数据刷新失败:', error));
+        }, 30000);
+
+        // 更新页面关键指标
+        function updateMetrics(data) {
+            // 更新价格信息
+            if (data.symbol_data && data.symbol_data.raw_data) {
+                const priceElements = document.querySelectorAll('.metric-value');
+                priceElements.forEach(element => {
+                    if (element.previousElementSibling && element.previousElementSibling.textContent.includes('当前价格')) {
+                        element.textContent = '$' + data.symbol_data.raw_data.price_info.current.toFixed(2);
+                    }
+                });
+            }
+            
+            // 更新决策信息
+            if (data.symbol_data && data.symbol_data.analysis_result) {
+                const metricElements = document.querySelectorAll('.metric-value');
+                metricElements.forEach(element => {
+                    if (element.previousElementSibling) {
+                        if (element.previousElementSibling.textContent.includes('决策')) {
+                            element.textContent = data.symbol_data.analysis_result.decision;
+                        }
+                        if (element.previousElementSibling.textContent.includes('置信度')) {
+                            element.textContent = (data.symbol_data.analysis_result.confidence * 100).toFixed(1) + '%';
+                        }
+                    }
+                });
+            }
+            
+            // 显示更新状态
+            const now = new Date();
+            console.log('页面数据已更新:', now.toLocaleTimeString());
+        }
+
+        // 页面加载完成后显示当前时间
+        document.addEventListener('DOMContentLoaded', function() {
+            const now = new Date();
+            console.log('页面加载完成:', now.toLocaleTimeString());
+        });
+    </script>
+</body>
+</html>

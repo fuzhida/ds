@@ -1,0 +1,28 @@
+{
+  "trading_style": "day_trading",
+  "risk_preference": "moderate",
+  "symbols": ["BTC/USD"],
+  "preferred_timeframes": ["15m", "1h", "4h"],
+  "max_timeframe": "4h",
+  "data_sources": {
+    "price_api": "binance",
+    "update_interval": 300,
+    "max_retries": 3
+  },
+  "ai_settings": {
+    "provider": "deepseek",
+    "max_tokens": 2000,
+    "temperature": 0.7,
+    "language": "chinese"
+  },
+  "risk_management": {
+    "daily_max_loss": 5,
+    "max_concurrent_trades": 3,
+    "position_sizing": "kelly_criterion"
+  },
+  "notifications": {
+    "telegram": false,
+    "email": false,
+    "webhook": ""
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "timestamp": "2025-10-30T23:48:07.719798",
+  "data_completeness": {
+    "enhanced_candlesticks": true,
+    "swing_points": true,
+    "volume_analysis": true,
+    "market_depth": true,
+    "time_sales": true,
+    "market_sentiment": true,
+    "multi_timeframe_context": true,
+    "liquidity_levels": true,
+    "price_movements": true,
+    "order_flow_imbalance": true,
+    "market_microstructure": true
+  },
+  "completeness_score": 1.0,
+  "consistency_issues": [],
+  "smc_calculation_feasibility": {
+    "BOS/CHOCH": true,
+    "Order Blocks": true,
+    "FVG": true,
+    "Liquidity Analysis": true,
+    "Market Microstructure": true
+  },
+  "feasibility_score": 1.0,
+  "overall_test_result": true
+}

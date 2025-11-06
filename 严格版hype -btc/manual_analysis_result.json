@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-11-04T20:38:08.785987",
+  "price": 103898.0,
+  "signal": {
+    "signal": "SELL",
+    "reason": "SMC analysis unavailable, adopting aggressive fallback with Fibonacci optimization",
+    "stop_loss": 101820.04,
+    "take_profit": 107014.94,
+    "confidence": "MEDIUM",
+    "confidence_score": 62.6,
+    "encourage_trading": true,
+    "is_fallback": true,
+    "fibonacci_optimized": true,
+    "risk_reward_ratio": 1.5,
+    "timestamp": "2025-11-04 12:37:56"
+  }
+}

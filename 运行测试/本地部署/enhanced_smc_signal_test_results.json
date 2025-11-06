@@ -1,0 +1,117 @@
+{
+  "signal_calculator_result": {
+    "signal": "HOLD",
+    "confidence": 0.2242238400414544,
+    "reason": "\u4fe1\u53f7\u4e0d\u660e\u786e\u6216\u7f6e\u4fe1\u5ea6\u4e0d\u8db3",
+    "stop_loss": null,
+    "take_profit": null,
+    "risk_reward_ratio": 0,
+    "current_price": 50803.747983237095,
+    "signal_breakdown": {
+      "bos_choch": {
+        "signal": "BUY",
+        "confidence": 0.5122334611180767,
+        "reason": "\u770b\u6da8BOS: \u4ef7\u683c\u7a81\u7834\u524d\u9ad8 50741.67",
+        "current_price": 50803.747983237095,
+        "prev_high": 50741.673354432336,
+        "prev_low": 50590.503540320824
+      },
+      "order_blocks": {
+        "signal": "HOLD",
+        "confidence": 0.0,
+        "reason": "\u65e0\u660e\u786e\u8ba2\u5355\u5757",
+        "order_block_level": null,
+        "current_price": 50803.747983237095
+      },
+      "fvg": {
+        "signal": "SELL",
+        "confidence": 0.7375129591347039,
+        "reason": "\u770b\u8dccFVG: \u4ef7\u683c\u5728\u7f3a\u53e3\u533a\u57df 50526.65-50832.42",
+        "fvg_top": 50832.42392391519,
+        "fvg_bottom": 50526.652890762445,
+        "current_price": 50803.747983237095
+      },
+      "liquidity": {
+        "signal": "BUY",
+        "confidence": 0.47035867804020937,
+        "reason": "\u770b\u6da8\u6d41\u52a8\u6027: \u63a5\u8fd1\u6d41\u52a8\u6027\u4f4e\u70b9 50687.08",
+        "liquidity_level": 50687.08158476327,
+        "current_price": 50803.747983237095
+      },
+      "market_microstructure": {
+        "signal": "HOLD",
+        "confidence": 0.0,
+        "reason": "\u65e0\u660e\u663e\u4e70\u5356\u538b\u529b",
+        "depth_imbalance": -0.2590525614498567,
+        "sales_imbalance": 0.017871101657409526,
+        "combined_imbalance": -0.1205907298962236
+      }
+    },
+    "strength_scores": {
+      "buy_strength": 0.2242238400414544,
+      "sell_strength": 0.14750259182694078
+    },
+    "timestamp": "2025-10-30T16:22:27.266918+00:00"
+  },
+  "integrated_signal_result": {
+    "signal": "HOLD",
+    "confidence": 0.157776020877863,
+    "reason": "\u4fe1\u53f7\u4e0d\u660e\u786e\u6216\u7f6e\u4fe1\u5ea6\u4e0d\u8db3",
+    "stop_loss": null,
+    "take_profit": null,
+    "risk_reward_ratio": 0,
+    "current_price": 41558.36735459595,
+    "signal_breakdown": {
+      "bos_choch": {
+        "signal": "SELL",
+        "confidence": 0.5259200695928766,
+        "reason": "\u770b\u8dccBOS: \u4ef7\u683c\u8dcc\u7834\u524d\u4f4e 41666.37",
+        "current_price": 41558.36735459595,
+        "prev_high": 41938.296156526776,
+        "prev_low": 41666.3668674847
+      },
+      "order_blocks": {
+        "signal": "HOLD",
+        "confidence": 0.0,
+        "reason": "\u65e0\u660e\u786e\u8ba2\u5355\u5757",
+        "order_block_level": null,
+        "current_price": 41558.36735459595
+      },
+      "fvg": {
+        "signal": "HOLD",
+        "confidence": 0.0,
+        "reason": "\u65e0\u660e\u786eFVG",
+        "fvg_top": null,
+        "fvg_bottom": null,
+        "current_price": 41558.36735459595
+      },
+      "liquidity": {
+        "signal": "HOLD",
+        "confidence": 0.0,
+        "reason": "\u65e0\u660e\u786e\u6d41\u52a8\u6027\u4fe1\u53f7",
+        "liquidity_level": null,
+        "current_price": 41558.36735459595
+      },
+      "market_microstructure": {
+        "signal": "HOLD",
+        "confidence": 0.0,
+        "reason": "\u65e0\u660e\u663e\u4e70\u5356\u538b\u529b",
+        "depth_imbalance": -0.07843559848311484,
+        "sales_imbalance": 0.08892708865940037,
+        "combined_imbalance": 0.005245745088142767
+      }
+    },
+    "strength_scores": {
+      "buy_strength": 0.0,
+      "sell_strength": 0.157776020877863
+    },
+    "timestamp": "2025-10-30T16:22:27.270853+00:00"
+  },
+  "enhanced_data_stats": {
+    "candlesticks": 50,
+    "swing_points": 23,
+    "market_depth": 10,
+    "time_sales": 100
+  },
+  "test_timestamp": "2025-10-30T16:22:27.270891+00:00"
+}

@@ -1,0 +1,1630 @@
+# SMC/ICT策略分析 - 增强版数据驱动分析
+
+## 任务概述
+基于提供的增强版原始市场数据，进行专业SMC/ICT（Smart Money Concepts/Inner Circle Trader）结构分析，识别关键交易机会。你拥有完全自主权，不受任何预设偏见影响，必须基于数据做出独立判断。
+
+## 增强版原始市场数据
+
+### 1. 增强版K线数据 (Enhanced Candlesticks)
+```json
+[
+  {
+    "timestamp": "2024-01-01T00:00:00Z",
+    "open": 41947.89281235658,
+    "high": 41977.15900870179,
+    "low": 41945.979072848306,
+    "close": 41959.97003570791,
+    "volume": 1054.0966930072177,
+    "timeframe": "1h",
+    "body_size": 12.077223351334396,
+    "upper_wick": 17.18897299387754,
+    "lower_wick": 1.9137395082725561,
+    "body_position": "upper",
+    "body_ratio": 0.3873395829961181,
+    "previous_close": 42000,
+    "gap_size": 52.10718764342164,
+    "gap_direction": "down",
+    "volume_profile": {
+      "poc_price": 41959.97003570791,
+      "value_area_high": 41557.38741861477,
+      "value_area_low": 42365.43886357679,
+      "value_area_volume_pct": 0.7
+    },
+    "engulfing": "bearish_engulfing",
+    "rejection": false,
+    "inside_bar": false
+  },
+  {
+    "timestamp": "2024-01-02T01:00:00Z",
+    "open": 41926.84453331955,
+    "high": 41930.39767314702,
+    "low": 41898.78095560356,
+    "close": 41902.38375165876,
+    "volume": 1455.837905501186,
+    "timeframe": "1h",
+    "body_size": 24.460781660789507,
+    "upper_wick": 3.55313982746884,
+    "lower_wick": 3.6027960552019067,
+    "body_position": "upper",
+    "body_ratio": 0.7736660716649596,
+    "previous_close": 41959.97003570791,
+    "gap_size": 33.12550238836411,
+    "gap_direction": "down",
+    "volume_profile": {
+      "poc_price": 41902.38375165876,
+      "value_area_high": 41511.09369641555,
+      "value_area_low": 42317.76876515959,
+      "value_area_volume_pct": 0.7
+    },
+    "engulfing": "none",
+    "rejection": false,
+    "inside_bar": true
+  },
+  {
+    "timestamp": "2024-01-03T02:00:00Z",
+    "open": 41842.16278875552,
+    "high": 41892.7465660858,
+    "low": 41821.65679367655,
+    "close": 41888.462536661194,
+    "volume": 1201.4975927002656,
+    "timeframe": "1h",
+    "body_size": 46.29974790567212,
+    "upper_wick": 4.284029424605251,
+    "lower_wick": 20.505995078972774,
+    "body_position": "middle",
+    "body_ratio": 0.6512856397842066,
+    "previous_close": 41902.38375165876,
+    "gap_size": 60.220962903236796,
+    "gap_direction": "down",
+    "volume_profile": {
+      "poc_price": 41888.462536661194,
+      "value_area_high": 41473.81910042494,
+      "value_area_low": 42239.87336161332,
+      "value_area_volume_pct": 0.7
+    },
+    "engulfing": "none",
+    "rejection": false,
+    "inside_bar": false
+  },
+  {
+    "timestamp": "2024-01-04T03:00:00Z",
+    "open": 41877.72703213367,
+    "high": 41910.57856463494,
+    "low": 41840.746395078735,
+    "close": 41879.115684886805,
+    "volume": 1097.2869859433931,
+    "timeframe": "1h",
+    "body_size": 1.3886527531358297,
+    "upper_wick": 31.462879748134583,
+    "lower_wick": 36.98063705493405,
+    "body_position": "upper",
+    "body_ratio": 0.019885573682744767,
+    "previous_close": 41888.462536661194,
+    "gap_size": 10.735504527525336,
+    "gap_direction": "down",
+    "volume_profile": {
+      "poc_price": 41879.115684886805,
+      "value_area_high": 41491.47277898859,
+      "value_area_low": 42259.153859029524,
+      "value_area_volume_pct": 0.7
+    },
+    "engulfing": "none",
+    "rejection": false,
+    "inside_bar": true
+  },
+  {
+    "timestamp": "2024-01-05T04:00:00Z",
+    "open": 41869.01485282009,
+    "high": 41914.85952832639,
+    "low": 41841.515176305125,
+    "close": 41879.76893110175,
+    "volume": 1034.8258327848328,
+    "timeframe": "1h",
+    "body_size": 10.754078281664988,
+    "upper_wick": 35.09059722464008,
+    "lower_wick": 27.49967651496263,
+    "body_position": "lower",
+    "body_ratio": 0.14662449098393593,
+    "previous_close": 41879.115684886805,
+    "gap_size": 10.100832066716976,
+    "gap_direction": "down",
+    "volume_profile": {
+      "poc_price": 41879.76893110175,
+      "value_area_high": 41495.71093304313,
+      "value_area_low": 42259.93032806818,
+      "value_area_volume_pct": 0.7
+    },
+    "engulfing": "bearish_engulfing",
+    "rejection": false,
+    "inside_bar": false
+  },
+  {
+    "timestamp": "2024-01-06T05:00:00Z",
+    "open": 41887.86949718365,
+    "high": 41904.52133298585,
+    "low": 41837.98663205886,
+    "close": 41841.48813155592,
+    "volume": 1187.8727142021703,
+    "timeframe": "1h",
+    "body_size": 46.38136562773434,
+    "upper_wick": 16.651835802200367,
+    "lower_wick": 3.5014994970551925,
+    "body_position": "lower",
+    "body_ratio": 0.6971003849349185,
+    "previous_close": 41879.76893110175,
+    "gap_size": 8.10056608189916,
+    "gap_direction": "up",
+    "volume_profile": {
+      "poc_price": 41841.48813155592,
+      "value_area_high": 41485.47611965599,
+      "value_area_low": 42256.36649837945,
+      "value_area_volume_pct": 0.7
+    },
+    "engulfing": "bullish_engulfing",
+    "rejection": true,
+    "inside_bar": false
+  },
+  {
+    "timestamp": "2024-01-07T06:00:00Z",
+    "open": 41873.07415718795,
+    "high": 41876.6591811584,
+    "low": 41816.595368783084,
+    "close": 41837.21846963355,
+    "volume": 1386.9979979030313,
+    "timeframe": "1h",
+    "body_size": 35.855687554394535,
+    "upper_wick": 3.585023970452312,
+    "lower_wick": 20.6231008504692,
+    "body_position": "lower",
+    "body_ratio": 0.5969599020845681,
+    "previous_close": 41841.48813155592,
+    "gap_size": 31.586025632030214,
+    "gap_direction": "up",
+    "volume_profile": {
+      "poc_price": 41837.21846963355,
+      "value_area_high": 41457.89258934682,
+      "value_area_low": 42234.76132247091,
+      "value_area_volume_pct": 0.7
+    },
+    "engulfing": "none",
+    "rejection": false,
+    "inside_bar": true
+  },
+  {
+    "timestamp": "2024-01-08T07:00:00Z",
+    "open": 41843.80575833117,
+    "high": 41913.72898858615,
+    "low": 41827.16701240874,
+    "close": 41864.65954593858,
+    "volume": 851.660730827598,
+    "timeframe": "1h",
+    "body_size": 20.853787607411505,
+    "upper_wick": 49.069442647567485,
+    "lower_wick": 16.638745922427916,
+    "body_position": "middle",
+    "body_ratio": 0.24091163959418066,
+    "previous_close": 41837.21846963355,
+    "gap_size": 6.587288697613985,
+    "gap_direction": "up",
+    "volume_profile": {
+      "poc_price": 41864.65954593858,
+      "value_area_high": 41494.591698700286,
+      "value_area_low": 42245.438682532826,
+      "value_area_volume_pct": 0.7
+    },
+    "engulfing": "bullish_engulfing",
+    "rejection": true,
+    "inside_bar": false
+  },
+  {
+    "timestamp": "2024-01-09T08:00:00Z",
+    "open": 41797.920639695236,
+    "high": 41804.3861631352,
+    "low": 41740.693833064564,
+    "close": 41785.81785977054,
+    "volume": 1206.218342264719,
+    "timeframe": "1h",
+    "body_size": 12.102779924694914,
+    "upper_wick": 6.465523439961544,
+    "lower_wick": 45.124026705976576,
+    "body_position": "upper",
+    "body_ratio": 0.1900194248078735,
+    "previous_close": 41864.65954593858,
+    "gap_size": 66.73890624334308,
+    "gap_direction": "down",
+    "volume_profile": {
+      "poc_price": 41785.81785977054,
+      "value_area_high": 41386.34230150384,
+      "value_area_low": 42158.10077139521,
+      "value_area_volume_pct": 0.7
+    },
+    "engulfing": "none",
+    "rejection": false,
+    "inside_bar": true
+  },
+  {
+    "timestamp": "2024-01-10T09:00:00Z",
+    "open": 41803.708778790824,
+    "high": 41827.36422295933,
+    "low": 41776.352087545914,
+    "close": 41799.30811785208,
+    "volume": 1175.9296196881708,
+    "timeframe": "1h",
+    "body_size": 4.4006609387433855,
+    "upper_wick": 23.65544416850753,
+    "lower_wick": 22.956030306166213,
+    "body_position": "middle",
+    "body_ratio": 0.0862669422301018,
+    "previous_close": 41785.81785977054,
+    "gap_size": 17.890919020283036,
+    "gap_direction": "up",
+    "volume_profile": {
+      "poc_price": 41799.30811785208,
+      "value_area_high": 41409.09058072974,
+      "value_area_low": 42194.11560842137,
+      "value_area_volume_pct": 0.7
+    },
+    "engulfing": "bullish_engulfing",
+    "rejection": false,
+    "inside_bar": false
+  },
+  {
+    "timestamp": "2024-01-11T10:00:00Z",
+    "open": 41801.28313213091,
+    "high": 41837.82750518581,
+    "low": 41721.25413465286,
+    "close": 41752.65865183714,
+    "volume": 949.1571287070672,
+    "timeframe": "1h",
+    "body_size": 48.62448029377265,
+    "upper_wick": 36.544373054894095,
+    "lower_wick": 31.40451718428085,
+    "body_position": "upper",
+    "body_ratio": 0.41711481851706195,
+    "previous_close": 41799.30811785208,
+    "gap_size": 1.975014278832532,
+    "gap_direction": "up",
+    "volume_profile": {
+      "poc_price": 41752.65865183714,
+      "value_area_high": 41419.44923013395,
+      "value_area_low": 42138.466675999385,
+      "value_area_volume_pct": 0.7
+    },
+    "engulfing": "none",
+    "rejection": false,
+    "inside_bar": false
+  },
+  {
+    "timestamp": "2024-01-12T11:00:00Z",
+    "open": 41660.48074078881,
+    "high": 41674.75490424783,
+    "low": 41630.936410283335,
+    "close": 41633.776879965575,
+    "volume": 967.5193278599179,
+    "timeframe": "1h",
+    "body_size": 26.70386082323239,
+    "upper_wick": 14.274163459020201,
+    "lower_wick": 2.8404696822399274,
+    "body_position": "lower",
+    "body_ratio": 0.6094198683521929,
+    "previous_close": 41752.65865183714,
+    "gap_size": 92.17791104833304,
+    "gap_direction": "down",
+    "volume_profile": {
+      "poc_price": 41633.776879965575,
+      "value_area_high": 41258.00735520535,
+      "value_area_low": 42047.24577438617,
+      "value_area_volume_pct": 0.7
+    },
+    "engulfing": "none",
+    "rejection": true,
+    "inside_bar": false
+  },
+  {
+    "timestamp": "2024-01-13T12:00:00Z",
+    "open": 41584.66247932287,
+    "high": 41647.68218928468,
+    "low": 41549.16151252508,
+    "close": 41630.305258567125,
+    "volume": 1117.9551040860329,
+    "timeframe": "1h",
+    "body_size": 45.64277924425551,
+    "upper_wick": 17.376930717553478,
+    "lower_wick": 35.50096679778653,
+    "body_position": "middle",
+    "body_ratio": 0.46328121918640885,
+    "previous_close": 41633.776879965575,
+    "gap_size": 49.11440064270573,
+    "gap_direction": "down",
+    "volume_profile": {
+      "poc_price": 41630.305258567125,
+      "value_area_high": 41231.205367391834,
+      "value_area_low": 41964.65312765034,
+      "value_area_volume_pct": 0.7
+    },
+    "engulfing": "none",
+    "rejection": false,
+    "inside_bar": true
+  },
+  {
+    "timestamp": "2024-01-14T13:00:00Z",
+    "open": 41730.11307005126,
+    "high": 41806.086293379834,
+    "low": 41707.82025656666,
+    "close": 41762.23020743763,
+    "volume": 1441.8633373671476,
+    "timeframe": "1h",
+    "body_size": 32.117137386368995,
+    "upper_wick": 43.856085942206846,
+    "lower_wick": 22.29281348460063,
+    "body_position": "middle",
+    "body_ratio": 0.3268386354832865,
+    "previous_close": 41630.305258567125,
+    "gap_size": 99.80781148413371,
+    "gap_direction": "up",
+    "volume_profile": {
+      "poc_price": 41762.23020743763,
+      "value_area_high": 41388.02543044603,
+      "value_area_low": 42124.898459132324,
+      "value_area_volume_pct": 0.7
+    },
+    "engulfing": "none",
+    "rejection": false,
+    "inside_bar": true
+  },
+  {
+    "timestamp": "2024-01-15T14:00:00Z",
+    "open": 41719.503091557934,
+    "high": 41733.005175981285,
+    "low": 41640.06155360882,
+    "close": 41686.622609045524,
+    "volume": 974.9783027351272,
+    "timeframe": "1h",
+    "body_size": 32.8804825124098,
+    "upper_wick": 13.502084423351334,
+    "lower_wick": 46.56105543670128,
+    "body_position": "middle",
+    "body_ratio": 0.35376803349286845,
+    "previous_close": 41762.23020743763,
+    "gap_size": 42.72711587969388,
+    "gap_direction": "down",
+    "volume_profile": {
+      "poc_price": 41686.622609045524,
+      "value_area_high": 41315.675124221474,
+      "value_area_low": 42056.462169144914,
+      "value_area_volume_pct": 0.7
+    },
+    "engulfing": "bullish_engulfing",
+    "rejection": true,
+    "inside_bar": true
+  },
+  {
+    "timestamp": "2024-01-16T15:00:00Z",
+    "open": 41757.503556626296,
+    "high": 41804.602604411564,
+    "low": 41731.287254753835,
+    "close": 41734.82621177713,
+    "volume": 1054.2896648098642,
+    "timeframe": "1h",
+    "body_size": 22.67734484916582,
+    "upper_wick": 47.09904778526834,
+    "lower_wick": 3.5389570232946426,
+    "body_position": "middle",
+    "body_ratio": 0.3093123739439904,
+    "previous_close": 41686.622609045524,
+    "gap_size": 70.88094758077204,
+    "gap_direction": "up",
+    "volume_profile": {
+      "poc_price": 41734.82621177713,
+      "value_area_high": 41386.55657836745,
+      "value_area_low": 42148.600127301375,
+      "value_area_volume_pct": 0.7
+    },
+    "engulfing": "bearish_engulfing",
+    "rejection": false,
+    "inside_bar": true
+  },
+  {
+    "timestamp": "2024-01-17T16:00:00Z",
+    "open": 41661.948738245,
+    "high": 41662.37672371166,
+    "low": 41637.81241347288,
+    "close": 41639.08362361618,
+    "volume": 1048.128591144872,
+    "timeframe": "1h",
+    "body_size": 22.865114628824813,
+    "upper_wick": 0.427985466660175,
+    "lower_wick": 1.2712101432989584,
+    "body_position": "lower",
+    "body_ratio": 0.9308266508018483,
+    "previous_close": 41734.82621177713,
+    "gap_size": 72.87747353212762,
+    "gap_direction": "down",
+    "volume_profile": {
+      "poc_price": 41639.08362361618,
+      "value_area_high": 41245.75295647455,
+      "value_area_low": 42054.19053760761,
+      "value_area_volume_pct": 0.7
+    },
+    "engulfing": "bullish_engulfing",
+    "rejection": false,
+    "inside_bar": true
+  },
+  {
+    "timestamp": "2024-01-18T17:00:00Z",
+    "open": 41587.749501897226,
+    "high": 41634.49735878088,
+    "low": 41550.86614058314,
+    "close": 41553.66127065962,
+    "volume": 1204.7299406139864,
+    "timeframe": "1h",
+    "body_size": 34.088231237605214,
+    "upper_wick": 46.747856883652275,
+    "lower_wick": 2.795130076483474,
+    "body_position": "upper",
+    "body_ratio": 0.4076017541321191,
+    "previous_close": 41639.08362361618,
+    "gap_size": 51.33412171895179,
+    "gap_direction": "down",
+    "volume_profile": {
+      "poc_price": 41553.66127065962,
+      "value_area_high": 41218.15238519307,
+      "value_area_low": 41966.37480198897,
+      "value_area_volume_pct": 0.7
+    },
+    "engulfing": "bullish_engulfing",
+    "rejection": false,
+    "inside_bar": true
+  },
+  {
+    "timestamp": "2024-01-19T18:00:00Z",
+    "open": 41615.151505635054,
+    "high": 41646.043055903014,
+    "low": 41571.98379165123,
+    "close": 41637.78324177874,
+    "volume": 805.3230922589632,
+    "timeframe": "1h",
+    "body_size": 22.631736143688613,
+    "upper_wick": 8.259814124270633,
+    "lower_wick": 43.16771398382116,
+    "body_position": "middle",
+    "body_ratio": 0.30558953525040644,
+    "previous_close": 41553.66127065962,
+    "gap_size": 61.49023497543385,
+    "gap_direction": "up",
+    "volume_profile": {
+      "poc_price": 41637.78324177874,
+      "value_area_high": 41229.58262534398,
+      "value_area_low": 41987.703629567746,
+      "value_area_volume_pct": 0.7
+    },
+    "engulfing": "bearish_engulfing",
+    "rejection": false,
+    "inside_bar": true
+  },
+  {
+    "timestamp": "2024-01-20T19:00:00Z",
+    "open": 41588.27904568526,
+    "high": 41622.54314209589,
+    "low": 41585.97888876911,
+    "close": 41608.182659545695,
+    "volume": 977.4175796816891,
+    "timeframe": "1h",
+    "body_size": 19.903613860435144,
+    "upper_wick": 14.360482550197048,
+    "lower_wick": 2.3001569161497173,
+    "body_position": "lower",
+    "body_ratio": 0.5443462411922552,
+    "previous_close": 41637.78324177874,
+    "gap_size": 49.50419609348319,
+    "gap_direction": "down",
+    "volume_profile": {
+      "poc_price": 41608.182659545695,
+      "value_area_high": 41206.317710674935,
+      "value_area_low": 42001.8386776568,
+      "value_area_volume_pct": 0.7
+    },
+    "engulfing": "none",
+    "rejection": false,
+    "inside_bar": false
+  }
+]
+```
+
+**数据字段说明:**
+- `body_size`: K线实体大小，表示开盘价与收盘价之间的绝对距离
+- `upper_wick`: 上影线长度，表示最高价与实体顶部的距离
+- `lower_wick`: 下影线长度，表示实体底部与最低价的距离
+- `body_position`: 实体位置（upper/middle/lower/doji），反映收盘价在K线中的相对位置
+- `body_ratio`: 实体比例，实体大小占总波动的比例（0-1）
+- `gap_size`: 跳空大小，与前一收盘价的绝对距离
+- `gap_direction`: 跳空方向（up/down/none）
+- `volume_profile`: 成交量分布，包含POC（价格控制点）和价值区域
+- `engulfing`: 吞没形态（bullish_engulfing/bearish_engulfing/none）
+- `rejection`: 拒绝形态，当影线长度是实体长度的2倍以上时为True
+- `inside_bar`: 内包线，当前K线完全包含在前一根K线内
+
+### 2. 摆动点数据 (Swing Points)
+```json
+[
+  {
+    "timestamp": "2024-01-01T12:00:00Z",
+    "price": 42422.23572690303,
+    "type": "swing_low",
+    "strength": 6.962800801280014,
+    "confirmed": true
+  },
+  {
+    "timestamp": "2024-01-06T12:00:00Z",
+    "price": 42196.34441002135,
+    "type": "swing_low",
+    "strength": 9.496791354785444,
+    "confirmed": true
+  },
+  {
+    "timestamp": "2024-01-11T12:00:00Z",
+    "price": 42005.05400882586,
+    "type": "swing_low",
+    "strength": 7.089882902331548,
+    "confirmed": true
+  },
+  {
+    "timestamp": "2024-01-16T12:00:00Z",
+    "price": 41759.50306530044,
+    "type": "swing_low",
+    "strength": 9.39323295534114,
+    "confirmed": true
+  },
+  {
+    "timestamp": "2024-01-21T12:00:00Z",
+    "price": 41681.74663705535,
+    "type": "swing_low",
+    "strength": 7.071831563384903,
+    "confirmed": true
+  }
+]
+```
+
+**数据字段说明:**
+- `strength`: 摆动点强度（0-10），基于相对高度计算
+- `confirmed`: 是否已确认，True表示已形成完整结构
+
+### 3. 增强版成交量分析 (Enhanced Volume Analysis)
+```json
+[
+  {
+    "timestamp": "2024-01-01T00:00:00Z",
+    "volume": 1054.0966930072177,
+    "volume_avg": 955.090871615793,
+    "volume_ratio": 1.4793086754308418,
+    "volume_spike": false,
+    "volume_spike_magnitude": 2.4031848809798495,
+    "volume_price_efficiency": 0.054752416495732516,
+    "buying_pressure": 0.7604051612038241,
+    "volume_trend": "increasing"
+  },
+  {
+    "timestamp": "2024-01-02T01:00:00Z",
+    "volume": 1455.837905501186,
+    "volume_avg": 932.8630823706538,
+    "volume_ratio": 2.133885035920322,
+    "volume_spike": false,
+    "volume_spike_magnitude": 1.581944582215977,
+    "volume_price_efficiency": 0.03151637743389029,
+    "buying_pressure": 0.35039679780493965,
+    "volume_trend": "stable"
+  },
+  {
+    "timestamp": "2024-01-03T02:00:00Z",
+    "volume": 1201.4975927002656,
+    "volume_avg": 922.8647099977692,
+    "volume_ratio": 2.4454010361227407,
+    "volume_spike": true,
+    "volume_spike_magnitude": 2.886883691340292,
+    "volume_price_efficiency": 0.012144365808138947,
+    "buying_pressure": 0.5116455620162716,
+    "volume_trend": "increasing"
+  },
+  {
+    "timestamp": "2024-01-04T03:00:00Z",
+    "volume": 1097.2869859433931,
+    "volume_avg": 1067.3737621363505,
+    "volume_ratio": 1.7795114903126654,
+    "volume_spike": true,
+    "volume_spike_magnitude": 1.8890759378364885,
+    "volume_price_efficiency": 0.014307329729266051,
+    "buying_pressure": 0.31200103141106195,
+    "volume_trend": "stable"
+  },
+  {
+    "timestamp": "2024-01-05T04:00:00Z",
+    "volume": 1034.8258327848328,
+    "volume_avg": 957.3545518898088,
+    "volume_ratio": 0.8265750953183266,
+    "volume_spike": false,
+    "volume_spike_magnitude": 1.8020166221189209,
+    "volume_price_efficiency": 0.09384800011535445,
+    "buying_pressure": 0.7625890119908108,
+    "volume_trend": "increasing"
+  },
+  {
+    "timestamp": "2024-01-06T05:00:00Z",
+    "volume": 1187.8727142021703,
+    "volume_avg": 1072.73243248634,
+    "volume_ratio": 1.0759956449466284,
+    "volume_spike": true,
+    "volume_spike_magnitude": 2.4773317819992577,
+    "volume_price_efficiency": 0.05162930847361905,
+    "buying_pressure": 0.4183960237149023,
+    "volume_trend": "increasing"
+  },
+  {
+    "timestamp": "2024-01-07T06:00:00Z",
+    "volume": 1386.9979979030313,
+    "volume_avg": 1053.7225193431243,
+    "volume_ratio": 2.0907337424410644,
+    "volume_spike": false,
+    "volume_spike_magnitude": 2.074234656826016,
+    "volume_price_efficiency": 0.01569835963558728,
+    "buying_pressure": 0.413333509603438,
+    "volume_trend": "increasing"
+  },
+  {
+    "timestamp": "2024-01-08T07:00:00Z",
+    "volume": 851.660730827598,
+    "volume_avg": 1036.9414327133356,
+    "volume_ratio": 1.2518728656792195,
+    "volume_spike": false,
+    "volume_spike_magnitude": 1.6371342065263885,
+    "volume_price_efficiency": 0.08064111001511622,
+    "buying_pressure": 0.40900070227708624,
+    "volume_trend": "decreasing"
+  },
+  {
+    "timestamp": "2024-01-09T08:00:00Z",
+    "volume": 1206.218342264719,
+    "volume_avg": 1029.3389310166524,
+    "volume_ratio": 2.386003423879874,
+    "volume_spike": true,
+    "volume_spike_magnitude": 1.9790901114318353,
+    "volume_price_efficiency": 0.077622624724588,
+    "buying_pressure": 0.667311523380883,
+    "volume_trend": "decreasing"
+  },
+  {
+    "timestamp": "2024-01-10T09:00:00Z",
+    "volume": 1175.9296196881708,
+    "volume_avg": 982.1357560069337,
+    "volume_ratio": 1.32235096406301,
+    "volume_spike": true,
+    "volume_spike_magnitude": 2.0048886020032124,
+    "volume_price_efficiency": 0.02996582708005925,
+    "buying_pressure": 0.7080382138870225,
+    "volume_trend": "stable"
+  },
+  {
+    "timestamp": "2024-01-11T10:00:00Z",
+    "volume": 949.1571287070672,
+    "volume_avg": 1092.787387510148,
+    "volume_ratio": 1.981748816278354,
+    "volume_spike": false,
+    "volume_spike_magnitude": 1.7364415904966832,
+    "volume_price_efficiency": 0.09366678157093801,
+    "buying_pressure": 0.628502171391405,
+    "volume_trend": "decreasing"
+  },
+  {
+    "timestamp": "2024-01-12T11:00:00Z",
+    "volume": 967.5193278599179,
+    "volume_avg": 1029.4621967587395,
+    "volume_ratio": 0.9446170812381107,
+    "volume_spike": true,
+    "volume_spike_magnitude": 2.237836276961769,
+    "volume_price_efficiency": 0.09688082979825557,
+    "buying_pressure": 0.36297509263279976,
+    "volume_trend": "decreasing"
+  },
+  {
+    "timestamp": "2024-01-13T12:00:00Z",
+    "volume": 1117.9551040860329,
+    "volume_avg": 919.0707326073788,
+    "volume_ratio": 1.6637368025880819,
+    "volume_spike": true,
+    "volume_spike_magnitude": 2.678508119862901,
+    "volume_price_efficiency": 0.0723928432767352,
+    "buying_pressure": 0.4000652625323691,
+    "volume_trend": "increasing"
+  },
+  {
+    "timestamp": "2024-01-14T13:00:00Z",
+    "volume": 1441.8633373671476,
+    "volume_avg": 964.5139613106369,
+    "volume_ratio": 1.179439566918994,
+    "volume_spike": true,
+    "volume_spike_magnitude": 2.4532933555292398,
+    "volume_price_efficiency": 0.03495878283192939,
+    "buying_pressure": 0.7283357280949717,
+    "volume_trend": "stable"
+  },
+  {
+    "timestamp": "2024-01-15T14:00:00Z",
+    "volume": 974.9783027351272,
+    "volume_avg": 983.2492092191912,
+    "volume_ratio": 0.9332728902533359,
+    "volume_spike": true,
+    "volume_spike_magnitude": 2.9355882976965946,
+    "volume_price_efficiency": 0.03779019568212457,
+    "buying_pressure": 0.7734103006599808,
+    "volume_trend": "increasing"
+  },
+  {
+    "timestamp": "2024-01-16T15:00:00Z",
+    "volume": 1054.2896648098642,
+    "volume_avg": 1041.2827705071613,
+    "volume_ratio": 1.2201084712168637,
+    "volume_spike": true,
+    "volume_spike_magnitude": 2.189317535075766,
+    "volume_price_efficiency": 0.05224995078123832,
+    "buying_pressure": 0.5250555002960875,
+    "volume_trend": "increasing"
+  },
+  {
+    "timestamp": "2024-01-17T16:00:00Z",
+    "volume": 1048.128591144872,
+    "volume_avg": 920.9081999358551,
+    "volume_ratio": 2.044686184500362,
+    "volume_spike": false,
+    "volume_spike_magnitude": 2.519265435240481,
+    "volume_price_efficiency": 0.06887319733384938,
+    "buying_pressure": 0.49606999164280824,
+    "volume_trend": "decreasing"
+  },
+  {
+    "timestamp": "2024-01-18T17:00:00Z",
+    "volume": 1204.7299406139864,
+    "volume_avg": 974.3964454644956,
+    "volume_ratio": 2.394485173450509,
+    "volume_spike": true,
+    "volume_spike_magnitude": 1.9822273870537361,
+    "volume_price_efficiency": 0.02986498267172382,
+    "buying_pressure": 0.6653249536100538,
+    "volume_trend": "increasing"
+  },
+  {
+    "timestamp": "2024-01-19T18:00:00Z",
+    "volume": 805.3230922589632,
+    "volume_avg": 1098.1861474431716,
+    "volume_ratio": 1.4760012225894463,
+    "volume_spike": false,
+    "volume_spike_magnitude": 1.6157824378141565,
+    "volume_price_efficiency": 0.060453967880316865,
+    "buying_pressure": 0.5181141296825271,
+    "volume_trend": "decreasing"
+  },
+  {
+    "timestamp": "2024-01-20T19:00:00Z",
+    "volume": 977.4175796816891,
+    "volume_avg": 959.3584382603627,
+    "volume_ratio": 1.2053291036132627,
+    "volume_spike": true,
+    "volume_spike_magnitude": 2.2172791999114145,
+    "volume_price_efficiency": 0.047939241971116105,
+    "buying_pressure": 0.6810758947100672,
+    "volume_trend": "decreasing"
+  }
+]
+```
+
+**数据字段说明:**
+- `volume_ratio`: 当前成交量与平均成交量的比率
+- `volume_spike`: 成交量异常标记，当比率>2时为True
+- `volume_price_efficiency`: 成交量价格效率，价格变动与成交量的关系
+- `buying_pressure`: 买压估算（0-1），基于收盘位置和影线长度
+- `volume_trend`: 成交量趋势（increasing/decreasing/stable）
+
+### 4. 市场深度数据 (Market Depth)
+```json
+[
+  {
+    "timestamp": "2024-01-01T00:00:00Z",
+    "bid_price": 41995,
+    "ask_price": 42005,
+    "bid_volume": 229.9820762897136,
+    "ask_volume": 249.89544986952322,
+    "total_volume": 479.8775261592368,
+    "imbalance_ratio": 0.9203131806113041,
+    "spread": 10,
+    "spread_percentage": 0.02,
+    "dominant_side": "ask",
+    "liquidity_score": 47.98775261592368
+  },
+  {
+    "timestamp": "2024-01-01T01:00:00Z",
+    "bid_price": 42005,
+    "ask_price": 42015,
+    "bid_volume": 387.7863213563723,
+    "ask_volume": 427.7184678679479,
+    "total_volume": 815.5047892243201,
+    "imbalance_ratio": 0.9066391808831035,
+    "spread": 10,
+    "spread_percentage": 0.02,
+    "dominant_side": "ask",
+    "liquidity_score": 81.550478922432
+  },
+  {
+    "timestamp": "2024-01-01T02:00:00Z",
+    "bid_price": 42015,
+    "ask_price": 42025,
+    "bid_volume": 386.21654330059425,
+    "ask_volume": 306.35910839374446,
+    "total_volume": 692.5756516943387,
+    "imbalance_ratio": 1.2606661030107646,
+    "spread": 10,
+    "spread_percentage": 0.02,
+    "dominant_side": "bid",
+    "liquidity_score": 69.25756516943387
+  },
+  {
+    "timestamp": "2024-01-01T03:00:00Z",
+    "bid_price": 42025,
+    "ask_price": 42035,
+    "bid_volume": 447.48790733309664,
+    "ask_volume": 231.74226405290804,
+    "total_volume": 679.2301713860047,
+    "imbalance_ratio": 1.9309723634655294,
+    "spread": 10,
+    "spread_percentage": 0.02,
+    "dominant_side": "bid",
+    "liquidity_score": 67.92301713860047
+  },
+  {
+    "timestamp": "2024-01-01T04:00:00Z",
+    "bid_price": 42035,
+    "ask_price": 42045,
+    "bid_volume": 208.27877197758724,
+    "ask_volume": 483.6450609990678,
+    "total_volume": 691.923832976655,
+    "imbalance_ratio": 0.43064385181013703,
+    "spread": 10,
+    "spread_percentage": 0.02,
+    "dominant_side": "ask",
+    "liquidity_score": 69.1923832976655
+  }
+]
+```
+
+**数据字段说明:**
+- `imbalance_ratio`: 买卖不平衡比率，买量/卖量
+- `spread_percentage`: 价差百分比
+- `dominant_side`: 主导方（bid/ask）
+- `liquidity_score`: 流动性得分，总成交量/价差
+
+### 5. 时间与销售数据 (Time & Sales)
+```json
+[
+  {
+    "timestamp": "2024-01-01T00:00:00",
+    "price": 42093.60286069771,
+    "volume": 9.845261402240721,
+    "side": "buy",
+    "liquidity_removed": false,
+    "aggressive": true,
+    "large_order": true
+  },
+  {
+    "timestamp": "2024-01-01T01:01:01",
+    "price": 41918.63042701114,
+    "volume": 15.01226748313466,
+    "side": "buy",
+    "liquidity_removed": true,
+    "aggressive": false,
+    "large_order": true
+  },
+  {
+    "timestamp": "2024-01-01T02:02:02",
+    "price": 42051.834008087884,
+    "volume": 7.8847352065928815,
+    "side": "buy",
+    "liquidity_removed": false,
+    "aggressive": false,
+    "large_order": true
+  },
+  {
+    "timestamp": "2024-01-01T03:03:03",
+    "price": 41928.72254157878,
+    "volume": 7.744856315772365,
+    "side": "buy",
+    "liquidity_removed": false,
+    "aggressive": true,
+    "large_order": false
+  },
+  {
+    "timestamp": "2024-01-01T04:04:04",
+    "price": 42064.430221955015,
+    "volume": 18.72642212416016,
+    "side": "buy",
+    "liquidity_removed": true,
+    "aggressive": false,
+    "large_order": false
+  },
+  {
+    "timestamp": "2024-01-01T05:05:05",
+    "price": 41918.517728272665,
+    "volume": 14.966802769055686,
+    "side": "buy",
+    "liquidity_removed": false,
+    "aggressive": true,
+    "large_order": false
+  },
+  {
+    "timestamp": "2024-01-01T06:06:06",
+    "price": 41920.520969774705,
+    "volume": 13.691225947683524,
+    "side": "buy",
+    "liquidity_removed": false,
+    "aggressive": true,
+    "large_order": true
+  },
+  {
+    "timestamp": "2024-01-01T07:07:07",
+    "price": 42085.558955049324,
+    "volume": 9.71430830333765,
+    "side": "sell",
+    "liquidity_removed": true,
+    "aggressive": false,
+    "large_order": true
+  },
+  {
+    "timestamp": "2024-01-01T08:08:08",
+    "price": 42051.23046361787,
+    "volume": 12.212110284909818,
+    "side": "buy",
+    "liquidity_removed": true,
+    "aggressive": true,
+    "large_order": false
+  },
+  {
+    "timestamp": "2024-01-01T09:09:09",
+    "price": 41948.68180569946,
+    "volume": 14.028545844185604,
+    "side": "sell",
+    "liquidity_removed": true,
+    "aggressive": true,
+    "large_order": true
+  }
+]
+```
+
+**数据字段说明:**
+- `side`: 交易方向（buy/sell）
+- `liquidity_removed`: 是否移除流动性
+- `aggressive`: 是否主动成交
+- `large_order`: 是否大单（成交量>10）
+
+### 6. 市场情绪数据 (Market Sentiment)
+```json
+{
+  "fear_greed_index": 25.436207958660116,
+  "funding_rate": 0.005513288005563319,
+  "open_interest_change": -1.6165486573699916,
+  "long_short_ratio": 0.827669124245994
+}
+```
+
+### 7. 多时间框架上下文 (Multi-Timeframe Context)
+```json
+{
+  "short_term_trend": "neutral",
+  "long_term_trend": "bullish",
+  "alignment_score": 0.4182563499231136,
+  "key_levels_aligned": true,
+  "trend_strength": 0.906363433596791
+}
+```
+
+**数据字段说明:**
+- `alignment_score`: 趋势一致性得分（0-1）
+- `key_levels_aligned`: 关键水平是否对齐
+- `trend_strength`: 趋势强度（0-1）
+
+### 8. 增强版流动性水平 (Enhanced Liquidity Levels)
+```json
+[
+  {
+    "price": 41971.24163752556,
+    "strength": 8.210948698116718,
+    "type": "support",
+    "timestamp": "2024-01-01T12:00:00Z",
+    "tested": false,
+    "volume_confirmation": 974.38577281881
+  },
+  {
+    "price": 42191.535850342865,
+    "strength": 8.741493231358863,
+    "type": "support",
+    "timestamp": "2024-01-06T12:00:00Z",
+    "tested": false,
+    "volume_confirmation": 872.7087221774036
+  },
+  {
+    "price": 41519.73595596497,
+    "strength": 7.593924318311862,
+    "type": "support",
+    "timestamp": "2024-01-11T12:00:00Z",
+    "tested": true,
+    "volume_confirmation": 1094.8929317416719
+  },
+  {
+    "price": 41519.36061718733,
+    "strength": 9.019046128466758,
+    "type": "resistance",
+    "timestamp": "2024-01-16T12:00:00Z",
+    "tested": false,
+    "volume_confirmation": 901.3937107777103
+  },
+  {
+    "price": 41965.65609284363,
+    "strength": 9.888871338584877,
+    "type": "support",
+    "timestamp": "2024-01-21T12:00:00Z",
+    "tested": true,
+    "volume_confirmation": 1170.0380721466508
+  }
+]
+```
+
+**数据字段说明:**
+- `strength`: 流动性强度（0-10），结合摆动点强度和成交量
+- `tested`: 是否已被测试
+- `volume_confirmation`: 成交量确认
+
+### 9. 增强版价格变动数据 (Enhanced Price Movements)
+```json
+[
+  {
+    "timestamp": "2024-01-02T01:00:00Z",
+    "direction": "down",
+    "magnitude": 0.13724100374749487,
+    "duration": 60,
+    "strength": 1.8213871813225289,
+    "volume_confirmation": 1.3811236816879164,
+    "gap": -33.12550238836411,
+    "gap_pct": -0.07894548628174501,
+    "volatility": 0.07534971430283302
+  },
+  {
+    "timestamp": "2024-01-03T02:00:00Z",
+    "direction": "down",
+    "magnitude": 0.033222966693424894,
+    "duration": 60,
+    "strength": 0.19582584844164244,
+    "volume_confirmation": 0.8252962697015631,
+    "gap": -60.220962903236796,
+    "gap_pct": -0.14371727217273855,
+    "volatility": 0.16965567598868636
+  },
+  {
+    "timestamp": "2024-01-04T03:00:00Z",
+    "direction": "down",
+    "magnitude": 0.02231366636149286,
+    "duration": 60,
+    "strength": 0.13384736338266975,
+    "volume_confirmation": 0.9132660711182385,
+    "gap": -10.735504527525336,
+    "gap_pct": -0.025628786251415927,
+    "volatility": 0.16670979388438203
+  },
+  {
+    "timestamp": "2024-01-05T04:00:00Z",
+    "direction": "up",
+    "magnitude": 0.0015598376524071493,
+    "duration": 60,
+    "strength": 0.008906564676699175,
+    "volume_confirmation": 0.9430767393045683,
+    "gap": -10.100832066716976,
+    "gap_pct": -0.024119019471946803,
+    "volatility": 0.17513347839800725
+  },
+  {
+    "timestamp": "2024-01-06T05:00:00Z",
+    "direction": "down",
+    "magnitude": 0.09140642492276546,
+    "duration": 60,
+    "strength": 0.5753508922786262,
+    "volume_confirmation": 1.147896270626982,
+    "gap": 8.10056608189916,
+    "gap_pct": 0.019342432608035056,
+    "volatility": 0.15887074505222093
+  },
+  {
+    "timestamp": "2024-01-07T06:00:00Z",
+    "direction": "down",
+    "magnitude": 0.010204373967149216,
+    "duration": 60,
+    "strength": 0.07108542987056529,
+    "volume_confirmation": 1.167631835734692,
+    "gap": 31.586025632030214,
+    "gap_pct": 0.07548972812037423,
+    "volatility": 0.1435508512184519
+  },
+  {
+    "timestamp": "2024-01-08T07:00:00Z",
+    "direction": "up",
+    "magnitude": 0.0655901068684642,
+    "duration": 60,
+    "strength": 0.31701074209287455,
+    "volume_confirmation": 0.6140316944330152,
+    "gap": 6.587288697613985,
+    "gap_pct": 0.015745044576505954,
+    "volatility": 0.2069018432481013
+  },
+  {
+    "timestamp": "2024-01-09T08:00:00Z",
+    "direction": "down",
+    "magnitude": 0.18832515783754097,
+    "duration": 60,
+    "strength": 1.2378521256893058,
+    "volume_confirmation": 1.416313208538547,
+    "gap": -66.73890624334308,
+    "gap_pct": -0.15941585807024108,
+    "volatility": 0.15213865527974185
+  },
+  {
+    "timestamp": "2024-01-10T09:00:00Z",
+    "direction": "up",
+    "magnitude": 0.03228429829185526,
+    "duration": 60,
+    "strength": 0.2644519381949156,
+    "volume_confirmation": 0.9748895191564737,
+    "gap": 17.890919020283036,
+    "gap_pct": 0.04281576845120839,
+    "volatility": 0.12208002146711423
+  },
+  {
+    "timestamp": "2024-01-11T10:00:00Z",
+    "direction": "down",
+    "magnitude": 0.11160344062014887,
+    "duration": 60,
+    "strength": 0.40017257630682807,
+    "volume_confirmation": 0.8071547079142046,
+    "gap": 1.975014278832532,
+    "gap_pct": 0.004724992751707827,
+    "volatility": 0.27888827777788083
+  },
+  {
+    "timestamp": "2024-01-12T11:00:00Z",
+    "direction": "down",
+    "magnitude": 0.28472862737409077,
+    "duration": 60,
+    "strength": 2.7130501556694075,
+    "volume_confirmation": 1.019345794913708,
+    "gap": -92.17791104833304,
+    "gap_pct": -0.22077135690202848,
+    "volatility": 0.10494779345641618
+  },
+  {
+    "timestamp": "2024-01-13T12:00:00Z",
+    "direction": "down",
+    "magnitude": 0.008338473370934525,
+    "duration": 60,
+    "strength": 0.035237490368864144,
+    "volume_confirmation": 1.1554860682306656,
+    "gap": -49.11440064270573,
+    "gap_pct": -0.11796767990640761,
+    "volatility": 0.23663641433166316
+  },
+  {
+    "timestamp": "2024-01-14T13:00:00Z",
+    "direction": "up",
+    "magnitude": 0.3168964244943983,
+    "duration": 60,
+    "strength": 1.3425284375853948,
+    "volume_confirmation": 1.2897327737914135,
+    "gap": 99.80781148413371,
+    "gap_pct": 0.23974796933201492,
+    "volatility": 0.23604447818204324
+  },
+  {
+    "timestamp": "2024-01-15T14:00:00Z",
+    "direction": "down",
+    "magnitude": 0.18104300947663082,
+    "duration": 60,
+    "strength": 0.8134780683403288,
+    "volume_confirmation": 0.6761932823088798,
+    "gap": -42.72711587969388,
+    "gap_pct": -0.10231042659231454,
+    "volatility": 0.2225542599396659
+  },
+  {
+    "timestamp": "2024-01-16T15:00:00Z",
+    "direction": "up",
+    "magnitude": 0.11563326485736118,
+    "duration": 60,
+    "strength": 0.6574830912850276,
+    "volume_confirmation": 1.0813467970028083,
+    "gap": 70.88094758077204,
+    "gap_pct": 0.1700328382213235,
+    "volatility": 0.17587260629221663
+  },
+  {
+    "timestamp": "2024-01-17T16:00:00Z",
+    "direction": "down",
+    "magnitude": 0.22940694104037,
+    "duration": 60,
+    "strength": 3.8976298227086783,
+    "volume_confirmation": 0.9941561850878019,
+    "gap": -72.87747353212762,
+    "gap_pct": -0.17462028753234,
+    "volatility": 0.058858062842135794
+  },
+  {
+    "timestamp": "2024-01-18T17:00:00Z",
+    "direction": "down",
+    "magnitude": 0.2051494546054528,
+    "duration": 60,
+    "strength": 1.0214170592921534,
+    "volume_confirmation": 1.1494104356966912,
+    "gap": -51.33412171895179,
+    "gap_pct": -0.12328350494686904,
+    "volatility": 0.20084788357423977
+  },
+  {
+    "timestamp": "2024-01-19T18:00:00Z",
+    "direction": "up",
+    "magnitude": 0.20244177900761695,
+    "duration": 60,
+    "strength": 1.1358737082930195,
+    "volume_confirmation": 0.6684677329829897,
+    "gap": 61.49023497543385,
+    "gap_pct": 0.14797789916733795,
+    "volatility": 0.1782256051263345
+  },
+  {
+    "timestamp": "2024-01-20T19:00:00Z",
+    "direction": "down",
+    "magnitude": 0.07109067757321733,
+    "duration": 60,
+    "strength": 0.8095497525548198,
+    "volume_confirmation": 1.2136962035199983,
+    "gap": -49.50419609348319,
+    "gap_pct": -0.11889248715770105,
+    "volatility": 0.08781508159179299
+  }
+]
+```
+
+**数据字段说明:**
+- `strength`: 变动强度，结合价格变动和波动率
+- `volume_confirmation`: 成交量确认
+- `gap_pct`: 跳空百分比
+- `volatility`: 波动率
+
+### 10. 订单流不平衡 (Order Flow Imbalance)
+```json
+{
+  "imbalance_ratio": 1.356406666211445,
+  "dominant_side": "sell",
+  "buy_volume": 9089.668107270098,
+  "sell_volume": 9281.863278492716,
+  "total_volume": 14237.997965662127,
+  "large_order_ratio": 0.21527795105965608,
+  "aggressive_buy_ratio": 0.6719809329273098
+}
+```
+
+**数据字段说明:**
+- `imbalance_ratio`: 买卖不平衡比率
+- `dominant_side`: 主导方（buy/sell）
+- `large_order_ratio`: 大单比例
+
+### 11. 市场微观结构 (Market Microstructure)
+```json
+{
+  "price_efficiency": 0.6652999587692628,
+  "liquidity_distribution": {
+    "bid_liquidity": 7204.594701845755,
+    "ask_liquidity": 7015.587699582314,
+    "liquidity_ratio": 1.1339312166511917,
+    "liquidity_imbalance": 0.2671973231743925
+  },
+  "market_pressure": 0.3940837413475765,
+  "microstructure_score": 0.47880814651312675
+}
+```
+
+**数据字段说明:**
+- `price_efficiency`: 价格效率（0-1），实际位移与总路径的比率
+- `liquidity_distribution`: 流动性分布
+- `market_pressure`: 市场压力（0-1）
+- `microstructure_score`: 微观结构得分
+
+## SMC结构计算方法详解
+
+### 1. BOS (Break of Structure) 计算方法
+**定义**: 价格突破前一波段高点或低点，标志着市场结构改变
+
+**计算步骤**:
+1. 识别最近的摆动高点(SH)和摆动低点(SL)
+2. 检查当前价格是否突破SH或SL
+3. 确认突破的有效性：
+   - 突破K线收盘价必须超过SH/SL
+   - 突破时成交量应高于平均水平(volume_ratio > 1.2)
+   - 突破K线body_ratio应 > 0.5，表示强劲突破
+4. 评估突破强度：
+   - 强突破: volume_ratio > 2.0 且 body_ratio > 0.7
+   - 中等突破: 1.5 < volume_ratio ≤ 2.0 且 0.4 < body_ratio ≤ 0.7
+   - 弱突破: 1.2 < volume_ratio ≤ 1.5 且 0.3 < body_ratio ≤ 0.4
+
+**数据使用**:
+- 使用enhanced_candlesticks中的body_size和body_ratio评估突破强度
+- 使用volume_analysis中的volume_ratio确认成交量支持
+- 使用swing_points确定需要突破的关键水平
+
+### 2. CHOCH (Change of Character) 计算方法
+**定义**: 市场从趋势状态转为盘整状态，或从盘整转为趋势状态
+
+**计算步骤**:
+1. 识别当前市场状态（趋势/盘整）
+2. 寻找状态改变的信号：
+   - 趋势转盘整: 连续3根K线无法创新高/新低，且body_ratio < 0.3
+   - 盘整转趋势: 价格突破盘整区间，且volume_spike为True
+3. 确认状态改变：
+   - 盘整区间由至少5根K线形成
+   - 突破时buying_pressure > 0.6（向上突破）或 < 0.4（向下突破）
+4. 评估CHOCH强度：
+   - 强信号: volume_spike为True且alignment_score > 0.8
+   - 中等信号: volume_spike为True或alignment_score > 0.6
+   - 弱信号: alignment_score > 0.4
+
+**数据使用**:
+- 使用enhanced_candlesticks中的body_position和body_ratio判断市场状态
+- 使用volume_analysis中的volume_spike确认突破动力
+- 使用multi_timeframe_context中的alignment_score评估多时间框架一致性
+
+### 3. 订单块 (Order Block) 计算方法
+**定义**: 机构订单集中的区域，通常在强烈价格变动前的最后一根K线
+
+**计算步骤**:
+1. 识别强烈价格变动（price_movements中strength > 0.7）
+2. 定位强烈变动前的K线（通常是1-3根前）
+3. 确认订单块特征：
+   - K线body_ratio > 0.6，表示强烈意图
+   - 成交量高于平均水平(volume_ratio > 1.5)
+   - K线engulfing为bullish_engulfing或bearish_engulfing
+4. 评估订单块强度：
+   - 强订单块: body_ratio > 0.8 且 volume_ratio > 2.0
+   - 中等订单块: 0.6 < body_ratio ≤ 0.8 且 1.5 < volume_ratio ≤ 2.0
+   - 弱订单块: 0.4 < body_ratio ≤ 0.6 且 1.2 < volume_ratio ≤ 1.5
+
+**数据使用**:
+- 使用enhanced_candlesticks中的body_ratio和engulfing识别潜在订单块
+- 使用volume_analysis中的volume_ratio确认订单强度
+- 使用price_movements定位强烈价格变动
+
+### 4. FVG (Fair Value Gap) 计算方法
+**定义**: 价格快速移动时留下的不平衡区域，通常由三根K线形成
+
+**计算步骤**:
+1. 寻找三根连续K线，其中中间K线高点低于第一根K线低点，或中间K线低点高于第一根K线高点
+2. 计算FVG范围：
+   - 看涨FVG: 第二根K线高点到第一根K线低点之间的区域
+   - 看跌FVG: 第二根K线低点到第一根K线高点之间的区域
+3. 确认FVG有效性：
+   - 形成FVG的K线中至少有一根volume_spike为True
+   - FVG大小应大于平均ATR的0.5倍
+4. 评估FVG强度：
+   - 强FVG: 形成时volume_spike为True且gap_size > 平均ATR
+   - 中等FVG: 形成时volume_ratio > 1.5且gap_size > 0.5*平均ATR
+   - 弱FVG: volume_ratio > 1.2且gap_size > 0.3*平均ATR
+
+**数据使用**:
+- 使用enhanced_candlesticks中的gap_size和gap_direction识别潜在FVG
+- 使用volume_analysis中的volume_spike确认FVG强度
+- 使用price_movements中的volatility计算平均ATR
+
+### 5. 流动性分析计算方法
+**定义**: 识别市场中的流动性集中区域，这些区域可能成为价格目标
+
+**计算步骤**:
+1. 识别流动性水平（liquidity_levels中strength > 7）
+2. 分析流动性特征：
+   - 未测试的流动性水平(tested为False)更具吸引力
+   - 高成交量确认的流动性水平(volume_confirmation > 平均值)更可靠
+3. 评估流动性梯度：
+   - 流动性梯度计算: 相邻流动性水平之间的strength差异
+   - 陡峭梯度表明强阻力/支撑区域
+4. 确认流动性清除：
+   - 使用time_sales数据检查是否有大单在流动性水平附近成交
+   - 使用market_depth数据检查流动性水平附近的订单不平衡
+
+**数据使用**:
+- 使用liquidity_levels中的strength和tested识别关键流动性区域
+- 使用market_depth中的imbalance_ratio确认流动性分布
+- 使用time_sales中的large_order检查流动性清除情况
+
+## 增强版数据使用指南
+
+### 1. 市场深度数据使用
+- **不平衡分析**: 当imbalance_ratio > 2或 < 0.5时，表明强烈单边压力
+- **流动性评估**: liquidity_score > 1000表示高流动性区域
+- **价差分析**: spread_percentage < 0.05表示低延迟市场环境
+
+### 2. 时间与销售数据使用
+- **大单监控**: large_order为True的交易值得关注
+- **主动成交**: aggressive为True表明市场参与者急切
+- **流动性清除**: liquidity_removed为True表明关键水平被测试
+
+### 3. 市场情绪数据使用
+- **恐惧贪婪指数**: > 75表示贪婪，< 25表示恐惧
+- **资金费率**: 正值表示多头主导，负值表示空头主导
+- **多空比例**: > 1.2表示多头过多，< 0.8表示空头过多
+
+### 4. 多时间框架上下文使用
+- **趋势一致性**: alignment_score > 0.8表示多时间框架趋势一致
+- **关键水平对齐**: key_levels_aligned为True时，支撑/阻力更可靠
+- **趋势强度**: trend_strength > 0.7表示强趋势
+
+## 综合信号生成与权重分配
+
+### 1. 信号权重分配（总计100%）
+- **BOS/CHOCH结构**: 30%（基础结构确认）
+- **订单块确认**: 25%（机构活动区域）
+- **FVG确认**: 15%（价格不平衡区域）
+- **流动性分析**: 15%（流动性梯度与清除）
+- **市场微观结构**: 10%（价格效率与压力）
+- **市场情绪**: 5%（情绪极端指标）
+
+### 2. 信号强度计算
+每个信号类型根据以下标准评分（0-10分）：
+
+#### BOS/CHOCH评分标准:
+- 10分: 强突破(volume_ratio > 2.0, body_ratio > 0.7)且多时间框架一致
+- 8分: 中等突破(1.5 < volume_ratio ≤ 2.0, 0.4 < body_ratio ≤ 0.7)且多时间框架部分一致
+- 6分: 弱突破(1.2 < volume_ratio ≤ 1.5, 0.3 < body_ratio ≤ 0.4)
+- 4分: 仅突破但无成交量支持
+- 2分: 潜在突破但未确认
+
+#### 订单块评分标准:
+- 10分: 强订单块(body_ratio > 0.8, volume_ratio > 2.0)且未被测试
+- 8分: 中等订单块(0.6 < body_ratio ≤ 0.8, 1.5 < volume_ratio ≤ 2.0)且部分测试
+- 6分: 弱订单块(0.4 < body_ratio ≤ 0.6, 1.2 < volume_ratio ≤ 2.0)且已被测试
+- 4分: 潜在订单块但特征不完整
+- 2分: 可疑订单块
+
+#### FVG评分标准:
+- 10分: 强FVG(volume_spike为True, gap_size > 平均ATR)且未填充
+- 8分: 中等FVG(volume_ratio > 1.5, gap_size > 0.5*平均ATR)且部分填充
+- 6分: 弱FVG(volume_ratio > 1.2, gap_size > 0.3*平均ATR)且已填充
+- 4分: 潜在FVG但特征不完整
+- 2分: 可疑FVG
+
+#### 流动性分析评分标准:
+- 10分: 强流动性水平(strength > 9)且陡峭梯度且大单清除
+- 8分: 中等流动性水平(7 < strength ≤ 9)且中等梯度
+- 6分: 弱流动性水平(5 < strength ≤ 7)且平缓梯度
+- 4分: 流动性水平但无梯度
+- 2分: 可疑流动性水平
+
+#### 市场微观结构评分标准:
+- 10分: 高价格效率(> 0.8)且低市场压力(< 0.3)且高流动性得分
+- 8分: 中等价格效率(0.6-0.8)且中等市场压力(0.3-0.7)
+- 6分: 低价格效率(0.4-0.6)且高市场压力(> 0.7)
+- 4分: 极低价格效率(< 0.4)
+- 2分: 市场微观结构混乱
+
+#### 市场情绪评分标准:
+- 10分: 极端情绪(恐惧贪婪指数 > 80或 < 20)且资金费率极值(> 0.1%或 < -0.1%)
+- 8分: 高情绪(恐惧贪婪指数 70-80或 20-30)且资金费率高值(0.05%-0.1%或 -0.05%至-0.1%)
+- 6分: 中等情绪(恐惧贪婪指数 60-70或 30-40)
+- 4分: 低情绪(恐惧贪婪指数 40-60)
+- 2分: 中性情绪
+
+### 3. 综合信号计算
+```
+综合信号强度 = (BOS评分 × 30% + 订单块评分 × 25% + FVG评分 × 15% + 
+               流动性评分 × 15% + 微观结构评分 × 10% + 情绪评分 × 5%) / 10
+```
+
+### 4. 交易决策阈值
+- **强烈买入**: 综合信号强度 > 8.0
+- **买入**: 7.0 < 综合信号强度 ≤ 8.0
+- **持有**: 5.0 < 综合信号强度 ≤ 7.0
+- **卖出**: 3.0 < 综合信号强度 ≤ 5.0
+- **强烈卖出**: 综合信号强度 ≤ 3.0
+
+## AI专业判断权限
+
+你拥有完全自主权，必须基于数据做出独立判断，不受任何预设偏见影响。具体权限包括：
+
+1. **结构识别自主权**: 完全自主决定哪些价格行为构成有效SMC结构
+2. **权重调整自主权**: 可根据市场条件调整各信号类型权重(±20%范围内)
+3. **时间框架优先权**: 自主决定哪个时间框架的结构应优先考虑
+4. **异常处理自主权**: 当数据不完整或矛盾时，自主决定最佳处理方式
+5. **风险控制自主权**: 自主评估信号可靠性并调整仓位建议
+
+## 输出要求
+
+请基于以上增强版数据和分析方法，提供以下格式的JSON分析结果：
+
+```json
+{
+  "market_analysis": {
+    "current_price": 41608.182659545695,
+    "market_phase": "趋势/盘整/转换",
+    "trend_direction": "上升/下降/横盘",
+    "key_levels": {
+      "support": [价格1, 价格2, ...],
+      "resistance": [价格1, 价格2, ...]
+    },
+    "market_efficiency": 0.0-1.0,
+    "liquidity_analysis": {
+      "major_zones": [{"price": 价格, "strength": 0-10, "type": "support/resistance"}, ...],
+      "liquidity_gradient": "steep/moderate/gentle",
+      "cleared_levels": [价格1, 价格2, ...]
+    }
+  },
+  "smc_structures": {
+    "bos_signals": [{"price": 价格, "strength": 0-10, "timeframe": "时间框架", "confirmation": "强/中/弱"}, ...],
+    "choch_signals": [{"price": 价格, "strength": 0-10, "timeframe": "时间框架", "confirmation": "强/中/弱"}, ...],
+    "order_blocks": [{"price": 价格, "strength": 0-10, "type": "bullish/bearish", "tested": true/false, "volume_confirmation": true/false}, ...],
+    "fvg_zones": [{"top": 价格, "bottom": 价格, "strength": 0-10, "type": "bullish/bearish", "filled_percentage": 0-100}, ...]
+  },
+  "signal_strength": {
+    "overall_score": 0.0-10.0,
+    "component_scores": {
+      "bos_choch": 0.0-10.0,
+      "order_blocks": 0.0-10.0,
+      "fvg": 0.0-10.0,
+      "liquidity": 0.0-10.0,
+      "microstructure": 0.0-10.0,
+      "sentiment": 0.0-10.0
+    },
+    "weight_adjustments": {
+      "bos_choch_weight": "默认30%或调整值",
+      "order_blocks_weight": "默认25%或调整值",
+      "fvg_weight": "默认15%或调整值",
+      "liquidity_weight": "默认15%或调整值",
+      "microstructure_weight": "默认10%或调整值",
+      "sentiment_weight": "默认5%或调整值"
+    }
+  },
+  "trading_recommendation": {
+    "action": "强烈买入/买入/持有/卖出/强烈卖出",
+    "confidence": 0.0-1.0,
+    "entry_price": 价格,
+    "stop_loss": 价格,
+    "targets": [价格1, 价格2, ...],
+    "position_size": "大/中/小",
+    "risk_reward_ratio": 数值,
+    "time_horizon": "短期/中期/长期",
+    "key_reasons": ["原因1", "原因2", ...],
+    "risk_factors": ["风险1", "风险2", ...]
+  },
+  "data_quality_assessment": {
+    "completeness": 0.0-1.0,
+    "reliability": 0.0-1.0,
+    "timeliness": 0.0-1.0,
+    "missing_elements": ["缺失元素1", "缺失元素2", ...],
+    "confidence_adjustment": "建议调整幅度"
+  },
+  "professional_judgment": {
+    "primary_thesis": "主要分析论点",
+    "alternative_scenarios": ["备选情景1", "备选情景2"],
+    "critical_levels": [{"price": 价格, "reason": "原因", "importance": "高/中/低"}, ...],
+    "market_biases": "识别的市场偏见",
+    "confidence_level": 0.0-1.0
+  }
+}
+```
+
+## 重要提醒
+
+1. **数据驱动**: 所有结论必须基于提供的数据，不得凭空猜测
+2. **结构优先**: SMC结构识别是分析基础，必须首先确认
+3. **多维度验证**: 至少3个不同维度的信号确认才可形成强交易建议
+4. **风险意识**: 明确指出所有潜在风险和不确定性
+5. **专业判断**: 运用你的专业知识评估数据质量和信号可靠性
+6. **透明度**: 清晰说明每个结论的数据依据和推理过程
+7. **权重灵活性**: 根据市场条件调整权重，但需说明调整理由
+
+请基于以上增强版数据和分析方法，提供专业、客观、数据驱动的SMC/ICT分析结果。

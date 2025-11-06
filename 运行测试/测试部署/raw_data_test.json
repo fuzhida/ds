@@ -1,0 +1,659 @@
+{
+  "candlesticks": [
+    {
+      "timestamp": "2024-01-01 10:00:00",
+      "open": 42100,
+      "high": 42150,
+      "low": 42050,
+      "close": 42120,
+      "volume": 1100,
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 11:00:00",
+      "open": 42110,
+      "high": 42160,
+      "low": 42060,
+      "close": 42130,
+      "volume": 1110,
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 12:00:00",
+      "open": 42120,
+      "high": 42170,
+      "low": 42070,
+      "close": 42140,
+      "volume": 1120,
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 13:00:00",
+      "open": 42130,
+      "high": 42180,
+      "low": 42080,
+      "close": 42150,
+      "volume": 1130,
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 14:00:00",
+      "open": 42140,
+      "high": 42190,
+      "low": 42090,
+      "close": 42160,
+      "volume": 1140,
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 15:00:00",
+      "open": 42150,
+      "high": 42200,
+      "low": 42100,
+      "close": 42170,
+      "volume": 1150,
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 16:00:00",
+      "open": 42160,
+      "high": 42210,
+      "low": 42110,
+      "close": 42180,
+      "volume": 1160,
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 17:00:00",
+      "open": 42170,
+      "high": 42220,
+      "low": 42120,
+      "close": 42190,
+      "volume": 1170,
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 18:00:00",
+      "open": 42180,
+      "high": 42230,
+      "low": 42130,
+      "close": 42200,
+      "volume": 1180,
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 19:00:00",
+      "open": 42190,
+      "high": 42240,
+      "low": 42140,
+      "close": 42210,
+      "volume": 1190,
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 20:00:00",
+      "open": 42200,
+      "high": 42250,
+      "low": 42150,
+      "close": 42220,
+      "volume": 1200,
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 21:00:00",
+      "open": 42210,
+      "high": 42260,
+      "low": 42160,
+      "close": 42230,
+      "volume": 1210,
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 22:00:00",
+      "open": 42220,
+      "high": 42270,
+      "low": 42170,
+      "close": 42240,
+      "volume": 1220,
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 23:00:00",
+      "open": 42230,
+      "high": 42280,
+      "low": 42180,
+      "close": 42250,
+      "volume": 1230,
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-02 00:00:00",
+      "open": 42240,
+      "high": 42290,
+      "low": 42190,
+      "close": 42260,
+      "volume": 1240,
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-02 01:00:00",
+      "open": 42250,
+      "high": 42300,
+      "low": 42200,
+      "close": 42270,
+      "volume": 1250,
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-02 02:00:00",
+      "open": 42260,
+      "high": 42310,
+      "low": 42210,
+      "close": 42280,
+      "volume": 1260,
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-02 03:00:00",
+      "open": 42270,
+      "high": 42320,
+      "low": 42220,
+      "close": 42290,
+      "volume": 1270,
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-02 04:00:00",
+      "open": 42280,
+      "high": 42330,
+      "low": 42230,
+      "close": 42300,
+      "volume": 1280,
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-02 05:00:00",
+      "open": 42290,
+      "high": 42340,
+      "low": 42240,
+      "close": 42310,
+      "volume": 1290,
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 00:00:00",
+      "open": 42000,
+      "high": 42100,
+      "low": 41900,
+      "close": 42040,
+      "volume": 4000,
+      "timeframe": "4h"
+    },
+    {
+      "timestamp": "2024-01-01 04:00:00",
+      "open": 42040,
+      "high": 42140,
+      "low": 41940,
+      "close": 42080,
+      "volume": 4160,
+      "timeframe": "4h"
+    },
+    {
+      "timestamp": "2024-01-01 08:00:00",
+      "open": 42080,
+      "high": 42180,
+      "low": 41980,
+      "close": 42120,
+      "volume": 4320,
+      "timeframe": "4h"
+    },
+    {
+      "timestamp": "2024-01-01 12:00:00",
+      "open": 42120,
+      "high": 42220,
+      "low": 42020,
+      "close": 42160,
+      "volume": 4480,
+      "timeframe": "4h"
+    },
+    {
+      "timestamp": "2024-01-01 16:00:00",
+      "open": 42160,
+      "high": 42260,
+      "low": 42060,
+      "close": 42200,
+      "volume": 4640,
+      "timeframe": "4h"
+    },
+    {
+      "timestamp": "2024-01-01 20:00:00",
+      "open": 42200,
+      "high": 42300,
+      "low": 42100,
+      "close": 42240,
+      "volume": 4800,
+      "timeframe": "4h"
+    },
+    {
+      "timestamp": "2024-01-02 00:00:00",
+      "open": 42240,
+      "high": 42340,
+      "low": 42140,
+      "close": 42280,
+      "volume": 4960,
+      "timeframe": "4h"
+    },
+    {
+      "timestamp": "2024-01-02 04:00:00",
+      "open": 42280,
+      "high": 42380,
+      "low": 42180,
+      "close": 42320,
+      "volume": 5120,
+      "timeframe": "4h"
+    }
+  ],
+  "swing_points": [],
+  "volume_data": [
+    {
+      "timestamp": "2024-01-01 10:00:00",
+      "volume": 1100,
+      "timeframe": "1h",
+      "volume_ma": 0,
+      "volume_ratio": 0
+    },
+    {
+      "timestamp": "2024-01-01 11:00:00",
+      "volume": 1110,
+      "timeframe": "1h",
+      "volume_ma": 0,
+      "volume_ratio": 0
+    },
+    {
+      "timestamp": "2024-01-01 12:00:00",
+      "volume": 1120,
+      "timeframe": "1h",
+      "volume_ma": 0,
+      "volume_ratio": 0
+    },
+    {
+      "timestamp": "2024-01-01 13:00:00",
+      "volume": 1130,
+      "timeframe": "1h",
+      "volume_ma": 0,
+      "volume_ratio": 0
+    },
+    {
+      "timestamp": "2024-01-01 14:00:00",
+      "volume": 1140,
+      "timeframe": "1h",
+      "volume_ma": 0,
+      "volume_ratio": 0
+    },
+    {
+      "timestamp": "2024-01-01 15:00:00",
+      "volume": 1150,
+      "timeframe": "1h",
+      "volume_ma": 0,
+      "volume_ratio": 0
+    },
+    {
+      "timestamp": "2024-01-01 16:00:00",
+      "volume": 1160,
+      "timeframe": "1h",
+      "volume_ma": 0,
+      "volume_ratio": 0
+    },
+    {
+      "timestamp": "2024-01-01 17:00:00",
+      "volume": 1170,
+      "timeframe": "1h",
+      "volume_ma": 0,
+      "volume_ratio": 0
+    },
+    {
+      "timestamp": "2024-01-01 18:00:00",
+      "volume": 1180,
+      "timeframe": "1h",
+      "volume_ma": 0,
+      "volume_ratio": 0
+    },
+    {
+      "timestamp": "2024-01-01 19:00:00",
+      "volume": 1190,
+      "timeframe": "1h",
+      "volume_ma": 0,
+      "volume_ratio": 0
+    },
+    {
+      "timestamp": "2024-01-01 20:00:00",
+      "volume": 1200,
+      "timeframe": "1h",
+      "volume_ma": 0,
+      "volume_ratio": 0
+    },
+    {
+      "timestamp": "2024-01-01 21:00:00",
+      "volume": 1210,
+      "timeframe": "1h",
+      "volume_ma": 0,
+      "volume_ratio": 0
+    },
+    {
+      "timestamp": "2024-01-01 22:00:00",
+      "volume": 1220,
+      "timeframe": "1h",
+      "volume_ma": 0,
+      "volume_ratio": 0
+    },
+    {
+      "timestamp": "2024-01-01 23:00:00",
+      "volume": 1230,
+      "timeframe": "1h",
+      "volume_ma": 0,
+      "volume_ratio": 0
+    },
+    {
+      "timestamp": "2024-01-02 00:00:00",
+      "volume": 1240,
+      "timeframe": "1h",
+      "volume_ma": 0,
+      "volume_ratio": 0
+    },
+    {
+      "timestamp": "2024-01-02 01:00:00",
+      "volume": 1250,
+      "timeframe": "1h",
+      "volume_ma": 0,
+      "volume_ratio": 0
+    },
+    {
+      "timestamp": "2024-01-02 02:00:00",
+      "volume": 1260,
+      "timeframe": "1h",
+      "volume_ma": 0,
+      "volume_ratio": 0
+    },
+    {
+      "timestamp": "2024-01-02 03:00:00",
+      "volume": 1270,
+      "timeframe": "1h",
+      "volume_ma": 0,
+      "volume_ratio": 0
+    },
+    {
+      "timestamp": "2024-01-02 04:00:00",
+      "volume": 1280,
+      "timeframe": "1h",
+      "volume_ma": 0,
+      "volume_ratio": 0
+    },
+    {
+      "timestamp": "2024-01-02 05:00:00",
+      "volume": 1290,
+      "timeframe": "1h",
+      "volume_ma": 0,
+      "volume_ratio": 0
+    },
+    {
+      "timestamp": "2024-01-01 00:00:00",
+      "volume": 4000,
+      "timeframe": "4h",
+      "volume_ma": 0,
+      "volume_ratio": 0
+    },
+    {
+      "timestamp": "2024-01-01 04:00:00",
+      "volume": 4160,
+      "timeframe": "4h",
+      "volume_ma": 0,
+      "volume_ratio": 0
+    },
+    {
+      "timestamp": "2024-01-01 08:00:00",
+      "volume": 4320,
+      "timeframe": "4h",
+      "volume_ma": 0,
+      "volume_ratio": 0
+    },
+    {
+      "timestamp": "2024-01-01 12:00:00",
+      "volume": 4480,
+      "timeframe": "4h",
+      "volume_ma": 0,
+      "volume_ratio": 0
+    },
+    {
+      "timestamp": "2024-01-01 16:00:00",
+      "volume": 4640,
+      "timeframe": "4h",
+      "volume_ma": 0,
+      "volume_ratio": 0
+    },
+    {
+      "timestamp": "2024-01-01 20:00:00",
+      "volume": 4800,
+      "timeframe": "4h",
+      "volume_ma": 0,
+      "volume_ratio": 0
+    },
+    {
+      "timestamp": "2024-01-02 00:00:00",
+      "volume": 4960,
+      "timeframe": "4h",
+      "volume_ma": 0,
+      "volume_ratio": 0
+    },
+    {
+      "timestamp": "2024-01-02 04:00:00",
+      "volume": 5120,
+      "timeframe": "4h",
+      "volume_ma": 0,
+      "volume_ratio": 0
+    }
+  ],
+  "liquidity_levels": [
+    {
+      "level": 43200,
+      "type": "resistance_1",
+      "distance_to_price": 1.647058823529412
+    },
+    {
+      "level": 41500,
+      "type": "support_1",
+      "distance_to_price": 2.3529411764705883
+    },
+    {
+      "level": 44000,
+      "type": "resistance_2",
+      "distance_to_price": 3.5294117647058822
+    },
+    {
+      "level": 40800,
+      "type": "support_2",
+      "distance_to_price": 4.0
+    }
+  ],
+  "price_movements": [
+    {
+      "timestamp": "2024-01-01 01:00:00",
+      "price_change": "10",
+      "price_change_pct": 0.023798191337458353,
+      "high_low_range": "100",
+      "high_low_range_pct": 0.23798191337458352,
+      "volume": "1010",
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 02:00:00",
+      "price_change": "10",
+      "price_change_pct": 0.023792529145848205,
+      "high_low_range": "100",
+      "high_low_range_pct": 0.23792529145848204,
+      "volume": "1020",
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 03:00:00",
+      "price_change": "10",
+      "price_change_pct": 0.02378686964795433,
+      "high_low_range": "100",
+      "high_low_range_pct": 0.23786869647954328,
+      "volume": "1030",
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 04:00:00",
+      "price_change": "10",
+      "price_change_pct": 0.023781212841854936,
+      "high_low_range": "100",
+      "high_low_range_pct": 0.23781212841854932,
+      "volume": "1040",
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 05:00:00",
+      "price_change": "10",
+      "price_change_pct": 0.02377555872563005,
+      "high_low_range": "100",
+      "high_low_range_pct": 0.23775558725630053,
+      "volume": "1050",
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 06:00:00",
+      "price_change": "10",
+      "price_change_pct": 0.023769907297361538,
+      "high_low_range": "100",
+      "high_low_range_pct": 0.23769907297361542,
+      "volume": "1060",
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 07:00:00",
+      "price_change": "10",
+      "price_change_pct": 0.02376425855513308,
+      "high_low_range": "100",
+      "high_low_range_pct": 0.2376425855513308,
+      "volume": "1070",
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 08:00:00",
+      "price_change": "10",
+      "price_change_pct": 0.023758612497030172,
+      "high_low_range": "100",
+      "high_low_range_pct": 0.23758612497030174,
+      "volume": "1080",
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 09:00:00",
+      "price_change": "10",
+      "price_change_pct": 0.023752969121140142,
+      "high_low_range": "100",
+      "high_low_range_pct": 0.23752969121140144,
+      "volume": "1090",
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 10:00:00",
+      "price_change": "10",
+      "price_change_pct": 0.023747328425552126,
+      "high_low_range": "100",
+      "high_low_range_pct": 0.23747328425552128,
+      "volume": "1100",
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 11:00:00",
+      "price_change": "10",
+      "price_change_pct": 0.023741690408357077,
+      "high_low_range": "100",
+      "high_low_range_pct": 0.23741690408357075,
+      "volume": "1110",
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 12:00:00",
+      "price_change": "10",
+      "price_change_pct": 0.023736055067647758,
+      "high_low_range": "100",
+      "high_low_range_pct": 0.23736055067647754,
+      "volume": "1120",
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 13:00:00",
+      "price_change": "10",
+      "price_change_pct": 0.023730422401518746,
+      "high_low_range": "100",
+      "high_low_range_pct": 0.23730422401518747,
+      "volume": "1130",
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 14:00:00",
+      "price_change": "10",
+      "price_change_pct": 0.02372479240806643,
+      "high_low_range": "100",
+      "high_low_range_pct": 0.2372479240806643,
+      "volume": "1140",
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 15:00:00",
+      "price_change": "10",
+      "price_change_pct": 0.023719165085388995,
+      "high_low_range": "100",
+      "high_low_range_pct": 0.23719165085388993,
+      "volume": "1150",
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 16:00:00",
+      "price_change": "10",
+      "price_change_pct": 0.02371354043158644,
+      "high_low_range": "100",
+      "high_low_range_pct": 0.23713540431586438,
+      "volume": "1160",
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 17:00:00",
+      "price_change": "10",
+      "price_change_pct": 0.02370791844476055,
+      "high_low_range": "100",
+      "high_low_range_pct": 0.2370791844476055,
+      "volume": "1170",
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 18:00:00",
+      "price_change": "10",
+      "price_change_pct": 0.02370229912301493,
+      "high_low_range": "100",
+      "high_low_range_pct": 0.23702299123014933,
+      "volume": "1180",
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 19:00:00",
+      "price_change": "10",
+      "price_change_pct": 0.023696682464454978,
+      "high_low_range": "100",
+      "high_low_range_pct": 0.23696682464454977,
+      "volume": "1190",
+      "timeframe": "1h"
+    },
+    {
+      "timestamp": "2024-01-01 20:00:00",
+      "price_change": "10",
+      "price_change_pct": 0.02369106846718787,
+      "high_low_range": "100",
+      "high_low_range_pct": 0.23691068467187867,
+      "volume": "1200",
+      "timeframe": "1h"
+    }
+  ]
+}

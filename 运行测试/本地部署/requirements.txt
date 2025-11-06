@@ -1,0 +1,26 @@
+# BTC交易机器人依赖包列表
+# 基础Python包
+python>=3.8
+
+# 核心依赖
+openai>=1.0.0
+ccxt>=4.0.0
+pandas>=1.5.0
+numpy>=1.21.0
+python-dotenv>=1.0.0
+schedule>=1.0.0
+requests>=2.28.0
+urllib3>=2.0.0
+
+# 可选依赖（有降级处理）
+smartmoneyconcepts>=0.1.0  # SMC结构识别库（可选）
+
+# 本地模块
+# one_hour_optimizer.py 是本地文件，无需额外安装
+
+# 开发依赖（用于调试和测试）
+# 这些包在代码中已通过try-except处理，不会影响运行
+
+# 注意：以下包在代码中已通过环境变量和warnings模块禁用相关警告
+# urllib3 v2与macOS LibreSSL 2.8.3的兼容性问题已处理
+# one_hour_optimizer模块已创建并集成

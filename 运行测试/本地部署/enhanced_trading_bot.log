@@ -1,0 +1,371 @@
+2025-10-31 00:17:02 [MainThread] system       - INFO     - === 开始增强版交易分析 ===
+2025-10-31 00:17:02 [MainThread] system       - INFO     - 开始获取多时间框架数据: ['1d', '4h', '1h', '15m', '3m', '1m']
+2025-10-31 00:17:02 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 1d (attempt 1): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:17:03 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 1d (attempt 2): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:17:05 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 1d (attempt 3): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:17:05 [MainThread] system       - WARNING  - ❌ 1d 数据获取失败: 无数据返回
+2025-10-31 00:17:05 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 4h (attempt 1): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:17:06 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 4h (attempt 2): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:17:08 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 4h (attempt 3): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:17:08 [MainThread] system       - WARNING  - ❌ 4h 数据获取失败: 无数据返回
+2025-10-31 00:17:08 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 1h (attempt 1): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:17:09 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 1h (attempt 2): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:17:11 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 1h (attempt 3): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:17:11 [MainThread] system       - WARNING  - ❌ 1h 数据获取失败: 无数据返回
+2025-10-31 00:17:11 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 15m (attempt 1): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:17:12 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 15m (attempt 2): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:17:14 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 15m (attempt 3): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:17:14 [MainThread] system       - WARNING  - ❌ 15m 数据获取失败: 无数据返回
+2025-10-31 00:17:14 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 3m (attempt 1): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:17:15 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 3m (attempt 2): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:17:17 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 3m (attempt 3): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:17:17 [MainThread] system       - WARNING  - ❌ 3m 数据获取失败: 无数据返回
+2025-10-31 00:17:17 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 1m (attempt 1): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:17:18 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 1m (attempt 2): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:17:20 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 1m (attempt 3): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:17:20 [MainThread] system       - WARNING  - ❌ 1m 数据获取失败: 无数据返回
+2025-10-31 00:17:20 [MainThread] system       - INFO     - 数据获取完成: 成功 0/6 (0.0%)
+2025-10-31 00:17:20 [MainThread] system       - WARNING  - 获取失败: 1d, 4h, 1h, 15m, 3m, 1m
+2025-10-31 00:17:20 [MainThread] system       - ERROR    - 所有时间框架数据获取失败，无法继续分析
+2025-10-31 00:17:20 [MainThread] system       - ERROR    - 无法获取价格数据，跳过本次交易
+2025-10-31 00:18:08 [MainThread] enhanced_data_extractor - INFO     - 🔍 提取增强版原始数据: K线=50, 摆动点=23, 市场深度=10, 时间销售=100
+2025-10-31 00:18:40 [MainThread] enhanced_data_extractor - INFO     - 🔍 提取增强版原始数据: K线=50, 摆动点=23, 市场深度=10, 时间销售=100
+2025-10-31 00:18:40 [MainThread] system       - INFO     - 开始获取多时间框架数据: ['1d', '4h', '1h', '15m', '3m', '1m']
+2025-10-31 00:18:40 [MainThread] system       - DEBUG    - ✅ 1d 数据获取成功: 200 条记录
+2025-10-31 00:18:40 [MainThread] system       - DEBUG    - ✅ 4h 数据获取成功: 200 条记录
+2025-10-31 00:18:40 [MainThread] system       - DEBUG    - ✅ 1h 数据获取成功: 200 条记录
+2025-10-31 00:18:40 [MainThread] system       - DEBUG    - ✅ 15m 数据获取成功: 200 条记录
+2025-10-31 00:18:40 [MainThread] system       - DEBUG    - ✅ 3m 数据获取成功: 200 条记录
+2025-10-31 00:18:40 [MainThread] system       - DEBUG    - ✅ 1m 数据获取成功: 200 条记录
+2025-10-31 00:18:40 [MainThread] system       - INFO     - 数据获取完成: 成功 6/6 (100.0%)
+2025-10-31 00:18:40 [MainThread] system       - INFO     - 成功获取: 1d, 4h, 1h, 15m, 3m, 1m
+2025-10-31 00:18:40 [MainThread] system       - INFO     - ✅ 获取真实市场价格用于交易: $115845.20
+2025-10-31 00:18:40 [MainThread] system       - DEBUG    - 显示用价格: $114775.08
+2025-10-31 00:18:40 [MainThread] system       - INFO     - 🔍 使用增强版数据提取器分析市场数据...
+2025-10-31 00:18:40 [MainThread] enhanced_data_extractor - INFO     - 🔍 提取增强版原始数据: K线=200, 摆动点=101, 市场深度=10, 时间销售=100
+2025-10-31 00:18:40 [MainThread] system       - INFO     - ✅ 增强版数据提取完成，包含 200 根增强K线
+2025-10-31 00:18:40 [MainThread] system       - INFO     - 🤖 使用增强版SMC分析生成交易信号...
+2025-10-31 00:18:40 [MainThread] system       - INFO     - ✅ 增强版SMC分析完成: SELL 信号，置信度 0.66
+2025-10-31 00:18:40 [MainThread] system       - INFO     - 📊 增强版数据评分: 0.67, 市场微观结构: 0.78
+2025-10-31 00:18:40 [MainThread] system       - INFO     - === 开始增强版交易分析 ===
+2025-10-31 00:18:40 [MainThread] system       - INFO     - 开始获取多时间框架数据: ['1d', '4h', '1h', '15m', '3m', '1m']
+2025-10-31 00:18:40 [MainThread] system       - DEBUG    - ✅ 1d 数据获取成功: 200 条记录
+2025-10-31 00:18:40 [MainThread] system       - DEBUG    - ✅ 4h 数据获取成功: 200 条记录
+2025-10-31 00:18:40 [MainThread] system       - DEBUG    - ✅ 1h 数据获取成功: 200 条记录
+2025-10-31 00:18:40 [MainThread] system       - DEBUG    - ✅ 15m 数据获取成功: 200 条记录
+2025-10-31 00:18:40 [MainThread] system       - DEBUG    - ✅ 3m 数据获取成功: 200 条记录
+2025-10-31 00:18:40 [MainThread] system       - DEBUG    - ✅ 1m 数据获取成功: 200 条记录
+2025-10-31 00:18:40 [MainThread] system       - INFO     - 数据获取完成: 成功 6/6 (100.0%)
+2025-10-31 00:18:40 [MainThread] system       - INFO     - 成功获取: 1d, 4h, 1h, 15m, 3m, 1m
+2025-10-31 00:18:40 [MainThread] system       - INFO     - ✅ 获取真实市场价格用于交易: $115858.49
+2025-10-31 00:18:40 [MainThread] system       - DEBUG    - 显示用价格: $115641.92
+2025-10-31 00:18:40 [MainThread] system       - INFO     - 🔍 使用增强版数据提取器分析市场数据...
+2025-10-31 00:18:40 [MainThread] enhanced_data_extractor - INFO     - 🔍 提取增强版原始数据: K线=200, 摆动点=102, 市场深度=10, 时间销售=100
+2025-10-31 00:18:40 [MainThread] system       - INFO     - ✅ 增强版数据提取完成，包含 200 根增强K线
+2025-10-31 00:18:40 [MainThread] system       - INFO     - 🤖 使用增强版SMC分析生成交易信号...
+2025-10-31 00:18:40 [MainThread] system       - INFO     - ✅ 增强版SMC分析完成: BUY 信号，置信度 0.87
+2025-10-31 00:18:40 [MainThread] system       - INFO     - 📊 增强版数据评分: 0.88, 市场微观结构: 0.51
+2025-10-31 00:18:40 [MainThread] trading      - INFO     - 🎯 信号分析完成: BUY (置信度: 0.87)
+2025-10-31 00:18:40 [MainThread] trading      - INFO     - 📝 信号原因: 基于增强版SMC分析，检测到高质量看涨结构
+2025-10-31 00:18:40 [MainThread] trading      - INFO     - 🎯 止损: $118175.66, 止盈: $113541.32
+2025-10-31 00:18:40 [MainThread] trading      - INFO     - 📊 风险回报比: 3.74:1
+2025-10-31 00:18:40 [MainThread] trading      - INFO     - 🔍 模拟模式 - 不执行实际交易
+2025-10-31 00:22:52 [MainThread] system       - INFO     - === 开始增强版交易分析 ===
+2025-10-31 00:22:52 [MainThread] system       - INFO     - 开始获取多时间框架数据: ['1d', '4h', '1h', '15m', '3m', '1m']
+2025-10-31 00:22:52 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 1d (attempt 1): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:22:53 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 1d (attempt 2): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:22:55 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 1d (attempt 3): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:22:55 [MainThread] system       - WARNING  - ❌ 1d 数据获取失败: 无数据返回
+2025-10-31 00:22:55 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 4h (attempt 1): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:22:56 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 4h (attempt 2): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:22:58 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 4h (attempt 3): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:22:58 [MainThread] system       - WARNING  - ❌ 4h 数据获取失败: 无数据返回
+2025-10-31 00:22:58 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 1h (attempt 1): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:22:59 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 1h (attempt 2): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:23:01 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 1h (attempt 3): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:23:01 [MainThread] system       - WARNING  - ❌ 1h 数据获取失败: 无数据返回
+2025-10-31 00:23:01 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 15m (attempt 1): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:23:02 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 15m (attempt 2): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:23:04 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 15m (attempt 3): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:23:04 [MainThread] system       - WARNING  - ❌ 15m 数据获取失败: 无数据返回
+2025-10-31 00:23:04 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 3m (attempt 1): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:23:05 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 3m (attempt 2): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:23:07 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 3m (attempt 3): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:23:07 [MainThread] system       - WARNING  - ❌ 3m 数据获取失败: 无数据返回
+2025-10-31 00:23:07 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 1m (attempt 1): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:23:08 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 1m (attempt 2): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:23:10 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 1m (attempt 3): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:23:10 [MainThread] system       - WARNING  - ❌ 1m 数据获取失败: 无数据返回
+2025-10-31 00:23:10 [MainThread] system       - INFO     - 数据获取完成: 成功 0/6 (0.0%)
+2025-10-31 00:23:10 [MainThread] system       - WARNING  - 获取失败: 1d, 4h, 1h, 15m, 3m, 1m
+2025-10-31 00:23:10 [MainThread] system       - ERROR    - 所有时间框架数据获取失败，无法继续分析
+2025-10-31 00:23:10 [MainThread] system       - ERROR    - 无法获取价格数据，跳过本次交易
+2025-10-31 00:24:02 [MainThread] __main__     - INFO     - === 增强版交易机器人测试开始 ===
+2025-10-31 00:24:02 [MainThread] __main__     - INFO     - --- 测试1: 增强版数据提取 ---
+2025-10-31 00:24:31 [MainThread] __main__     - INFO     - === 增强版交易机器人测试开始 ===
+2025-10-31 00:24:31 [MainThread] __main__     - INFO     - --- 测试1: 增强版数据提取 ---
+2025-10-31 00:24:31 [MainThread] enhanced_data_extractor - ERROR    - 提取增强版原始数据失败: 'str' object has no attribute 'get'
+2025-10-31 00:24:31 [MainThread] __main__     - INFO     - ✅ 增强版数据提取完成
+2025-10-31 00:24:31 [MainThread] __main__     - INFO     - K线数据: 0
+2025-10-31 00:24:31 [MainThread] __main__     - INFO     - 摆动点: 0
+2025-10-31 00:24:31 [MainThread] __main__     - INFO     - 市场深度: 0
+2025-10-31 00:24:31 [MainThread] __main__     - INFO     - 时间销售: 0
+2025-10-31 00:24:31 [MainThread] __main__     - INFO     - --- 测试2: 增强版SMC信号计算 ---
+2025-10-31 00:24:42 [MainThread] __main__     - INFO     - === 增强版交易机器人测试开始 ===
+2025-10-31 00:24:42 [MainThread] __main__     - INFO     - --- 测试1: 增强版数据提取 ---
+2025-10-31 00:24:42 [MainThread] enhanced_data_extractor - ERROR    - 提取增强版原始数据失败: 'str' object has no attribute 'get'
+2025-10-31 00:24:42 [MainThread] __main__     - INFO     - ✅ 增强版数据提取完成
+2025-10-31 00:24:42 [MainThread] __main__     - INFO     - K线数据: 0
+2025-10-31 00:24:42 [MainThread] __main__     - INFO     - 摆动点: 0
+2025-10-31 00:24:42 [MainThread] __main__     - INFO     - 市场深度: 0
+2025-10-31 00:24:42 [MainThread] __main__     - INFO     - 时间销售: 0
+2025-10-31 00:24:42 [MainThread] __main__     - INFO     - --- 测试2: 增强版SMC信号计算 ---
+2025-10-31 00:24:42 [MainThread] __main__     - INFO     - ✅ 增强版SMC信号计算完成: HOLD (置信度: 0.00)
+2025-10-31 00:24:42 [MainThread] __main__     - INFO     - 原因: 信号不明确或置信度不足
+2025-10-31 00:24:42 [MainThread] __main__     - INFO     - 信号细分:
+2025-10-31 00:24:42 [MainThread] __main__     - INFO     -   bos_choch: HOLD (置信度: 0.00)
+2025-10-31 00:24:42 [MainThread] __main__     - INFO     -   order_blocks: HOLD (置信度: 0.00)
+2025-10-31 00:24:42 [MainThread] __main__     - INFO     -   fvg: HOLD (置信度: 0.00)
+2025-10-31 00:24:42 [MainThread] __main__     - INFO     -   liquidity: HOLD (置信度: 0.00)
+2025-10-31 00:24:42 [MainThread] __main__     - INFO     -   market_microstructure: HOLD (置信度: 0.00)
+2025-10-31 00:24:42 [MainThread] __main__     - INFO     - --- 测试3: 增强版交易机器人 ---
+2025-10-31 00:24:42 [MainThread] enhanced_data_extractor - ERROR    - 提取增强版原始数据失败: 'str' object has no attribute 'get'
+2025-10-31 00:24:42 [MainThread] __main__     - INFO     - ✅ 增强版数据提取完成
+2025-10-31 00:24:48 [MainThread] __main__     - INFO     - === 增强版交易机器人测试开始 ===
+2025-10-31 00:24:48 [MainThread] __main__     - INFO     - --- 测试1: 增强版数据提取 ---
+2025-10-31 00:24:48 [MainThread] enhanced_data_extractor - ERROR    - 提取增强版原始数据失败: 'str' object has no attribute 'get'
+2025-10-31 00:24:48 [MainThread] __main__     - INFO     - ✅ 增强版数据提取完成
+2025-10-31 00:24:48 [MainThread] __main__     - INFO     - K线数据: 0
+2025-10-31 00:24:48 [MainThread] __main__     - INFO     - 摆动点: 0
+2025-10-31 00:24:48 [MainThread] __main__     - INFO     - 市场深度: 0
+2025-10-31 00:24:48 [MainThread] __main__     - INFO     - 时间销售: 0
+2025-10-31 00:24:48 [MainThread] __main__     - INFO     - --- 测试2: 增强版SMC信号计算 ---
+2025-10-31 00:24:48 [MainThread] __main__     - INFO     - ✅ 增强版SMC信号计算完成: HOLD (置信度: 0.00)
+2025-10-31 00:24:48 [MainThread] __main__     - INFO     - 原因: 信号不明确或置信度不足
+2025-10-31 00:24:48 [MainThread] __main__     - INFO     - 信号细分:
+2025-10-31 00:24:48 [MainThread] __main__     - INFO     -   bos_choch: HOLD (置信度: 0.00)
+2025-10-31 00:24:48 [MainThread] __main__     - INFO     -   order_blocks: HOLD (置信度: 0.00)
+2025-10-31 00:24:48 [MainThread] __main__     - INFO     -   fvg: HOLD (置信度: 0.00)
+2025-10-31 00:24:48 [MainThread] __main__     - INFO     -   liquidity: HOLD (置信度: 0.00)
+2025-10-31 00:24:48 [MainThread] __main__     - INFO     -   market_microstructure: HOLD (置信度: 0.00)
+2025-10-31 00:24:48 [MainThread] __main__     - INFO     - --- 测试3: 增强版交易机器人 ---
+2025-10-31 00:24:48 [MainThread] enhanced_data_extractor - ERROR    - 提取增强版原始数据失败: 'str' object has no attribute 'get'
+2025-10-31 00:24:48 [MainThread] __main__     - INFO     - ✅ 增强版数据提取完成
+2025-10-31 00:24:48 [MainThread] __main__     - INFO     - ✅ 增强版SMC信号计算完成: HOLD (置信度: 0.00)
+2025-10-31 00:25:30 [MainThread] __main__     - INFO     - === 增强版交易机器人测试开始 ===
+2025-10-31 00:25:30 [MainThread] __main__     - INFO     - --- 测试1: 增强版数据提取 ---
+2025-10-31 00:25:30 [MainThread] enhanced_data_extractor - ERROR    - 提取增强版原始数据失败: 'str' object has no attribute 'get'
+2025-10-31 00:25:30 [MainThread] __main__     - INFO     - ✅ 增强版数据提取完成
+2025-10-31 00:25:30 [MainThread] __main__     - INFO     - K线数据: 0
+2025-10-31 00:25:30 [MainThread] __main__     - INFO     - 摆动点: 0
+2025-10-31 00:25:30 [MainThread] __main__     - INFO     - 市场深度: 0
+2025-10-31 00:25:30 [MainThread] __main__     - INFO     - 时间销售: 0
+2025-10-31 00:25:30 [MainThread] __main__     - INFO     - --- 测试2: 增强版SMC信号计算 ---
+2025-10-31 00:25:30 [MainThread] __main__     - INFO     - ✅ 增强版SMC信号计算完成: HOLD (置信度: 0.00)
+2025-10-31 00:25:30 [MainThread] __main__     - INFO     - 原因: 信号不明确或置信度不足
+2025-10-31 00:25:30 [MainThread] __main__     - INFO     - 信号细分:
+2025-10-31 00:25:30 [MainThread] __main__     - INFO     -   bos_choch: HOLD (置信度: 0.00)
+2025-10-31 00:25:30 [MainThread] __main__     - INFO     -   order_blocks: HOLD (置信度: 0.00)
+2025-10-31 00:25:30 [MainThread] __main__     - INFO     -   fvg: HOLD (置信度: 0.00)
+2025-10-31 00:25:30 [MainThread] __main__     - INFO     -   liquidity: HOLD (置信度: 0.00)
+2025-10-31 00:25:30 [MainThread] __main__     - INFO     -   market_microstructure: HOLD (置信度: 0.00)
+2025-10-31 00:25:30 [MainThread] __main__     - INFO     - --- 测试3: 增强版交易机器人 ---
+2025-10-31 00:25:30 [MainThread] enhanced_data_extractor - ERROR    - 提取增强版原始数据失败: 'str' object has no attribute 'get'
+2025-10-31 00:25:30 [MainThread] __main__     - INFO     - ✅ 增强版数据提取完成
+2025-10-31 00:25:30 [MainThread] __main__     - INFO     - ✅ 增强版SMC信号计算完成: HOLD (置信度: 0.00)
+2025-10-31 00:25:30 [MainThread] system       - WARNING  - 未找到增强版数据，回退到标准SMC分析
+2025-10-31 00:25:30 [MainThread] system       - ERROR    - 标准SMC分析失败: 'price'
+2025-10-31 00:25:40 [MainThread] __main__     - INFO     - === 增强版交易机器人测试开始 ===
+2025-10-31 00:25:40 [MainThread] __main__     - INFO     - --- 测试1: 增强版数据提取 ---
+2025-10-31 00:25:40 [MainThread] enhanced_data_extractor - ERROR    - 提取增强版原始数据失败: 'str' object has no attribute 'get'
+2025-10-31 00:25:40 [MainThread] __main__     - INFO     - ✅ 增强版数据提取完成
+2025-10-31 00:25:40 [MainThread] __main__     - INFO     - K线数据: 0
+2025-10-31 00:25:40 [MainThread] __main__     - INFO     - 摆动点: 0
+2025-10-31 00:25:40 [MainThread] __main__     - INFO     - 市场深度: 0
+2025-10-31 00:25:40 [MainThread] __main__     - INFO     - 时间销售: 0
+2025-10-31 00:25:40 [MainThread] __main__     - INFO     - --- 测试2: 增强版SMC信号计算 ---
+2025-10-31 00:25:40 [MainThread] __main__     - INFO     - ✅ 增强版SMC信号计算完成: HOLD (置信度: 0.00)
+2025-10-31 00:25:40 [MainThread] __main__     - INFO     - 原因: 信号不明确或置信度不足
+2025-10-31 00:25:40 [MainThread] __main__     - INFO     - 信号细分:
+2025-10-31 00:25:40 [MainThread] __main__     - INFO     -   bos_choch: HOLD (置信度: 0.00)
+2025-10-31 00:25:40 [MainThread] __main__     - INFO     -   order_blocks: HOLD (置信度: 0.00)
+2025-10-31 00:25:40 [MainThread] __main__     - INFO     -   fvg: HOLD (置信度: 0.00)
+2025-10-31 00:25:40 [MainThread] __main__     - INFO     -   liquidity: HOLD (置信度: 0.00)
+2025-10-31 00:25:40 [MainThread] __main__     - INFO     -   market_microstructure: HOLD (置信度: 0.00)
+2025-10-31 00:25:40 [MainThread] __main__     - INFO     - --- 测试3: 增强版交易机器人 ---
+2025-10-31 00:25:40 [MainThread] enhanced_data_extractor - ERROR    - 提取增强版原始数据失败: 'str' object has no attribute 'get'
+2025-10-31 00:25:40 [MainThread] __main__     - INFO     - ✅ 增强版数据提取完成
+2025-10-31 00:25:40 [MainThread] __main__     - INFO     - ✅ 增强版SMC信号计算完成: HOLD (置信度: 0.00)
+2025-10-31 00:25:40 [MainThread] system       - WARNING  - 未找到增强版数据，回退到标准SMC分析
+2025-10-31 00:25:40 [MainThread] system       - ERROR    - 标准SMC分析失败: 'price'
+2025-10-31 00:25:40 [MainThread] __main__     - WARNING  - 增强版SMC分析返回None
+2025-10-31 00:25:40 [MainThread] __main__     - INFO     - ✅ 增强版SMC分析完成: UNKNOWN (置信度: 0.00)
+2025-10-31 00:25:40 [MainThread] __main__     - INFO     - 原因: 分析失败
+2025-10-31 00:25:40 [MainThread] __main__     - INFO     - === 测试完成 ===
+2025-10-31 00:25:40 [MainThread] __main__     - INFO     - 测试结果已保存到 enhanced_trading_bot_test_results.json
+2025-10-31 00:28:46 [MainThread] system       - INFO     - === 开始增强版交易分析 ===
+2025-10-31 00:28:46 [MainThread] system       - INFO     - 开始获取多时间框架数据: ['1d', '4h', '1h', '15m', '3m', '1m']
+2025-10-31 00:28:46 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 1d (attempt 1): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:28:47 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 1d (attempt 2): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:28:49 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 1d (attempt 3): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:28:49 [MainThread] system       - WARNING  - ❌ 1d 数据获取失败: 无数据返回
+2025-10-31 00:28:49 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 4h (attempt 1): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:28:50 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 4h (attempt 2): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:28:52 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 4h (attempt 3): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:28:52 [MainThread] system       - WARNING  - ❌ 4h 数据获取失败: 无数据返回
+2025-10-31 00:28:52 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 1h (attempt 1): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:28:53 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 1h (attempt 2): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:29:14 [MainThread] system       - ERROR    - ❌ 交易所初始化失败: No module named 'hyperliquid'
+2025-10-31 00:29:14 [MainThread] system       - INFO     - 🔄 继续使用模拟模式
+2025-10-31 00:29:14 [MainThread] system       - INFO     - === 开始增强版交易分析 ===
+2025-10-31 00:29:14 [MainThread] system       - INFO     - 开始获取多时间框架数据: ['1d', '4h', '1h', '15m', '3m', '1m']
+2025-10-31 00:29:14 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 1d (attempt 1): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:29:15 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 1d (attempt 2): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:29:18 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 1d (attempt 3): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:29:18 [MainThread] system       - WARNING  - ❌ 1d 数据获取失败: 无数据返回
+2025-10-31 00:29:18 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 4h (attempt 1): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:29:19 [MainThread] api          - ERROR    - Unexpected error fetching OHLCV for BTC/USDC:USDC 4h (attempt 2): 'NoneType' object has no attribute 'fetch_ohlcv'
+2025-10-31 00:29:34 [MainThread] system       - ERROR    - ❌ 交易所初始化失败: No module named 'hyperliquid'
+2025-10-31 00:29:34 [MainThread] system       - INFO     - 🔄 继续使用模拟模式
+2025-10-31 00:29:34 [MainThread] system       - INFO     - ✅ 模拟交易所初始化成功
+2025-10-31 00:29:34 [MainThread] system       - INFO     - === 开始增强版交易分析 ===
+2025-10-31 00:29:34 [MainThread] system       - INFO     - 开始获取多时间框架数据: ['1d', '4h', '1h', '15m', '3m', '1m']
+2025-10-31 00:29:34 [MainThread] system       - DEBUG    - ✅ 1d 数据获取成功: 200 条记录
+2025-10-31 00:29:34 [MainThread] system       - DEBUG    - ✅ 4h 数据获取成功: 200 条记录
+2025-10-31 00:29:34 [MainThread] system       - DEBUG    - ✅ 1h 数据获取成功: 200 条记录
+2025-10-31 00:29:34 [MainThread] system       - DEBUG    - ✅ 15m 数据获取成功: 200 条记录
+2025-10-31 00:29:34 [MainThread] system       - DEBUG    - ✅ 3m 数据获取成功: 200 条记录
+2025-10-31 00:29:34 [MainThread] system       - DEBUG    - ✅ 1m 数据获取成功: 200 条记录
+2025-10-31 00:29:34 [MainThread] system       - INFO     - 数据获取完成: 成功 6/6 (100.0%)
+2025-10-31 00:29:34 [MainThread] system       - INFO     - 成功获取: 1d, 4h, 1h, 15m, 3m, 1m
+2025-10-31 00:29:34 [MainThread] system       - INFO     - ✅ 获取真实市场价格用于交易: $115000.00
+2025-10-31 00:29:34 [MainThread] system       - DEBUG    - 显示用价格: $115000.00
+2025-10-31 00:29:34 [MainThread] system       - INFO     - 🔍 使用增强版数据提取器分析市场数据...
+2025-10-31 00:29:34 [MainThread] enhanced_data_extractor - INFO     - 🔍 提取增强版原始数据: K线=200, 摆动点=116, 市场深度=10, 时间销售=100
+2025-10-31 00:29:34 [MainThread] system       - INFO     - ✅ 增强版数据提取完成，包含 200 根增强K线
+2025-10-31 00:29:34 [MainThread] system       - INFO     - ✅ 增强版SMC分析完成: HOLD 信号，置信度 0.26
+2025-10-31 00:29:34 [MainThread] trading      - INFO     - 🎯 信号分析完成: HOLD (置信度: 0.26)
+2025-10-31 00:29:34 [MainThread] trading      - INFO     - 📝 信号原因: 信号不明确或置信度不足
+2025-10-31 00:29:34 [MainThread] trading      - INFO     - 🔍 模拟模式 - 不执行实际交易
+2025-10-31 00:29:59 [MainThread] system       - INFO     - 🚀 启动实盘交易模式
+2025-10-31 00:29:59 [MainThread] system       - ERROR    - ❌ 交易所初始化失败: No module named 'hyperliquid'
+2025-10-31 00:29:59 [MainThread] system       - INFO     - 🔄 继续使用模拟模式
+2025-10-31 00:29:59 [MainThread] system       - INFO     - ✅ 模拟交易所初始化成功
+2025-10-31 00:29:59 [MainThread] system       - INFO     - 🚀 启动实盘交易机器人，持续运行...
+2025-10-31 00:29:59 [MainThread] system       - INFO     - === 开始增强版交易分析 ===
+2025-10-31 00:29:59 [MainThread] system       - INFO     - 开始获取多时间框架数据: ['1d', '4h', '1h', '15m', '3m', '1m']
+2025-10-31 00:29:59 [MainThread] system       - DEBUG    - ✅ 1d 数据获取成功: 200 条记录
+2025-10-31 00:29:59 [MainThread] system       - DEBUG    - ✅ 4h 数据获取成功: 200 条记录
+2025-10-31 00:29:59 [MainThread] system       - DEBUG    - ✅ 1h 数据获取成功: 200 条记录
+2025-10-31 00:29:59 [MainThread] system       - DEBUG    - ✅ 15m 数据获取成功: 200 条记录
+2025-10-31 00:29:59 [MainThread] system       - DEBUG    - ✅ 3m 数据获取成功: 200 条记录
+2025-10-31 00:29:59 [MainThread] system       - DEBUG    - ✅ 1m 数据获取成功: 200 条记录
+2025-10-31 00:29:59 [MainThread] system       - INFO     - 数据获取完成: 成功 6/6 (100.0%)
+2025-10-31 00:29:59 [MainThread] system       - INFO     - 成功获取: 1d, 4h, 1h, 15m, 3m, 1m
+2025-10-31 00:29:59 [MainThread] system       - INFO     - ✅ 获取真实市场价格用于交易: $115000.00
+2025-10-31 00:29:59 [MainThread] system       - DEBUG    - 显示用价格: $115000.00
+2025-10-31 00:29:59 [MainThread] system       - INFO     - 🔍 使用增强版数据提取器分析市场数据...
+2025-10-31 00:29:59 [MainThread] enhanced_data_extractor - INFO     - 🔍 提取增强版原始数据: K线=200, 摆动点=109, 市场深度=10, 时间销售=100
+2025-10-31 00:29:59 [MainThread] system       - INFO     - ✅ 增强版数据提取完成，包含 200 根增强K线
+2025-10-31 00:29:59 [MainThread] system       - INFO     - ✅ 增强版SMC分析完成: HOLD 信号，置信度 0.06
+2025-10-31 00:29:59 [MainThread] trading      - INFO     - 🎯 信号分析完成: HOLD (置信度: 0.06)
+2025-10-31 00:29:59 [MainThread] trading      - INFO     - 📝 信号原因: 信号不明确或置信度不足
+2025-10-31 00:29:59 [MainThread] trading      - INFO     - ⏸️ 信号置信度不足或为HOLD，不执行交易
+2025-10-31 00:29:59 [MainThread] system       - INFO     - === 增强版交易分析完成，耗时 0.05 秒 ===
+2025-10-31 00:30:30 [MainThread] system       - INFO     - 🚀 启动实盘交易模式
+2025-10-31 00:30:32 [MainThread] system       - ERROR    - ❌ 交易所初始化失败: module 'hyperliquid' has no attribute 'Exchange'
+2025-10-31 00:30:32 [MainThread] system       - INFO     - 🔄 继续使用模拟模式
+2025-10-31 00:30:32 [MainThread] system       - INFO     - ✅ 模拟交易所初始化成功
+2025-10-31 00:30:32 [MainThread] system       - INFO     - 🚀 启动实盘交易机器人，持续运行...
+2025-10-31 00:30:32 [MainThread] system       - INFO     - === 开始增强版交易分析 ===
+2025-10-31 00:30:32 [MainThread] system       - INFO     - 开始获取多时间框架数据: ['1d', '4h', '1h', '15m', '3m', '1m']
+2025-10-31 00:30:32 [MainThread] system       - DEBUG    - ✅ 1d 数据获取成功: 200 条记录
+2025-10-31 00:30:32 [MainThread] system       - DEBUG    - ✅ 4h 数据获取成功: 200 条记录
+2025-10-31 00:30:32 [MainThread] system       - DEBUG    - ✅ 1h 数据获取成功: 200 条记录
+2025-10-31 00:30:32 [MainThread] system       - DEBUG    - ✅ 15m 数据获取成功: 200 条记录
+2025-10-31 00:30:32 [MainThread] system       - DEBUG    - ✅ 3m 数据获取成功: 200 条记录
+2025-10-31 00:30:32 [MainThread] system       - DEBUG    - ✅ 1m 数据获取成功: 200 条记录
+2025-10-31 00:30:32 [MainThread] system       - INFO     - 数据获取完成: 成功 6/6 (100.0%)
+2025-10-31 00:30:32 [MainThread] system       - INFO     - 成功获取: 1d, 4h, 1h, 15m, 3m, 1m
+2025-10-31 00:30:32 [MainThread] system       - INFO     - ✅ 获取真实市场价格用于交易: $115000.00
+2025-10-31 00:30:32 [MainThread] system       - DEBUG    - 显示用价格: $115000.00
+2025-10-31 00:30:32 [MainThread] system       - INFO     - 🔍 使用增强版数据提取器分析市场数据...
+2025-10-31 00:30:32 [MainThread] enhanced_data_extractor - INFO     - 🔍 提取增强版原始数据: K线=200, 摆动点=120, 市场深度=10, 时间销售=100
+2025-10-31 00:30:32 [MainThread] system       - INFO     - ✅ 增强版数据提取完成，包含 200 根增强K线
+2025-10-31 00:30:32 [MainThread] system       - INFO     - ✅ 增强版SMC分析完成: HOLD 信号，置信度 0.10
+2025-10-31 00:30:32 [MainThread] trading      - INFO     - 🎯 信号分析完成: HOLD (置信度: 0.10)
+2025-10-31 00:30:32 [MainThread] trading      - INFO     - 📝 信号原因: 信号不明确或置信度不足
+2025-10-31 00:30:32 [MainThread] trading      - INFO     - ⏸️ 信号置信度不足或为HOLD，不执行交易
+2025-10-31 00:30:32 [MainThread] system       - INFO     - === 增强版交易分析完成，耗时 0.05 秒 ===
+2025-10-31 00:30:51 [MainThread] system       - INFO     - 🚀 启动实盘交易模式
+2025-10-31 00:30:51 [MainThread] system       - ERROR    - ❌ 交易所初始化失败: No module named 'hyperliquid.info'
+2025-10-31 00:30:51 [MainThread] system       - INFO     - 🔄 继续使用模拟模式
+2025-10-31 00:30:51 [MainThread] system       - INFO     - ✅ 模拟交易所初始化成功
+2025-10-31 00:30:51 [MainThread] system       - INFO     - 🚀 启动实盘交易机器人，持续运行...
+2025-10-31 00:30:51 [MainThread] system       - INFO     - === 开始增强版交易分析 ===
+2025-10-31 00:30:51 [MainThread] system       - INFO     - 开始获取多时间框架数据: ['1d', '4h', '1h', '15m', '3m', '1m']
+2025-10-31 00:30:51 [MainThread] system       - DEBUG    - ✅ 1d 数据获取成功: 200 条记录
+2025-10-31 00:30:51 [MainThread] system       - DEBUG    - ✅ 4h 数据获取成功: 200 条记录
+2025-10-31 00:30:51 [MainThread] system       - DEBUG    - ✅ 1h 数据获取成功: 200 条记录
+2025-10-31 00:30:51 [MainThread] system       - DEBUG    - ✅ 15m 数据获取成功: 200 条记录
+2025-10-31 00:30:51 [MainThread] system       - DEBUG    - ✅ 3m 数据获取成功: 200 条记录
+2025-10-31 00:30:51 [MainThread] system       - DEBUG    - ✅ 1m 数据获取成功: 200 条记录
+2025-10-31 00:30:51 [MainThread] system       - INFO     - 数据获取完成: 成功 6/6 (100.0%)
+2025-10-31 00:30:51 [MainThread] system       - INFO     - 成功获取: 1d, 4h, 1h, 15m, 3m, 1m
+2025-10-31 00:30:51 [MainThread] system       - INFO     - ✅ 获取真实市场价格用于交易: $115000.00
+2025-10-31 00:30:51 [MainThread] system       - DEBUG    - 显示用价格: $115000.00
+2025-10-31 00:30:51 [MainThread] system       - INFO     - 🔍 使用增强版数据提取器分析市场数据...
+2025-10-31 00:30:51 [MainThread] enhanced_data_extractor - INFO     - 🔍 提取增强版原始数据: K线=200, 摆动点=112, 市场深度=10, 时间销售=100
+2025-10-31 00:30:51 [MainThread] system       - INFO     - ✅ 增强版数据提取完成，包含 200 根增强K线
+2025-10-31 00:30:51 [MainThread] system       - INFO     - ✅ 增强版SMC分析完成: HOLD 信号，置信度 0.09
+2025-10-31 00:30:51 [MainThread] trading      - INFO     - 🎯 信号分析完成: HOLD (置信度: 0.09)
+2025-10-31 00:30:51 [MainThread] trading      - INFO     - 📝 信号原因: 信号不明确或置信度不足
+2025-10-31 00:30:51 [MainThread] trading      - INFO     - ⏸️ 信号置信度不足或为HOLD，不执行交易
+2025-10-31 00:30:51 [MainThread] system       - INFO     - === 增强版交易分析完成，耗时 0.04 秒 ===
+2025-10-31 00:31:12 [MainThread] system       - INFO     - 🚀 启动实盘交易模式
+2025-10-31 00:31:12 [MainThread] system       - ERROR    - ❌ 交易所初始化失败: No module named 'hyperliquid.ccxt_module'
+2025-10-31 00:31:12 [MainThread] system       - INFO     - 🔄 继续使用模拟模式
+2025-10-31 00:31:12 [MainThread] system       - INFO     - ✅ 模拟交易所初始化成功
+2025-10-31 00:31:12 [MainThread] system       - INFO     - 🚀 启动实盘交易机器人，持续运行...
+2025-10-31 00:31:12 [MainThread] system       - INFO     - === 开始增强版交易分析 ===
+2025-10-31 00:31:12 [MainThread] system       - INFO     - 开始获取多时间框架数据: ['1d', '4h', '1h', '15m', '3m', '1m']
+2025-10-31 00:31:12 [MainThread] system       - DEBUG    - ✅ 1d 数据获取成功: 200 条记录
+2025-10-31 00:31:12 [MainThread] system       - DEBUG    - ✅ 4h 数据获取成功: 200 条记录
+2025-10-31 00:31:12 [MainThread] system       - DEBUG    - ✅ 1h 数据获取成功: 200 条记录
+2025-10-31 00:31:12 [MainThread] system       - DEBUG    - ✅ 15m 数据获取成功: 200 条记录
+2025-10-31 00:31:12 [MainThread] system       - DEBUG    - ✅ 3m 数据获取成功: 200 条记录
+2025-10-31 00:31:12 [MainThread] system       - DEBUG    - ✅ 1m 数据获取成功: 200 条记录
+2025-10-31 00:31:12 [MainThread] system       - INFO     - 数据获取完成: 成功 6/6 (100.0%)
+2025-10-31 00:31:12 [MainThread] system       - INFO     - 成功获取: 1d, 4h, 1h, 15m, 3m, 1m
+2025-10-31 00:31:12 [MainThread] system       - INFO     - ✅ 获取真实市场价格用于交易: $115000.00
+2025-10-31 00:31:12 [MainThread] system       - DEBUG    - 显示用价格: $115000.00
+2025-10-31 00:31:12 [MainThread] system       - INFO     - 🔍 使用增强版数据提取器分析市场数据...
+2025-10-31 00:31:12 [MainThread] enhanced_data_extractor - INFO     - 🔍 提取增强版原始数据: K线=200, 摆动点=123, 市场深度=10, 时间销售=100
+2025-10-31 00:31:12 [MainThread] system       - INFO     - ✅ 增强版数据提取完成，包含 200 根增强K线
+2025-10-31 00:31:12 [MainThread] system       - INFO     - ✅ 增强版SMC分析完成: HOLD 信号，置信度 0.09
+2025-10-31 00:31:12 [MainThread] trading      - INFO     - 🎯 信号分析完成: HOLD (置信度: 0.09)
+2025-10-31 00:31:12 [MainThread] trading      - INFO     - 📝 信号原因: 信号不明确或置信度不足
+2025-10-31 00:31:12 [MainThread] trading      - INFO     - ⏸️ 信号置信度不足或为HOLD，不执行交易
+2025-10-31 00:31:12 [MainThread] system       - INFO     - === 增强版交易分析完成，耗时 0.04 秒 ===
+2025-10-31 00:46:12 [MainThread] system       - INFO     - === 开始增强版交易分析 ===
+2025-10-31 00:46:12 [MainThread] system       - INFO     - 开始获取多时间框架数据: ['1d', '4h', '1h', '15m', '3m', '1m']
+2025-10-31 00:46:12 [MainThread] system       - DEBUG    - ✅ 1d 数据获取成功: 200 条记录
+2025-10-31 00:46:12 [MainThread] system       - DEBUG    - ✅ 4h 数据获取成功: 200 条记录
+2025-10-31 00:46:12 [MainThread] system       - DEBUG    - ✅ 1h 数据获取成功: 200 条记录
+2025-10-31 00:46:12 [MainThread] system       - DEBUG    - ✅ 15m 数据获取成功: 200 条记录
+2025-10-31 00:46:12 [MainThread] system       - DEBUG    - ✅ 3m 数据获取成功: 200 条记录
+2025-10-31 00:46:12 [MainThread] system       - DEBUG    - ✅ 1m 数据获取成功: 200 条记录
+2025-10-31 00:46:12 [MainThread] system       - INFO     - 数据获取完成: 成功 6/6 (100.0%)
+2025-10-31 00:46:12 [MainThread] system       - INFO     - 成功获取: 1d, 4h, 1h, 15m, 3m, 1m
+2025-10-31 00:46:12 [MainThread] system       - INFO     - ✅ 获取真实市场价格用于交易: $115000.00
+2025-10-31 00:46:12 [MainThread] system       - DEBUG    - 显示用价格: $115000.00
+2025-10-31 00:46:12 [MainThread] system       - INFO     - 🔍 使用增强版数据提取器分析市场数据...
+2025-10-31 00:46:12 [MainThread] enhanced_data_extractor - INFO     - 🔍 提取增强版原始数据: K线=200, 摆动点=120, 市场深度=10, 时间销售=100
+2025-10-31 00:46:12 [MainThread] system       - INFO     - ✅ 增强版数据提取完成，包含 200 根增强K线
+2025-10-31 00:46:12 [MainThread] system       - INFO     - ✅ 增强版SMC分析完成: HOLD 信号，置信度 0.22
+2025-10-31 00:46:12 [MainThread] trading      - INFO     - 🎯 信号分析完成: HOLD (置信度: 0.22)
+2025-10-31 00:46:12 [MainThread] trading      - INFO     - 📝 信号原因: 信号不明确或置信度不足
+2025-10-31 00:46:12 [MainThread] trading      - INFO     - ⏸️ 信号置信度不足或为HOLD，不执行交易
+2025-10-31 00:46:12 [MainThread] system       - INFO     - === 增强版交易分析完成，耗时 0.08 秒 ===
+2025-10-31 00:50:21 [MainThread] system       - INFO     - ⏹️ 收到停止信号，正在关闭交易机器人...
+2025-10-31 00:50:21 [MainThread] system       - INFO     - ✅ 交易机器人已安全停止

@@ -4635,3 +4635,271 @@
 2025-11-07 00:46:10 [Thread-1  ] monitor      - DEBUG    - ✅ 价格监控获取真实价格: $100553.50
 2025-11-07 00:46:10 [Thread-1  ] system       - DEBUG    - 最接近关键水平: prev_3m_low @ $100615.00 (距离: 0.061%)
 2025-11-07 00:46:24 [Thread-2  ] monitor      - INFO     - 💓 Heartbeat: 00:46:24 | Position=No position | Balance=1001.97 USDC | Signals=0 | Price=$100591.50
+2025-11-07 00:47:13 [Thread-1  ] api          - INFO     - ✅ 获取实时市场价格: $100622.50
+2025-11-07 00:47:13 [Thread-1  ] monitor      - DEBUG    - ✅ 价格监控获取真实价格: $100622.50
+2025-11-07 00:47:24 [Thread-2  ] monitor      - INFO     - 💓 Heartbeat: 00:47:24 | Position=No position | Balance=1001.97 USDC | Signals=0 | Price=$100591.50
+2025-11-07 00:48:17 [Thread-1  ] api          - INFO     - ✅ 获取实时市场价格: $100571.50
+2025-11-07 00:48:17 [Thread-1  ] monitor      - DEBUG    - ✅ 价格监控获取真实价格: $100571.50
+2025-11-07 00:48:17 [Thread-1  ] monitor      - DEBUG    - Price monitoring normal: Price=100571.50, Cycle=100
+2025-11-07 00:48:24 [Thread-2  ] monitor      - INFO     - 💓 Heartbeat: 00:48:24 | Position=No position | Balance=1001.97 USDC | Signals=0 | Price=$100591.50
+2025-11-07 00:49:20 [Thread-1  ] api          - INFO     - ✅ 获取实时市场价格: $100433.50
+2025-11-07 00:49:20 [Thread-1  ] monitor      - DEBUG    - ✅ 价格监控获取真实价格: $100433.50
+2025-11-07 00:49:21 [ThreadPoolExecutor-0_2] api          - WARNING  - Insufficient 1w data for BTC/USDC:USDC: 5 bars
+2025-11-07 00:49:21 [Thread-1  ] monitor      - DEBUG    - Key levels cache lightweight update successful
+2025-11-07 00:49:21 [Thread-1  ] system       - DEBUG    - 价格激活: 1d_close (距离: 0.001%)
+2025-11-07 00:49:21 [Thread-1  ] monitor      - INFO     - Price activation: 1d_close (cumulative: 30 times)
+2025-11-07 00:49:21 [Thread-33 ] system       - INFO     - === Start trade analysis ===
+2025-11-07 00:49:21 [Thread-33 ] system       - WARNING  - Kill Zone disabled - proceeding with analysis (test mode)
+2025-11-07 00:49:21 [Thread-33 ] system       - INFO     - 开始获取多时间框架数据: ['1d', '4h', '1h', '15m', '5m', '3m', '1m']
+2025-11-07 00:49:21 [Thread-33 ] system       - DEBUG    - ✅ 1d 数据获取成功: 200 条记录
+2025-11-07 00:49:21 [Thread-33 ] system       - DEBUG    - ✅ 4h 数据获取成功: 200 条记录
+2025-11-07 00:49:21 [Thread-33 ] system       - DEBUG    - ✅ 1h 数据获取成功: 200 条记录
+2025-11-07 00:49:22 [Thread-33 ] system       - DEBUG    - ✅ 15m 数据获取成功: 200 条记录
+2025-11-07 00:49:22 [Thread-33 ] system       - DEBUG    - ✅ 5m 数据获取成功: 200 条记录
+2025-11-07 00:49:22 [Thread-33 ] system       - DEBUG    - ✅ 3m 数据获取成功: 200 条记录
+2025-11-07 00:49:22 [Thread-33 ] system       - DEBUG    - ✅ 1m 数据获取成功: 200 条记录
+2025-11-07 00:49:22 [Thread-33 ] system       - INFO     - 数据获取完成: 成功 7/7 (100.0%)
+2025-11-07 00:49:22 [Thread-33 ] system       - INFO     - 成功获取: 1d, 4h, 1h, 15m, 5m, 3m, 1m
+2025-11-07 00:49:25 [Thread-33 ] api          - INFO     - ✅ 获取实时市场价格: $100413.50
+2025-11-07 00:49:25 [Thread-33 ] system       - INFO     - ✅ 获取真实市场价格用于交易: $100413.50
+2025-11-07 00:49:25 [Thread-33 ] system       - INFO     - 📊 显示价格: $100441.00 (仅用于日志显示)
+2025-11-07 00:49:25 [Thread-33 ] system       - DEBUG    - 计算振幅: 14297.43
+2025-11-07 00:49:25 [Thread-33 ] system       - DEBUG    - 关键水平缓存更新成功: 56 个水平
+2025-11-07 00:49:25 [Thread-33 ] system       - DEBUG    - 计算波动率: 0.59%
+2025-11-07 00:49:25 [Thread-33 ] system       - DEBUG    - Using provided activated level: 1d_close
+2025-11-07 00:49:26 [Thread-33 ] api          - WARNING  - Insufficient 3m data for BTC/USDC:USDC: 1 bars
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 使用TradingView SMC检测 1d 时间框架结构
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - daily斐波那契水平计算完成: 8个水平, 趋势: bearish
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 优化流动性评分: 结构强度=0.00, 流动性=0.44, OB有效性=0.00, 斐波那契有效性=0.00, 总分=0.07
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 1d SMC结构分析完成，流动性评分: 0.065
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 使用TradingView SMC检测 4h 时间框架结构
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - daily斐波那契水平计算完成: 8个水平, 趋势: bearish
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 优化流动性评分: 结构强度=0.00, 流动性=0.36, OB有效性=0.00, 斐波那契有效性=0.00, 总分=0.05
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 4h SMC结构分析完成，流动性评分: 0.053
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 使用TradingView SMC检测 1h 时间框架结构
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - daily斐波那契水平计算完成: 8个水平, 趋势: bearish
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 优化流动性评分: 结构强度=0.00, 流动性=1.00, OB有效性=0.00, 斐波那契有效性=0.00, 总分=0.15
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 1h SMC结构分析完成，流动性评分: 0.150
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 使用TradingView SMC检测 15m 时间框架结构
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - daily斐波那契水平计算完成: 8个水平, 趋势: bearish
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 优化流动性评分: 结构强度=0.00, 流动性=0.31, OB有效性=0.00, 斐波那契有效性=0.00, 总分=0.05
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 15m SMC结构分析完成，流动性评分: 0.046
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 使用TradingView SMC检测 5m 时间框架结构
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - daily斐波那契水平计算完成: 8个水平, 趋势: bearish
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 优化流动性评分: 结构强度=0.00, 流动性=0.57, OB有效性=0.00, 斐波那契有效性=0.00, 总分=0.09
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 5m SMC结构分析完成，流动性评分: 0.086
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 使用TradingView SMC检测 3m 时间框架结构
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - daily斐波那契水平计算完成: 8个水平, 趋势: bearish
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 优化流动性评分: 结构强度=0.00, 流动性=0.16, OB有效性=0.00, 斐波那契有效性=0.00, 总分=0.02
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 3m SMC结构分析完成，流动性评分: 0.023
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - daily斐波那契水平计算完成: 8个水平, 趋势: bearish
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 优化流动性评分: 结构强度=0.00, 流动性=0.12, OB有效性=0.00, 斐波那契有效性=0.00, 总分=0.02
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 1m SMC结构分析完成，流动性评分: 0.019
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 使用TradingView SMC检测 1d 时间框架结构
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 使用TradingView SMC检测 4h 时间框架结构
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 使用TradingView SMC检测 1h 时间框架结构
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 使用TradingView SMC检测 15m 时间框架结构
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 使用TradingView SMC检测 3m 时间框架结构
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - MTF偏置: D1=neutral, H4=neutral, H1=neutral, 一致性=0.50, 建议=neutral, 精准入场=False
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - MTF结构分析: neutral (一致性: 0.50)
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - Higher TF invalidation calculated: 98405.2300 (2.00% from current price)
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - Nearest key level: 100414.0000 (distance: 0.00% from current price 100413.5000)
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 更高时间框架失效点计算: 98405.2300, 最近关键水平: 100414.0000 (距离: 0.0000)
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - BTC current price: $100,413.50
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - Primary timeframe: 3m
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - Weekly average amplitude: 14297.43
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - Completed volatility: 0.6%
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 价格激活状态: ✅ 已激活
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 激活水平: 1d_close
+2025-11-07 00:49:26 [Thread-33 ] system       - DEBUG    - 跳过蜡烛图模式检查（功能待实现）
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 动量过滤器警告：FVG/OB数量不足 (FVG=0, OB=0) 但继续分析
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 使用TradingView SMC检测 1d 时间框架结构
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 使用TradingView SMC检测 4h 时间框架结构
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 使用TradingView SMC检测 1h 时间框架结构
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 使用TradingView SMC检测 15m 时间框架结构
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 使用TradingView SMC检测 3m 时间框架结构
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - MTF偏置: D1=neutral, H4=neutral, H1=neutral, 一致性=0.50, 建议=neutral, 精准入场=False
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - 动量过滤器：MTF一致性评分过低 (0.50 < 0.6)
+2025-11-07 00:49:26 [Thread-33 ] system       - INFO     - Intraday momentum filter failed, skipping trade
+2025-11-07 00:49:26 [Thread-2  ] monitor      - INFO     - 💓 Heartbeat: 00:49:26 | Position=No position | Balance=1001.97 USDC | Signals=0 | Price=$100413.50
+2025-11-07 00:50:24 [Thread-1  ] api          - INFO     - ✅ 获取实时市场价格: $100331.50
+2025-11-07 00:50:24 [Thread-1  ] monitor      - DEBUG    - ✅ 价格监控获取真实价格: $100331.50
+2025-11-07 00:50:26 [Thread-2  ] monitor      - INFO     - 💓 Heartbeat: 00:50:26 | Position=No position | Balance=1001.97 USDC | Signals=0 | Price=$100413.50
+2025-11-07 00:51:26 [Thread-2  ] monitor      - INFO     - 💓 Heartbeat: 00:51:26 | Position=No position | Balance=1001.97 USDC | Signals=0 | Price=$100413.50
+2025-11-07 00:51:28 [Thread-1  ] api          - INFO     - ✅ 获取实时市场价格: $100484.50
+2025-11-07 00:51:28 [Thread-1  ] monitor      - DEBUG    - ✅ 价格监控获取真实价格: $100484.50
+2025-11-07 00:51:28 [Thread-1  ] system       - DEBUG    - 价格激活: 15m_open (距离: 0.003%)
+2025-11-07 00:51:28 [Thread-1  ] monitor      - DEBUG    - Price activation: 15m_open (cumulative: 31 times)
+2025-11-07 00:51:28 [Thread-34 ] system       - INFO     - === Start trade analysis ===
+2025-11-07 00:51:28 [Thread-34 ] system       - WARNING  - Kill Zone disabled - proceeding with analysis (test mode)
+2025-11-07 00:51:28 [Thread-34 ] system       - INFO     - 开始获取多时间框架数据: ['1d', '4h', '1h', '15m', '5m', '3m', '1m']
+2025-11-07 00:51:28 [Thread-34 ] system       - DEBUG    - ✅ 1d 数据获取成功: 200 条记录
+2025-11-07 00:51:28 [Thread-34 ] system       - DEBUG    - ✅ 4h 数据获取成功: 200 条记录
+2025-11-07 00:51:28 [Thread-34 ] system       - DEBUG    - ✅ 1h 数据获取成功: 200 条记录
+2025-11-07 00:51:29 [Thread-34 ] system       - DEBUG    - ✅ 15m 数据获取成功: 200 条记录
+2025-11-07 00:51:29 [Thread-34 ] system       - DEBUG    - ✅ 5m 数据获取成功: 200 条记录
+2025-11-07 00:51:29 [Thread-34 ] system       - DEBUG    - ✅ 3m 数据获取成功: 200 条记录
+2025-11-07 00:51:29 [Thread-34 ] system       - DEBUG    - ✅ 1m 数据获取成功: 200 条记录
+2025-11-07 00:51:29 [Thread-34 ] system       - INFO     - 数据获取完成: 成功 7/7 (100.0%)
+2025-11-07 00:51:29 [Thread-34 ] system       - INFO     - 成功获取: 1d, 4h, 1h, 15m, 5m, 3m, 1m
+2025-11-07 00:51:31 [Thread-34 ] api          - INFO     - ✅ 获取实时市场价格: $100485.50
+2025-11-07 00:51:31 [Thread-34 ] system       - INFO     - ✅ 获取真实市场价格用于交易: $100485.50
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 📊 显示价格: $100486.00 (仅用于日志显示)
+2025-11-07 00:51:32 [Thread-34 ] system       - DEBUG    - 计算振幅: 14297.43
+2025-11-07 00:51:32 [Thread-34 ] system       - DEBUG    - 关键水平缓存更新成功: 56 个水平
+2025-11-07 00:51:32 [Thread-34 ] system       - DEBUG    - 计算波动率: 0.59%
+2025-11-07 00:51:32 [Thread-34 ] system       - DEBUG    - Using provided activated level: 15m_open
+2025-11-07 00:51:32 [Thread-34 ] api          - WARNING  - Insufficient 3m data for BTC/USDC:USDC: 1 bars
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 使用TradingView SMC检测 1d 时间框架结构
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - daily斐波那契水平计算完成: 8个水平, 趋势: bearish
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 优化流动性评分: 结构强度=0.00, 流动性=0.44, OB有效性=0.00, 斐波那契有效性=0.00, 总分=0.07
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 1d SMC结构分析完成，流动性评分: 0.066
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 使用TradingView SMC检测 4h 时间框架结构
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - daily斐波那契水平计算完成: 8个水平, 趋势: bearish
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 优化流动性评分: 结构强度=0.00, 流动性=0.37, OB有效性=0.00, 斐波那契有效性=0.00, 总分=0.06
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 4h SMC结构分析完成，流动性评分: 0.056
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 使用TradingView SMC检测 1h 时间框架结构
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - daily斐波那契水平计算完成: 8个水平, 趋势: bearish
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 优化流动性评分: 结构强度=0.00, 流动性=1.00, OB有效性=0.00, 斐波那契有效性=0.00, 总分=0.15
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 1h SMC结构分析完成，流动性评分: 0.150
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 使用TradingView SMC检测 15m 时间框架结构
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - daily斐波那契水平计算完成: 8个水平, 趋势: bearish
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 优化流动性评分: 结构强度=0.00, 流动性=0.46, OB有效性=0.00, 斐波那契有效性=0.00, 总分=0.07
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 15m SMC结构分析完成，流动性评分: 0.069
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 使用TradingView SMC检测 5m 时间框架结构
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - daily斐波那契水平计算完成: 8个水平, 趋势: bearish
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 优化流动性评分: 结构强度=0.00, 流动性=0.26, OB有效性=0.00, 斐波那契有效性=0.00, 总分=0.04
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 5m SMC结构分析完成，流动性评分: 0.040
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 使用TradingView SMC检测 3m 时间框架结构
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - daily斐波那契水平计算完成: 8个水平, 趋势: bearish
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 优化流动性评分: 结构强度=0.00, 流动性=0.05, OB有效性=0.00, 斐波那契有效性=0.00, 总分=0.01
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 3m SMC结构分析完成，流动性评分: 0.008
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - daily斐波那契水平计算完成: 8个水平, 趋势: bearish
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 优化流动性评分: 结构强度=0.00, 流动性=0.09, OB有效性=0.00, 斐波那契有效性=0.10, 总分=0.02
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 1m SMC结构分析完成，流动性评分: 0.024
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 使用TradingView SMC检测 1d 时间框架结构
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 使用TradingView SMC检测 4h 时间框架结构
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 使用TradingView SMC检测 1h 时间框架结构
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 使用TradingView SMC检测 15m 时间框架结构
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 使用TradingView SMC检测 3m 时间框架结构
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - MTF偏置: D1=neutral, H4=neutral, H1=neutral, 一致性=0.50, 建议=neutral, 精准入场=False
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - MTF结构分析: neutral (一致性: 0.50)
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - Higher TF invalidation calculated: 98475.7900 (2.00% from current price)
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - Nearest key level: 100488.0000 (distance: 0.00% from current price 100485.5000)
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 更高时间框架失效点计算: 98475.7900, 最近关键水平: 100488.0000 (距离: 0.0000)
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - BTC current price: $100,485.50
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - Primary timeframe: 3m
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - Weekly average amplitude: 14297.43
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - Completed volatility: 0.6%
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 价格激活状态: ✅ 已激活
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 激活水平: 15m_open
+2025-11-07 00:51:32 [Thread-34 ] system       - DEBUG    - 跳过蜡烛图模式检查（功能待实现）
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 动量过滤器警告：FVG/OB数量不足 (FVG=0, OB=0) 但继续分析
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 使用TradingView SMC检测 1d 时间框架结构
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 使用TradingView SMC检测 4h 时间框架结构
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 使用TradingView SMC检测 1h 时间框架结构
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 使用TradingView SMC检测 15m 时间框架结构
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 使用TradingView SMC检测 3m 时间框架结构
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - MTF偏置: D1=neutral, H4=neutral, H1=neutral, 一致性=0.50, 建议=neutral, 精准入场=False
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - 动量过滤器：MTF一致性评分过低 (0.50 < 0.6)
+2025-11-07 00:51:32 [Thread-34 ] system       - INFO     - Intraday momentum filter failed, skipping trade
+2025-11-07 00:52:27 [Thread-2  ] monitor      - INFO     - 💓 Heartbeat: 00:52:27 | Position=No position | Balance=1001.97 USDC | Signals=0 | Price=$100747.50
+2025-11-07 00:52:32 [Thread-1  ] api          - INFO     - ✅ 获取实时市场价格: $100767.50
+2025-11-07 00:52:32 [Thread-1  ] monitor      - DEBUG    - ✅ 价格监控获取真实价格: $100767.50
+2025-11-07 00:52:32 [Thread-1  ] system       - DEBUG    - 最接近关键水平: 1m_ema_20 @ $100785.76 (距离: 0.018%)
+2025-11-07 00:53:27 [Thread-2  ] monitor      - INFO     - 💓 Heartbeat: 00:53:27 | Position=No position | Balance=1001.97 USDC | Signals=0 | Price=$100747.50
+2025-11-07 00:53:35 [Thread-1  ] api          - INFO     - ✅ 获取实时市场价格: $100944.50
+2025-11-07 00:53:35 [Thread-1  ] monitor      - DEBUG    - ✅ 价格监控获取真实价格: $100944.50
+2025-11-07 00:54:27 [Thread-2  ] monitor      - INFO     - 💓 Heartbeat: 00:54:27 | Position=No position | Balance=1001.97 USDC | Signals=0 | Price=$100747.50
+2025-11-07 00:54:39 [Thread-1  ] api          - INFO     - ✅ 获取实时市场价格: $101020.50
+2025-11-07 00:54:39 [Thread-1  ] monitor      - DEBUG    - ✅ 价格监控获取真实价格: $101020.50
+2025-11-07 00:55:29 [Thread-2  ] monitor      - INFO     - 💓 Heartbeat: 00:55:29 | Position=No position | Balance=1001.97 USDC | Signals=0 | Price=$100856.00
+2025-11-07 00:55:42 [Thread-1  ] api          - INFO     - ✅ 获取实时市场价格: $100796.00
+2025-11-07 00:55:42 [Thread-1  ] monitor      - DEBUG    - ✅ 价格监控获取真实价格: $100796.00
+2025-11-07 00:56:29 [Thread-2  ] monitor      - INFO     - 💓 Heartbeat: 00:56:29 | Position=No position | Balance=1001.97 USDC | Signals=0 | Price=$100856.00
+2025-11-07 00:56:45 [Thread-1  ] api          - INFO     - ✅ 获取实时市场价格: $100656.50
+2025-11-07 00:56:45 [Thread-1  ] monitor      - DEBUG    - ✅ 价格监控获取真实价格: $100656.50
+2025-11-07 00:56:46 [ThreadPoolExecutor-0_2] api          - WARNING  - Insufficient 1w data for BTC/USDC:USDC: 5 bars
+2025-11-07 00:56:46 [Thread-1  ] monitor      - DEBUG    - Key levels cache lightweight update successful
+2025-11-07 00:56:46 [Thread-1  ] system       - DEBUG    - 价格激活: 4h_close (距离: 0.000%)
+2025-11-07 00:56:46 [Thread-1  ] monitor      - DEBUG    - Price activation: 4h_close (cumulative: 32 times)
+2025-11-07 00:56:46 [Thread-35 ] system       - INFO     - === Start trade analysis ===
+2025-11-07 00:56:46 [Thread-35 ] system       - WARNING  - Kill Zone disabled - proceeding with analysis (test mode)
+2025-11-07 00:56:46 [Thread-35 ] system       - INFO     - 开始获取多时间框架数据: ['1d', '4h', '1h', '15m', '5m', '3m', '1m']
+2025-11-07 00:56:46 [Thread-35 ] system       - DEBUG    - ✅ 1d 数据获取成功: 200 条记录
+2025-11-07 00:56:46 [Thread-35 ] system       - DEBUG    - ✅ 4h 数据获取成功: 200 条记录
+2025-11-07 00:56:47 [Thread-35 ] system       - DEBUG    - ✅ 1h 数据获取成功: 200 条记录
+2025-11-07 00:56:47 [Thread-35 ] system       - DEBUG    - ✅ 15m 数据获取成功: 200 条记录
+2025-11-07 00:56:47 [Thread-35 ] system       - DEBUG    - ✅ 5m 数据获取成功: 200 条记录
+2025-11-07 00:56:48 [Thread-35 ] system       - DEBUG    - ✅ 3m 数据获取成功: 200 条记录
+2025-11-07 00:56:48 [Thread-35 ] system       - DEBUG    - ✅ 1m 数据获取成功: 200 条记录
+2025-11-07 00:56:48 [Thread-35 ] system       - INFO     - 数据获取完成: 成功 7/7 (100.0%)
+2025-11-07 00:56:48 [Thread-35 ] system       - INFO     - 成功获取: 1d, 4h, 1h, 15m, 5m, 3m, 1m
+2025-11-07 00:56:50 [Thread-35 ] api          - INFO     - ✅ 获取实时市场价格: $100656.50
+2025-11-07 00:56:50 [Thread-35 ] system       - INFO     - ✅ 获取真实市场价格用于交易: $100656.50
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 📊 显示价格: $100635.00 (仅用于日志显示)
+2025-11-07 00:56:51 [Thread-35 ] system       - DEBUG    - 计算振幅: 14297.43
+2025-11-07 00:56:51 [Thread-35 ] system       - DEBUG    - 关键水平缓存更新成功: 56 个水平
+2025-11-07 00:56:51 [Thread-35 ] system       - DEBUG    - 计算波动率: 0.59%
+2025-11-07 00:56:51 [Thread-35 ] system       - DEBUG    - Using provided activated level: 4h_close
+2025-11-07 00:56:51 [Thread-35 ] api          - WARNING  - Insufficient 3m data for BTC/USDC:USDC: 1 bars
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 使用TradingView SMC检测 1d 时间框架结构
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - daily斐波那契水平计算完成: 8个水平, 趋势: bearish
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 优化流动性评分: 结构强度=0.00, 流动性=0.47, OB有效性=0.00, 斐波那契有效性=0.00, 总分=0.07
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 1d SMC结构分析完成，流动性评分: 0.071
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 使用TradingView SMC检测 4h 时间框架结构
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - daily斐波那契水平计算完成: 8个水平, 趋势: bearish
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 优化流动性评分: 结构强度=0.00, 流动性=0.50, OB有效性=0.00, 斐波那契有效性=0.00, 总分=0.07
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 4h SMC结构分析完成，流动性评分: 0.075
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 使用TradingView SMC检测 1h 时间框架结构
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - daily斐波那契水平计算完成: 8个水平, 趋势: bearish
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 优化流动性评分: 结构强度=0.00, 流动性=1.00, OB有效性=0.00, 斐波那契有效性=0.00, 总分=0.15
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 1h SMC结构分析完成，流动性评分: 0.150
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 使用TradingView SMC检测 15m 时间框架结构
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - daily斐波那契水平计算完成: 8个水平, 趋势: bearish
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 优化流动性评分: 结构强度=0.00, 流动性=1.00, OB有效性=0.00, 斐波那契有效性=0.00, 总分=0.15
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 15m SMC结构分析完成，流动性评分: 0.150
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 使用TradingView SMC检测 5m 时间框架结构
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - daily斐波那契水平计算完成: 8个水平, 趋势: bearish
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 优化流动性评分: 结构强度=0.00, 流动性=0.78, OB有效性=0.00, 斐波那契有效性=0.00, 总分=0.12
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 5m SMC结构分析完成，流动性评分: 0.118
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 使用TradingView SMC检测 3m 时间框架结构
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - daily斐波那契水平计算完成: 8个水平, 趋势: bearish
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 优化流动性评分: 结构强度=0.00, 流动性=1.00, OB有效性=0.00, 斐波那契有效性=0.09, 总分=0.16
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 3m SMC结构分析完成，流动性评分: 0.159
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - daily斐波那契水平计算完成: 8个水平, 趋势: bearish
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 优化流动性评分: 结构强度=0.00, 流动性=0.72, OB有效性=0.00, 斐波那契有效性=0.14, 总分=0.12
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 1m SMC结构分析完成，流动性评分: 0.123
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 使用TradingView SMC检测 1d 时间框架结构
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 使用TradingView SMC检测 4h 时间框架结构
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 使用TradingView SMC检测 1h 时间框架结构
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 使用TradingView SMC检测 15m 时间框架结构
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 使用TradingView SMC检测 3m 时间框架结构
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - MTF偏置: D1=neutral, H4=neutral, H1=neutral, 一致性=0.50, 建议=neutral, 精准入场=False
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - MTF结构分析: neutral (一致性: 0.50)
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - Higher TF invalidation calculated: 98643.3700 (2.00% from current price)
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - Nearest key level: 100656.0000 (distance: 0.00% from current price 100656.5000)
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 更高时间框架失效点计算: 98643.3700, 最近关键水平: 100656.0000 (距离: 0.0000)
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - BTC current price: $100,656.50
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - Primary timeframe: 3m
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - Weekly average amplitude: 14297.43
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - Completed volatility: 0.6%
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 价格激活状态: ✅ 已激活
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 激活水平: 4h_close
+2025-11-07 00:56:51 [Thread-35 ] system       - DEBUG    - 跳过蜡烛图模式检查（功能待实现）
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 动量过滤器警告：FVG/OB数量不足 (FVG=0, OB=0) 但继续分析
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 使用TradingView SMC检测 1d 时间框架结构
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 使用TradingView SMC检测 4h 时间框架结构
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 使用TradingView SMC检测 1h 时间框架结构
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 使用TradingView SMC检测 15m 时间框架结构
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 使用TradingView SMC检测 3m 时间框架结构
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - MTF偏置: D1=neutral, H4=neutral, H1=neutral, 一致性=0.50, 建议=neutral, 精准入场=False
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - 动量过滤器：MTF一致性评分过低 (0.50 < 0.6)
+2025-11-07 00:56:51 [Thread-35 ] system       - INFO     - Intraday momentum filter failed, skipping trade
+2025-11-07 00:57:29 [Thread-2  ] monitor      - INFO     - 💓 Heartbeat: 00:57:29 | Position=No position | Balance=1001.97 USDC | Signals=0 | Price=$100856.00
+2025-11-07 00:57:49 [Thread-1  ] api          - INFO     - ✅ 获取实时市场价格: $100762.50
+2025-11-07 00:57:49 [Thread-1  ] monitor      - DEBUG    - ✅ 价格监控获取真实价格: $100762.50
+2025-11-07 00:57:49 [Thread-1  ] system       - DEBUG    - 最接近关键水平: 1m_open @ $100737.00 (距离: 0.025%)
+2025-11-07 00:58:31 [Thread-2  ] monitor      - INFO     - 💓 Heartbeat: 00:58:31 | Position=No position | Balance=1001.97 USDC | Signals=0 | Price=$100654.50
+2025-11-07 00:58:53 [Thread-1  ] api          - INFO     - ✅ 获取实时市场价格: $100726.50
+2025-11-07 00:58:53 [Thread-1  ] monitor      - DEBUG    - ✅ 价格监控获取真实价格: $100726.50

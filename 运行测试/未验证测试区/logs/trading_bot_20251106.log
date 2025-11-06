@@ -67,3 +67,440 @@
 2025-11-06 15:42:25,901 - TradingBot - INFO - 交易执行器已启动
 2025-11-06 15:42:25,901 - TradingBot - INFO - 定时任务已设置
 2025-11-06 15:42:25,901 - TradingBot - INFO - 交易机器人已启动
+2025-11-06 15:43:26,129 - TradingBot - INFO - 开始市场分析
+2025-11-06 15:43:36,166 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:43:47,179 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:43:58,191 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:43:58,192 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 15:43:58,192 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:43:58,192 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 15:43:58,193 - TradingBot - INFO - 开始风险检查
+2025-11-06 15:44:08,198 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:44:19,212 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:44:30,220 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:44:30,220 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 15:44:30,221 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:44:30,221 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 15:44:58,322 - TradingBot - INFO - 开始市场分析
+2025-11-06 15:45:08,333 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:45:19,358 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:45:30,385 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:45:30,387 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 15:45:30,389 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:45:30,389 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 15:45:31,393 - TradingBot - INFO - 开始风险检查
+2025-11-06 15:45:41,402 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:45:52,418 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:46:03,432 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:46:03,433 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 15:46:03,433 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:46:03,433 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 15:46:30,534 - TradingBot - INFO - 开始市场分析
+2025-11-06 15:46:40,544 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:46:51,559 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:46:51,581 - TradingBot - INFO - 交易所 okx 初始化成功
+2025-11-06 15:46:51,805 - TradingBot - INFO - DeepSeek AI信号提供者初始化成功
+2025-11-06 15:47:01,832 - TradingBot - ERROR - 交易所连接测试失败: okx GET https://www.okx.com/api/v5/asset/currencies
+2025-11-06 15:47:01,833 - TradingBot - ERROR - 组件初始化失败: 无法连接到交易所
+2025-11-06 15:47:02,573 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:47:02,574 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 15:47:02,574 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:47:02,574 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 15:47:03,578 - TradingBot - INFO - 开始风险检查
+2025-11-06 15:47:13,585 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:47:24,600 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:47:27,222 - TradingBot - INFO - 交易所 binance 初始化成功
+2025-11-06 15:47:27,388 - TradingBot - INFO - DeepSeek AI信号提供者初始化成功
+2025-11-06 15:47:35,611 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:47:35,612 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 15:47:35,612 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:47:35,613 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 15:47:37,393 - TradingBot - ERROR - 交易所连接测试失败: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1762415247389&recvWindow=10000&signature=39bf84b6ef68545e586aad654e42a717ae8c24ce78cf80250495c842f1904dc3
+2025-11-06 15:47:37,394 - TradingBot - ERROR - 组件初始化失败: 无法连接到交易所
+2025-11-06 15:48:02,733 - TradingBot - INFO - 开始市场分析
+2025-11-06 15:48:12,771 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:48:23,782 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:48:34,795 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:48:34,797 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 15:48:34,797 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:48:34,797 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 15:48:35,800 - TradingBot - INFO - 开始风险检查
+2025-11-06 15:48:45,809 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:48:53,690 - TradingBot - INFO - 交易所 binance 初始化成功
+2025-11-06 15:48:53,911 - TradingBot - INFO - DeepSeek AI信号提供者初始化成功
+2025-11-06 15:48:56,823 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:49:03,925 - TradingBot - ERROR - 交易所连接测试失败: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:49:03,927 - TradingBot - ERROR - 组件初始化失败: 无法连接到交易所
+2025-11-06 15:49:07,832 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:49:07,832 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 15:49:07,832 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:49:07,832 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 15:49:34,952 - TradingBot - INFO - 开始市场分析
+2025-11-06 15:49:44,963 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:49:55,978 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:50:06,996 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:50:06,997 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 15:50:06,997 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:50:06,997 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 15:50:08,003 - TradingBot - INFO - 开始风险检查
+2025-11-06 15:50:18,023 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:50:29,039 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:50:40,054 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:50:40,055 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 15:50:40,055 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:50:40,055 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 15:51:07,145 - TradingBot - INFO - 开始市场分析
+2025-11-06 15:51:17,157 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:51:28,165 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:51:39,177 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:51:39,178 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 15:51:39,178 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:51:39,178 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 15:51:40,180 - TradingBot - INFO - 开始风险检查
+2025-11-06 15:51:50,190 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:52:01,204 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:52:12,214 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:52:12,215 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 15:52:12,216 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:52:12,216 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 15:52:39,301 - TradingBot - INFO - 开始市场分析
+2025-11-06 15:52:49,332 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:53:00,344 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:53:11,353 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:53:11,353 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 15:53:11,353 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:53:11,353 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 15:53:12,359 - TradingBot - INFO - 开始风险检查
+2025-11-06 15:53:22,365 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:53:33,381 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:53:39,873 - TradingBot - INFO - 交易所 binance 初始化成功
+2025-11-06 15:53:39,874 - TradingBot - WARNING - 没有可用的AI信号提供者
+2025-11-06 15:53:39,874 - TradingBot - INFO - 模拟模式：跳过交易所连接测试
+2025-11-06 15:53:39,874 - TradingBot - INFO - 所有组件初始化成功
+2025-11-06 15:53:39,874 - TradingBot - INFO - 交易机器人初始化完成
+2025-11-06 15:53:39,874 - TradingBot - INFO - 交易执行器已启动
+2025-11-06 15:53:39,874 - TradingBot - INFO - 定时任务已设置
+2025-11-06 15:53:39,874 - TradingBot - INFO - 交易机器人已启动
+2025-11-06 15:53:44,400 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:53:44,401 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 15:53:44,401 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:53:44,401 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 15:54:11,489 - TradingBot - INFO - 开始市场分析
+2025-11-06 15:54:21,501 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:54:32,509 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:54:40,079 - TradingBot - INFO - 开始市场分析
+2025-11-06 15:54:43,526 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:54:43,527 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 15:54:43,527 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:54:43,527 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 15:54:44,531 - TradingBot - INFO - 开始风险检查
+2025-11-06 15:54:50,094 - TradingBot - WARNING - 获取 BTC/USDT 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:54:54,535 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:55:01,107 - TradingBot - WARNING - 获取 BTC/USDT 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:55:05,547 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:55:12,125 - TradingBot - WARNING - 获取 BTC/USDT 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:55:12,126 - TradingBot - ERROR - 获取 BTC/USDT 1m OHLCV数据最终失败
+2025-11-06 15:55:12,126 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:55:12,126 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 15:55:12,127 - TradingBot - INFO - 开始风险检查
+2025-11-06 15:55:16,556 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:55:16,556 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 15:55:16,557 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:55:16,557 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 15:55:22,130 - TradingBot - WARNING - 获取 BTC/USDT 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:55:33,142 - TradingBot - WARNING - 获取 BTC/USDT 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:55:43,671 - TradingBot - INFO - 开始市场分析
+2025-11-06 15:55:44,152 - TradingBot - WARNING - 获取 BTC/USDT 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:55:44,153 - TradingBot - ERROR - 获取 BTC/USDT 1m OHLCV数据最终失败
+2025-11-06 15:55:44,153 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:55:44,153 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 15:55:53,682 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:56:04,701 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:56:12,267 - TradingBot - INFO - 开始市场分析
+2025-11-06 15:56:15,715 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:56:15,716 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 15:56:15,716 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:56:15,716 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 15:56:16,719 - TradingBot - INFO - 开始风险检查
+2025-11-06 15:56:22,278 - TradingBot - WARNING - 获取 BTC/USDT 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:56:26,727 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:56:33,287 - TradingBot - WARNING - 获取 BTC/USDT 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:56:37,740 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:56:44,299 - TradingBot - WARNING - 获取 BTC/USDT 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:56:44,299 - TradingBot - ERROR - 获取 BTC/USDT 1m OHLCV数据最终失败
+2025-11-06 15:56:44,300 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:56:44,300 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 15:56:45,305 - TradingBot - INFO - 开始风险检查
+2025-11-06 15:56:48,751 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:56:48,752 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 15:56:48,753 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:56:48,754 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 15:56:55,311 - TradingBot - WARNING - 获取 BTC/USDT 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:57:06,319 - TradingBot - WARNING - 获取 BTC/USDT 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:57:15,872 - TradingBot - INFO - 开始市场分析
+2025-11-06 15:57:17,331 - TradingBot - WARNING - 获取 BTC/USDT 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:57:17,331 - TradingBot - ERROR - 获取 BTC/USDT 1m OHLCV数据最终失败
+2025-11-06 15:57:17,331 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:57:17,332 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 15:57:25,882 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:57:36,889 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:57:44,440 - TradingBot - INFO - 开始市场分析
+2025-11-06 15:57:47,898 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:57:47,899 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 15:57:47,899 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:57:47,900 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 15:57:48,902 - TradingBot - INFO - 开始风险检查
+2025-11-06 15:57:54,453 - TradingBot - WARNING - 获取 BTC/USDT 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:57:58,910 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:58:05,465 - TradingBot - WARNING - 获取 BTC/USDT 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:58:09,924 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:58:16,472 - TradingBot - WARNING - 获取 BTC/USDT 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:58:16,473 - TradingBot - ERROR - 获取 BTC/USDT 1m OHLCV数据最终失败
+2025-11-06 15:58:16,474 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:58:16,474 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 15:58:17,478 - TradingBot - INFO - 开始风险检查
+2025-11-06 15:58:20,936 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:58:20,936 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 15:58:20,937 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:58:20,937 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 15:58:27,487 - TradingBot - WARNING - 获取 BTC/USDT 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:58:38,500 - TradingBot - WARNING - 获取 BTC/USDT 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:58:48,047 - TradingBot - INFO - 开始市场分析
+2025-11-06 15:58:48,615 - TradingBot - INFO - 交易执行器已停止
+2025-11-06 15:58:49,514 - TradingBot - WARNING - 获取 BTC/USDT 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:58:49,514 - TradingBot - ERROR - 获取 BTC/USDT 1m OHLCV数据最终失败
+2025-11-06 15:58:49,515 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:58:49,516 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 15:58:49,516 - TradingBot - INFO - 交易机器人已停止
+2025-11-06 15:58:58,061 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:59:09,080 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:59:20,095 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:59:20,096 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 15:59:20,096 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:59:20,096 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 15:59:21,099 - TradingBot - INFO - 开始风险检查
+2025-11-06 15:59:31,114 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:59:42,131 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:59:53,144 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:59:53,146 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 15:59:53,147 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:59:53,147 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 16:00:20,269 - TradingBot - INFO - 开始市场分析
+2025-11-06 16:00:30,279 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:00:41,294 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:00:52,309 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:00:52,310 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:00:52,310 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:00:52,311 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 16:00:53,317 - TradingBot - INFO - 开始风险检查
+2025-11-06 16:01:03,326 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:01:14,340 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:01:25,351 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:01:25,352 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:01:25,352 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:01:25,352 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 16:01:52,450 - TradingBot - INFO - 开始市场分析
+2025-11-06 16:02:02,466 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:02:13,485 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:02:24,514 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:02:24,515 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:02:24,515 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:02:24,515 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 16:02:25,524 - TradingBot - INFO - 开始风险检查
+2025-11-06 16:02:35,540 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:02:46,552 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:02:57,564 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:02:57,566 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:02:57,566 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:02:57,566 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 16:03:24,665 - TradingBot - INFO - 开始市场分析
+2025-11-06 16:03:34,678 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:03:45,691 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:03:56,701 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:03:56,702 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:03:56,702 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:03:56,702 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 16:03:57,708 - TradingBot - INFO - 开始风险检查
+2025-11-06 16:04:07,716 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:04:18,727 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:04:29,740 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:04:29,741 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:04:29,741 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:04:29,742 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 16:04:56,840 - TradingBot - INFO - 开始市场分析
+2025-11-06 16:05:06,853 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:05:17,869 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:05:28,882 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:05:28,883 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:05:28,883 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:05:28,883 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 16:05:29,888 - TradingBot - INFO - 开始风险检查
+2025-11-06 16:05:39,897 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:05:50,906 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:06:01,920 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:06:01,921 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:06:01,922 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:06:01,922 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 16:06:29,021 - TradingBot - INFO - 开始市场分析
+2025-11-06 16:06:39,035 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:06:50,048 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:07:01,056 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:07:01,057 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:07:01,057 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:07:01,057 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 16:07:02,063 - TradingBot - INFO - 开始风险检查
+2025-11-06 16:07:12,071 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:07:23,086 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:07:34,098 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:07:34,100 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:07:34,103 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:07:34,104 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 16:08:01,215 - TradingBot - INFO - 开始市场分析
+2025-11-06 16:08:11,225 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:08:22,237 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:08:33,249 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:08:33,249 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:08:33,249 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:08:33,249 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 16:08:34,253 - TradingBot - INFO - 开始风险检查
+2025-11-06 16:08:44,261 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:08:55,272 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:09:06,286 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:09:06,288 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:09:06,288 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:09:06,289 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 16:09:33,395 - TradingBot - INFO - 开始市场分析
+2025-11-06 16:09:43,411 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:09:54,426 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:10:05,439 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:10:05,439 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:10:05,439 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:10:05,439 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 16:10:06,445 - TradingBot - INFO - 开始风险检查
+2025-11-06 16:10:16,453 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:10:27,477 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:10:38,494 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:10:38,496 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:10:38,497 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:10:38,497 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 16:11:05,586 - TradingBot - INFO - 开始市场分析
+2025-11-06 16:11:15,613 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:11:26,620 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:11:37,629 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:11:37,631 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:11:37,631 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:11:37,631 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 16:11:38,637 - TradingBot - INFO - 开始风险检查
+2025-11-06 16:11:48,643 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:11:59,657 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:12:10,669 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:12:10,670 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:12:10,674 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:12:10,676 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 16:12:37,787 - TradingBot - INFO - 开始市场分析
+2025-11-06 16:12:47,797 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:12:58,811 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:13:09,829 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:13:09,830 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:13:09,831 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:13:09,831 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 16:13:10,835 - TradingBot - INFO - 开始风险检查
+2025-11-06 16:13:20,843 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:13:31,857 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:13:42,871 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:13:42,873 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:13:42,873 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:13:42,873 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 16:14:09,965 - TradingBot - INFO - 开始市场分析
+2025-11-06 16:14:19,977 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:14:30,987 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:14:42,001 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:14:42,003 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:14:42,003 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:14:42,003 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 16:14:43,004 - TradingBot - INFO - 开始风险检查
+2025-11-06 16:14:53,010 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:15:04,021 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:15:15,031 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:15:15,033 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:15:15,033 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:15:15,033 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 16:15:42,127 - TradingBot - INFO - 开始市场分析
+2025-11-06 16:15:52,137 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:16:03,147 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:16:14,161 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:16:14,163 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:16:14,163 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:16:14,164 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 16:16:15,168 - TradingBot - INFO - 开始风险检查
+2025-11-06 16:16:25,173 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:16:36,182 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:16:47,193 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:16:47,194 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:16:47,194 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:16:47,194 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 16:17:14,288 - TradingBot - INFO - 开始市场分析
+2025-11-06 16:17:24,302 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:17:35,322 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:17:46,336 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:17:46,339 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:17:46,340 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:17:46,340 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 16:17:47,350 - TradingBot - INFO - 开始风险检查
+2025-11-06 16:17:57,359 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:18:08,378 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:18:19,400 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:18:19,402 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:18:19,402 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:18:19,402 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 16:18:46,493 - TradingBot - INFO - 开始市场分析
+2025-11-06 16:18:56,519 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:19:07,529 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:19:18,541 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:19:18,542 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:19:18,542 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:19:18,542 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 16:19:19,544 - TradingBot - INFO - 开始风险检查
+2025-11-06 16:19:29,553 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:19:40,568 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:19:51,580 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:19:51,581 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:19:51,581 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:19:51,582 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 16:20:18,680 - TradingBot - INFO - 开始市场分析
+2025-11-06 16:20:28,688 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:20:39,700 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:20:50,711 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:20:50,712 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:20:50,712 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:20:50,712 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 16:20:51,713 - TradingBot - INFO - 开始风险检查
+2025-11-06 16:21:01,721 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:21:12,734 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:21:23,751 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:21:23,752 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:21:23,752 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:21:23,753 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 16:21:50,844 - TradingBot - INFO - 开始市场分析
+2025-11-06 16:22:00,873 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:22:11,885 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:22:22,893 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:22:22,895 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:22:22,895 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:22:22,895 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 16:22:23,896 - TradingBot - INFO - 开始风险检查
+2025-11-06 16:22:33,902 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:22:44,916 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:22:55,936 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:22:55,937 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:22:55,937 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:22:55,937 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 16:23:23,036 - TradingBot - INFO - 开始市场分析
+2025-11-06 16:23:33,051 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:23:44,066 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:23:45,944 - TradingBot - INFO - 交易执行器已停止
+2025-11-06 16:23:55,081 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 16:23:55,082 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 16:23:55,082 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 16:23:55,082 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 16:23:55,083 - TradingBot - INFO - 交易机器人已停止

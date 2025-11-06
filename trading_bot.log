@@ -1,0 +1,58 @@
+2025-11-06 18:09:18 [MainThread] system       - INFO     - 🔧 阈值对齐完成: MTF一致性=0.6 (原:0.25), 最小结构评分=0.6 (原:0.4)
+2025-11-06 18:09:18 [MainThread] system       - INFO     - ℹ️ 1小时级别优化器不可用，使用默认配置
+2025-11-06 18:09:18 [MainThread] system       - INFO     - ================================================================================
+2025-11-06 18:09:18 [MainThread] system       - INFO     - 🚀 DeepSeek AI 自主权增强版交易机器人启动参数报告
+2025-11-06 18:09:18 [MainThread] system       - INFO     - ================================================================================
+2025-11-06 18:09:18 [MainThread] system       - INFO     - 📊 基础交易参数:
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    交易对: BTC/USDC:USDC
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    杠杆倍数: 10x
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    基础交易量: 0.0010 BTC
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    运行模式: 🔴 实盘模式
+2025-11-06 18:09:18 [MainThread] system       - INFO     - 🎯 价格激活参数:
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    激活阈值: 0.005% (价格接近关键水平的触发距离)
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    主要时间框架: 3m
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    确认时间框架: 1h
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    监控间隔: 60秒
+2025-11-06 18:09:18 [MainThread] system       - INFO     - ⏰ Kill Zone 设置:
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    状态: 🔴 禁用 (全天候交易)
+2025-11-06 18:09:18 [MainThread] system       - INFO     - 🛡️ 风险管理参数:
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    每笔交易风险: 1.8%
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    最大保证金使用: 60%
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    最大日亏损: 15%
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    最大回撤: 20%
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    最小持仓金额: $50 USDC
+2025-11-06 18:09:18 [MainThread] system       - INFO     - 📈 风险回报比设置:
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    最小R:R比例: 2.0:1
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    激进R:R比例: 3.0:1
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    激进模式风险: 2.0%
+2025-11-06 18:09:18 [MainThread] system       - INFO     - 📊 技术分析参数:
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    成交量确认阈值: 0.6x MA
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    FVG堆叠要求: 1个
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    新鲜区域最大交互: 10次
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    蜡烛图形权重: 1.5x
+2025-11-06 18:09:18 [MainThread] system       - INFO     - 🤖 AI 分析参数:
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    DeepSeek 温度: 0.4
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    超时时间: 30秒
+2025-11-06 18:09:18 [MainThread] system       - INFO     - 📡 监控参数:
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    心跳间隔: 60秒
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    价格监控间隔: 60秒
+2025-11-06 18:09:18 [MainThread] system       - INFO     - 🧠 关键逻辑条件:
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    1. 价格必须接近关键水平 (激活阈值内)
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    2. Kill Zone已禁用，全天候交易
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    3. 风险回报比必须满足最小要求
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    4. 账户余额必须充足
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    5. 无现有持仓冲突
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    6. 技术指标确认信号
+2025-11-06 18:09:18 [MainThread] system       - INFO     - 🧠 AI自主权增强功能:
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    • AI信号权重: 40.0% (大幅提升)
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    • 激活阈值: 0.01% (极低阈值)
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    • MTF一致性阈值: 60% (宽松要求)
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    • 最小结构评分: 60% (降低要求)
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    • 最小R:R比例: 2.0:1 (降低要求)
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    • 成交量确认: 0.6x MA (取消硬性确认)
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    • FVG堆叠要求: 1个 (降低要求)
+2025-11-06 18:09:18 [MainThread] system       - INFO     -    • 区域交互限制: 10次 (放宽限制)
+2025-11-06 18:09:18 [MainThread] system       - INFO     - ================================================================================
+2025-11-06 18:09:18 [MainThread] system       - INFO     - Config validation successful: BTC/USDC:USDC | Leverage=10x | Risk=1.8% | Mode=Live
+2025-11-06 18:09:18 [MainThread] system       - ERROR    - Failed to initialize DeepSeek client: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-11-06 18:09:18 [MainThread] system       - ERROR    - Missing required environment variables: DEEPSEEK_API_KEY, HYPERLIQUID_WALLET_ADDRESS, HYPERLIQUID_PRIVATE_KEY

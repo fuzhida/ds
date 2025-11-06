@@ -95,6 +95,7 @@ class Config:
     # 日志配置
     log_level: str = "INFO"
     log_file: str = "paxg_trading.log"
+    contextual_log_file: str = "logs/contextual_rejects.jsonl"
     max_log_size: int = 10 * 1024 * 1024  # 10MB
     backup_count: int = 5
     
@@ -126,6 +127,13 @@ class Config:
     max_order_retries: int = 3  # 最大重试次数（与order_retry_count相同）
     order_retry_delay: float = 1.0  # 订单重试延迟(秒)
     slippage_tolerance: float = 0.001  # 滑点容忍度
+    spread_tolerance: float = 0.001  # 点差容忍度（买卖价差占中间价比例）
+
+    # 执行相关的默认参数（供 TradingExecutor 使用）
+    default_position_size: float = 0.01  # 默认仓位大小（单位数量）
+    max_position_size: float = 1.0       # 最大仓位大小（单位数量上限）
+    default_stop_loss_pct: float = 0.01  # 默认止损百分比（例如 0.01 = 1%）
+    default_take_profit_pcts: List[float] = field(default_factory=lambda: [0.005, 0.01, 0.02])  # 默认止盈百分比列表
     
     # 执行器配置
     execution_interval: int = 30  # 执行间隔(秒) - 调整为30秒以适应3m主时间框架
@@ -167,6 +175,12 @@ class Config:
                 self.max_open_positions = trade.get("max_open_positions", self.max_open_positions)
                 self.min_signal_confidence = trade.get("min_signal_confidence", self.min_signal_confidence)
                 self.min_signal_interval = trade.get("min_signal_interval", self.min_signal_interval)
+                # 执行相关的默认参数（可从配置文件覆盖）
+                self.default_position_size = trade.get("default_position_size", self.default_position_size)
+                self.max_position_size = trade.get("max_position_size", self.max_position_size)
+                self.default_stop_loss_pct = trade.get("default_stop_loss_pct", self.default_stop_loss_pct)
+                self.default_take_profit_pcts = trade.get("default_take_profit_pcts", self.default_take_profit_pcts)
+                self.spread_tolerance = trade.get("spread_tolerance", self.spread_tolerance)
                 # 分析与调度参数
                 tf = analysis.get("timeframes")
                 if tf:
@@ -190,6 +204,9 @@ class Config:
                     self.openai_api_key = openai.get("api_key", self.openai_api_key)
                     self.openai_model = openai.get("model", self.openai_model)
                     self.openai_base_url = openai.get("base_url", self.openai_base_url)
+                # 日志相关配置
+                logging_cfg = cfg.get("logging", {})
+                self.contextual_log_file = logging_cfg.get("contextual_log_file", self.contextual_log_file)
         except Exception:
             # 保持静默以兼容无配置文件场景
             pass
@@ -228,6 +245,9 @@ class Config:
         
         if os.getenv("OPENAI_API_KEY"):
             self.openai_api_key = os.getenv("OPENAI_API_KEY")
+
+        if os.getenv("CONTEXTUAL_LOG_FILE"):
+            self.contextual_log_file = os.getenv("CONTEXTUAL_LOG_FILE")
         
         # 验证配置参数
         self._validate_config()
@@ -305,6 +325,25 @@ class Config:
         
         if self.slippage_tolerance < 0:
             raise ValueError("Slippage tolerance must be non-negative")
+        if self.spread_tolerance < 0:
+            raise ValueError("Spread tolerance must be non-negative")
+        if not isinstance(self.contextual_log_file, str) or not self.contextual_log_file.strip():
+            raise ValueError("Contextual log file must be a non-empty string")
+
+        # 执行相关默认参数校验
+        if self.default_position_size <= 0:
+            raise ValueError("Default position size must be greater than 0")
+        if self.max_position_size <= 0:
+            raise ValueError("Max position size must be greater than 0")
+        if self.max_position_size < self.default_position_size:
+            raise ValueError("Max position size must be >= default position size")
+        if self.default_stop_loss_pct <= 0:
+            raise ValueError("Default stop loss percent must be greater than 0")
+        if not isinstance(self.default_take_profit_pcts, list) or not self.default_take_profit_pcts:
+            raise ValueError("Default take profit percents must be a non-empty list")
+        for pct in self.default_take_profit_pcts:
+            if pct <= 0:
+                raise ValueError("Take profit percents must be greater than 0")
         
         if self.execution_interval <= 0:
             raise ValueError("Execution interval must be greater than 0")

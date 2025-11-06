@@ -12,6 +12,8 @@ import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import asyncio
 import uuid
+import os
+import json
 
 
 class OrderManager:
@@ -226,6 +228,31 @@ class OrderManager:
             slippage = abs(actual_price - entry_price) / entry_price
             if slippage > self.slippage_tolerance:
                 self.logger.warning(f"买入滑点过大: {slippage:.2%} > {self.slippage_tolerance:.2%}")
+                # 记录门禁事件
+                try:
+                    path = getattr(self.config, 'contextual_log_file', None)
+                    if path:
+                        data = {
+                            "ts": datetime.utcnow().isoformat(),
+                            "module": "order_manager",
+                            "symbol": getattr(self.config, 'symbol', ''),
+                            "reason": "slippage_exceeds_tolerance",
+                            "extras": {
+                                "side": "buy",
+                                "expected_price": entry_price,
+                                "actual_price": actual_price,
+                                "slippage": slippage,
+                                "tolerance": self.slippage_tolerance,
+                                "order_id": buy_order.get("id")
+                            }
+                        }
+                        d = os.path.dirname(path)
+                        if d:
+                            os.makedirs(d, exist_ok=True)
+                        with open(path, 'a', encoding='utf-8') as f:
+                            f.write(json.dumps(data, ensure_ascii=False) + "\n")
+                except Exception:
+                    self.logger.debug("写入上下文日志失败", exc_info=True)
             
             # 创建止损卖单
             stop_loss_price = order.get("stop_loss", 0)
@@ -312,6 +339,31 @@ class OrderManager:
             slippage = abs(actual_price - entry_price) / entry_price
             if slippage > self.slippage_tolerance:
                 self.logger.warning(f"卖出滑点过大: {slippage:.2%} > {self.slippage_tolerance:.2%}")
+                # 记录门禁事件
+                try:
+                    path = getattr(self.config, 'contextual_log_file', None)
+                    if path:
+                        data = {
+                            "ts": datetime.utcnow().isoformat(),
+                            "module": "order_manager",
+                            "symbol": getattr(self.config, 'symbol', ''),
+                            "reason": "slippage_exceeds_tolerance",
+                            "extras": {
+                                "side": "sell",
+                                "expected_price": entry_price,
+                                "actual_price": actual_price,
+                                "slippage": slippage,
+                                "tolerance": self.slippage_tolerance,
+                                "order_id": sell_order.get("id")
+                            }
+                        }
+                        d = os.path.dirname(path)
+                        if d:
+                            os.makedirs(d, exist_ok=True)
+                        with open(path, 'a', encoding='utf-8') as f:
+                            f.write(json.dumps(data, ensure_ascii=False) + "\n")
+                except Exception:
+                    self.logger.debug("写入上下文日志失败", exc_info=True)
             
             # 创建止损买单
             stop_loss_price = order.get("stop_loss", 0)
@@ -733,6 +785,51 @@ class TradingExecutor:
             if not current_price:
                 self.logger.error("无法获取当前价格")
                 return False
+
+            # 点差门控：若买卖价差占中间价比例超出容忍，拒绝执行
+            try:
+                orderbook = self.exchange_manager.safe_fetch_order_book(self.config.symbol)
+                if orderbook:
+                    bids = orderbook.get('bids', [])
+                    asks = orderbook.get('asks', [])
+                    if bids and asks:
+                        best_bid = float(bids[0][0])
+                        best_ask = float(asks[0][0])
+                        mid = (best_bid + best_ask) / 2.0 if (best_bid and best_ask) else current_price
+                        spread_ratio = (best_ask - best_bid) / mid if mid > 0 else 0.0
+                        if spread_ratio > getattr(self.config, 'spread_tolerance', 0.001):
+                            self.logger.warning(
+                                f"点差过大: {spread_ratio:.2%} > {getattr(self.config, 'spread_tolerance', 0.001):.2%}，拒绝执行"
+                            )
+                            # 记录门禁事件
+                            try:
+                                path = getattr(self.config, 'contextual_log_file', None)
+                                if path:
+                                    data = {
+                                        "ts": datetime.utcnow().isoformat(),
+                                        "module": "trading_executor",
+                                        "symbol": getattr(self.config, 'symbol', ''),
+                                        "reason": "spread_too_wide",
+                                        "extras": {
+                                            "best_bid": best_bid,
+                                            "best_ask": best_ask,
+                                            "mid": mid,
+                                            "spread_ratio": spread_ratio,
+                                            "tolerance": getattr(self.config, 'spread_tolerance', None),
+                                            "signal_type": signal.get("signal", "HOLD")
+                                        }
+                                    }
+                                    d = os.path.dirname(path)
+                                    if d:
+                                        os.makedirs(d, exist_ok=True)
+                                    with open(path, 'a', encoding='utf-8') as f:
+                                        f.write(json.dumps(data, ensure_ascii=False) + "\n")
+                            except Exception:
+                                self.logger.debug("写入上下文日志失败", exc_info=True)
+                            return False
+            except Exception as _e:
+                # 获取订单簿失败不致命，继续执行，但记录日志
+                self.logger.debug(f"点差门控检查失败，忽略继续: {_e}")
             
             # 计算仓位大小、止损和止盈
             position_size = self._calculate_position_size(signal, current_price)

@@ -178,10 +178,11 @@ class TradingBot:
                 # 设置定时任务
                 self._setup_schedule()
                 
-                # 兼容测试：触发一次异步任务创建
+                # 兼容测试：仅在有运行中的事件循环时触发一次异步任务创建，避免未await警告
                 try:
                     import asyncio
-                    asyncio.create_task(asyncio.sleep(0))
+                    loop = asyncio.get_running_loop()
+                    loop.create_task(asyncio.sleep(0))
                 except Exception:
                     pass
                 

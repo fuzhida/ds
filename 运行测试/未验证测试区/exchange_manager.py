@@ -75,9 +75,13 @@ class ExchangeManager:
             raise
     
     def test_connection(self) -> bool:
-        """测试交易所连接：加载交易对信息以验证连接"""
+        """测试交易所连接：在模拟模式下跳过网络请求，否则加载交易对信息以验证连接"""
+        # 在模拟模式，不进行网络访问，直接认为连接成功
+        if getattr(self.config, 'simulation_mode', False):
+            self.logger.info("模拟模式：跳过交易所连接测试")
+            return True
         try:
-            # 测试期望调用 load_markets
+            # 非模拟模式：调用 load_markets 验证连接
             self.exchange.load_markets()
             self.logger.info("交易所连接测试成功")
             return True

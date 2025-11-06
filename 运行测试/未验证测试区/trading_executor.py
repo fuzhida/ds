@@ -10,6 +10,7 @@ from datetime import datetime, timezone, timedelta
 import time
 import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
+import asyncio
 import uuid
 
 
@@ -583,6 +584,9 @@ class TradingExecutor:
         self.running = False  # 添加running属性以兼容测试
         self.execution_thread = None
         self.stop_event = threading.Event()
+        # 事件循环线程（用于异步执行循环）
+        self._event_loop = None
+        self._event_loop_thread = None
         
         # 执行配置
         self.execution_interval = config.execution_interval  # 执行间隔(秒)
@@ -604,16 +608,26 @@ class TradingExecutor:
             self.execution_thread = threading.Thread(target=self._execution_loop, daemon=True)
             self.execution_thread.start()
             
-            # 创建异步任务以满足测试需求
+            # 创建并运行异步执行循环（在现有或独立事件循环中）
             import asyncio
             try:
-                # 直接调用create_task以满足测试需求
-                asyncio.create_task(self._async_execution_loop())
-            except RuntimeError:
-                # 如果没有事件循环，创建一个新的
-                loop = asyncio.new_event_loop()
-                asyncio.set_event_loop(loop)
+                # 如果已有运行中的事件循环，直接调度任务
+                loop = asyncio.get_running_loop()
                 loop.create_task(self._async_execution_loop())
+            except RuntimeError:
+                # 无运行中的事件循环：启动独立事件循环线程并调度任务
+                loop = asyncio.new_event_loop()
+                self._event_loop = loop
+                
+                def _run_loop(l):
+                    asyncio.set_event_loop(l)
+                    l.run_forever()
+                
+                self._event_loop_thread = threading.Thread(target=_run_loop, args=(loop,), daemon=True)
+                self._event_loop_thread.start()
+                
+                # 将协程提交到独立事件循环中运行
+                asyncio.run_coroutine_threadsafe(self._async_execution_loop(), loop)
             
             self.logger.info("交易执行器已启动")
             
@@ -660,6 +674,17 @@ class TradingExecutor:
             # 等待执行线程结束
             if self.execution_thread and self.execution_thread.is_alive():
                 self.execution_thread.join(timeout=10)
+            
+            # 关闭并清理独立事件循环线程
+            if self._event_loop:
+                try:
+                    self._event_loop.call_soon_threadsafe(self._event_loop.stop)
+                except Exception:
+                    pass
+                if self._event_loop_thread and self._event_loop_thread.is_alive():
+                    self._event_loop_thread.join(timeout=5)
+                self._event_loop = None
+                self._event_loop_thread = None
             
             self.logger.info("交易执行器已停止")
             

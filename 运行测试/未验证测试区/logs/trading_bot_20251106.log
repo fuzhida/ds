@@ -3,3 +3,67 @@
 2025-11-06 02:16:07,394 - TradingBot - INFO - 模拟模式：跳过交易所连接测试
 2025-11-06 02:16:07,394 - TradingBot - INFO - 所有组件初始化成功
 2025-11-06 02:16:07,394 - TradingBot - INFO - 交易机器人初始化完成
+2025-11-06 15:36:50,675 - TradingBot - INFO - 交易所 binance 初始化成功
+2025-11-06 15:36:50,676 - TradingBot - WARNING - 没有可用的AI信号提供者
+2025-11-06 15:36:50,774 - TradingBot - ERROR - 交易所连接测试失败: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:36:50,774 - TradingBot - ERROR - 组件初始化失败: 无法连接到交易所
+2025-11-06 15:37:08,489 - TradingBot - INFO - 交易所 binance 初始化成功
+2025-11-06 15:37:08,490 - TradingBot - WARNING - 没有可用的AI信号提供者
+2025-11-06 15:37:08,490 - TradingBot - INFO - 模拟模式：跳过交易所连接测试
+2025-11-06 15:37:08,490 - TradingBot - INFO - 所有组件初始化成功
+2025-11-06 15:37:08,490 - TradingBot - INFO - 交易机器人初始化完成
+2025-11-06 15:37:08,490 - TradingBot - WARNING - 交易机器人尚未初始化
+2025-11-06 15:37:38,693 - TradingBot - INFO - 交易所 binance 初始化成功
+2025-11-06 15:37:38,693 - TradingBot - WARNING - 没有可用的AI信号提供者
+2025-11-06 15:37:38,693 - TradingBot - INFO - 模拟模式：跳过交易所连接测试
+2025-11-06 15:37:38,693 - TradingBot - INFO - 所有组件初始化成功
+2025-11-06 15:37:38,693 - TradingBot - INFO - 交易机器人初始化完成
+2025-11-06 15:37:38,696 - TradingBot - INFO - 交易执行器已启动
+2025-11-06 15:37:38,696 - TradingBot - INFO - 定时任务已设置
+2025-11-06 15:37:38,698 - TradingBot - INFO - 交易机器人已启动
+2025-11-06 15:38:38,926 - TradingBot - INFO - 开始市场分析
+2025-11-06 15:38:48,961 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:38:59,974 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:39:10,983 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:39:10,984 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 15:39:10,984 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:39:10,984 - TradingBot - WARNING - 无法获取市场数据，跳过分析
+2025-11-06 15:39:10,985 - TradingBot - INFO - 开始风险检查
+2025-11-06 15:39:20,989 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 1/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:39:32,004 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 2/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:39:41,317 - TradingBot - INFO - 交易执行器已停止
+2025-11-06 15:39:43,018 - TradingBot - WARNING - 获取 BTC/USDC 1m OHLCV数据失败 (尝试 3/3): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-11-06 15:39:43,019 - TradingBot - ERROR - 获取 BTC/USDC 1m OHLCV数据最终失败
+2025-11-06 15:39:43,019 - TradingBot - WARNING - 无法获取 1m 时间框架数据
+2025-11-06 15:39:43,019 - TradingBot - WARNING - 无法获取市场数据，跳过风险检查
+2025-11-06 15:39:43,019 - TradingBot - INFO - 交易机器人已停止
+2025-11-06 15:41:45,078 - TradingBot - INFO - 交易所 binance 初始化成功
+2025-11-06 15:41:45,078 - TradingBot - WARNING - 没有可用的AI信号提供者
+2025-11-06 15:41:45,078 - TradingBot - INFO - 模拟模式：跳过交易所连接测试
+2025-11-06 15:41:45,078 - TradingBot - INFO - 所有组件初始化成功
+2025-11-06 15:41:45,078 - TradingBot - INFO - 交易机器人初始化完成
+2025-11-06 15:41:45,079 - TradingBot - INFO - 交易执行器已启动
+2025-11-06 15:41:45,079 - TradingBot - ERROR - 异步执行循环异常: name 'asyncio' is not defined
+2025-11-06 15:41:45,079 - TradingBot - INFO - 定时任务已设置
+2025-11-06 15:41:45,079 - TradingBot - ERROR - 异步执行循环失败: name 'asyncio' is not defined
+2025-11-06 15:41:45,079 - TradingBot - INFO - 交易机器人已启动
+2025-11-06 15:41:45,283 - TradingBot - INFO - 交易执行器已停止
+2025-11-06 15:41:45,283 - TradingBot - INFO - 交易机器人已停止
+2025-11-06 15:41:57,615 - TradingBot - INFO - 交易所 binance 初始化成功
+2025-11-06 15:41:57,615 - TradingBot - WARNING - 没有可用的AI信号提供者
+2025-11-06 15:41:57,615 - TradingBot - INFO - 模拟模式：跳过交易所连接测试
+2025-11-06 15:41:57,615 - TradingBot - INFO - 所有组件初始化成功
+2025-11-06 15:41:57,616 - TradingBot - INFO - 交易机器人初始化完成
+2025-11-06 15:41:57,616 - TradingBot - INFO - 交易执行器已启动
+2025-11-06 15:41:57,616 - TradingBot - INFO - 定时任务已设置
+2025-11-06 15:41:57,616 - TradingBot - ERROR - 异步执行循环异常: name 'asyncio' is not defined
+2025-11-06 15:41:57,616 - TradingBot - INFO - 交易机器人已启动
+2025-11-06 15:41:57,616 - TradingBot - ERROR - 异步执行循环失败: name 'asyncio' is not defined
+2025-11-06 15:42:25,900 - TradingBot - INFO - 交易所 binance 初始化成功
+2025-11-06 15:42:25,901 - TradingBot - WARNING - 没有可用的AI信号提供者
+2025-11-06 15:42:25,901 - TradingBot - INFO - 模拟模式：跳过交易所连接测试
+2025-11-06 15:42:25,901 - TradingBot - INFO - 所有组件初始化成功
+2025-11-06 15:42:25,901 - TradingBot - INFO - 交易机器人初始化完成
+2025-11-06 15:42:25,901 - TradingBot - INFO - 交易执行器已启动
+2025-11-06 15:42:25,901 - TradingBot - INFO - 定时任务已设置
+2025-11-06 15:42:25,901 - TradingBot - INFO - 交易机器人已启动

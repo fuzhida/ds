@@ -30,6 +30,8 @@ def main(logger: Optional[object] = None):
 
     # 当未传入外部 logger 时，执行真实启动流程
     if logger is None:
+        # 标记已初始化以通过启动检查
+        bot.initialize()
         if bot.start():
             try:
                 while True:
